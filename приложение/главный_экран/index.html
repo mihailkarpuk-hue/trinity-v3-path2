@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тринити Альфа</title>
+    <link rel="stylesheet" href="../стили/палитра.css">
+    <link rel="stylesheet" href="стиль.css">
+    <link rel="stylesheet" href="../блоки/каталог/меню.css">
+    <link rel="stylesheet" href="../блоки/просмотр_клеточки/стиль.css">
+    <link rel="stylesheet" href="../блоки/плеер_звука/стиль.css">
+
+    <!-- Three.js 0.160 — ЛОКАЛЬНАЯ копия (офлайн, без CDN). Файлы в приложение/vendor/three/. -->
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "../vendor/three/three.module.js",
+        "three/addons/": "../vendor/three/addons/"
+      }
+    }
+    </script>
+
+    <!-- Индикатор записи микрофона (модуль ../общее/пользовательский_звук.js) -->
+    <style>
+      .индикатор-записи{position:fixed;top:48px;left:50%;transform:translateX(-50%);
+        z-index:50;display:flex;align-items:center;gap:10px;
+        background:#1a1a1a;border:1px solid var(--акцент-тёплый,#FF6347);
+        color:#eee;padding:8px 14px;border-radius:10px;font-size:13px;
+        box-shadow:0 6px 24px rgba(0,0,0,.5)}
+      .индикатор-записи[hidden]{display:none}
+      .точка-записи{width:10px;height:10px;border-radius:50%;
+        background:var(--акцент-тёплый,#FF6347);animation:пульс-записи 1s infinite}
+      @keyframes пульс-записи{0%,100%{opacity:1}50%{opacity:.25}}
+      .стоп-записи{background:var(--акцент-тёплый,#FF6347);color:#000;border:0;
+        border-radius:6px;padding:4px 10px;font-weight:600;cursor:pointer}
+    </style>
+</head>
+<body class="главный-экран">
+
+    <!-- ВЕРХНЯЯ ПОЛОСА -->
+    <header class="полоса-верх">
+        <div class="лого">Trinity V3 · позвоночник</div>
+        <div class="функции-обёртка">
+            <button id="кнопка-функции" class="кнопка-функции" type="button" aria-haspopup="true" aria-expanded="false">
+                Функции <span class="стрелка">▾</span>
+            </button>
+            <ul id="панель-функций" class="панель-функций" hidden>
+                <li data-id="slovo">🔤 Слово · буквица</li>
+                <li data-id="faza">🔷 Фаза → форма</li>
+                <li data-id="record">🎙 Записать живой звук</li>
+                <li data-id="upload">📁 Загрузить файл</li>
+                <li data-id="hear">🔊 Услышать образ</li>
+                <li data-id="recognize">🧠 Узнать образ</li>
+                <li data-id="etalon">📷 Образ из эталона</li>
+                <li data-id="about">ℹ&nbsp; О проекте</li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ЛЕВАЯ ПАНЕЛЬ: КАТАЛОГ -->
+    <aside class="зона зона-каталог" id="зона-каталог" aria-label="Каталог клеточек"></aside>
+
+    <!-- ЦЕНТР: СЦЕНА / ОБРАЗ (упрощено 16.06 — Атомы/Решётка скрыты) -->
+    <main class="зона зона-центр" id="зона-просмотр" aria-label="Просмотр клеточки">
+        <nav class="переключатель-проекций" role="tablist" aria-label="Тип проекции">
+            <button class="прж активна" data-проекция="сцена" type="button" role="tab" aria-selected="true">Сцена</button>
+            <button class="прж"          data-проекция="образ"   type="button" role="tab" aria-selected="false" title="Сцена ИЗ атомов: цвет=Hz, насыщенность=тембр, размер=амплитуда. Оживает при Play">Образ</button>
+            <!-- скрыто для простоты (вернуть при надобности):
+            <button class="прж"          data-проекция="атомы" type="button" role="tab" aria-selected="false">Атомы</button>
+            <button class="прж"          data-проекция="решётка" type="button" role="tab" aria-selected="false">Решётка</button>
+            -->
+        </nav>
+        <nav class="переключатель-координат" id="переключатель-координат" role="tablist" aria-label="Координаты" hidden>
+            <span class="координаты-метка">координаты:</span>
+            <button class="кх активна" data-режим="физика" type="button" role="tab" aria-selected="true" title="X=время · Y=log частоты · Z=амплитуда — структура звука (алфавит)">Физика</button>
+            <!-- упрощено 18.06 (алфавит = только Физика); вернуть при надобности:
+            <button class="кх" data-режим="авто"   type="button" role="tab" aria-selected="false" title="Авто — сферическая раскладка из генератора">Авто</button>
+            <button class="кх" data-режим="радиус" type="button" role="tab" aria-selected="false" title="Радиально: угол=частота, радиус растёт со временем">Радиус</button>
+            -->
+            <span class="координаты-метка" style="margin-left:14px;">цвет:</span>
+            <button class="цв активна" data-цвет="файл" type="button" role="tab" aria-selected="true"  title="Цвет из файла сцены">Файл</button>
+            <button class="цв"         data-цвет="hz"   type="button" role="tab" aria-selected="false" title="Цвет = частота (Hz), спектральный образ звука">Hz</button>
+        </nav>
+    </main>
+
+    <!-- НИЗ: ПЛЕЕР + ПАСПОРТ -->
+    <footer class="зона-низ">
+        <div class="зона-плеер" id="зона-плеер" aria-label="Плеер"></div>
+        <div class="паспорт" id="паспорт">— · — · — · —</div>
+    </footer>
+
+    <script src="разметка.js"></script>
+    <script type="module" src="../блоки/каталог/код.js"></script>
+    <script type="module" src="../блоки/просмотр_клеточки/код.js"></script>
+    <script type="module" src="../блоки/плеер_звука/код.js"></script>
+    <script type="module" src="../общее/пользовательский_звук.js"></script>
+    <script type="module" src="../общее/образ_в_атомы.js"></script>
+    <script type="module" src="../общее/озвучить_образ.js"></script>
+    <script type="module" src="../общее/образ_в_звук.js"></script>
+    <script type="module" src="../общее/узнавание.js"></script>
+    <script type="module" src="../общее/эталон_в_атомы.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тринити — Слово (звук → образ → слово)</title>
+<script type="importmap">
+{ "imports": { "three": "../vendor/three/three.module.js", "three/addons/": "../vendor/three/addons/" } }
+</script>
+<style>
+  :root{ --bg:#05060a; --pan:#0d1018; --tx:#e7ecf5; --mut:#8a93a6; --acc:#6ea8ff; }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
+  .верх{display:flex;gap:10px;align-items:center;padding:12px 16px;background:linear-gradient(#0d1018,#0a0c12);border-bottom:1px solid #1b2130;flex-wrap:wrap;}
+  .верх h1{font-size:15px;margin:0;font-weight:650;letter-spacing:.3px}
+  .верх h1 small{color:var(--mut);font-weight:400;margin-left:8px;font-size:12px}
+  input#слово{flex:0 0 280px;background:#11151f;border:1px solid #283042;color:var(--tx);font-size:18px;padding:9px 12px;border-radius:9px;letter-spacing:1px;outline:none}
+  input#слово:focus{border-color:var(--acc)}
+  button{background:#1b2740;border:1px solid #2c3c5c;color:#dce6ff;font-size:14px;padding:9px 16px;border-radius:9px;cursor:pointer}
+  button:hover{background:#23304e}
+  button.gl{background:linear-gradient(#2b62b8,#244e93);border-color:#3b6fd0}
+  #холст{position:absolute;inset:0;top:0}
+  .сцена{position:relative;width:100%;height:calc(100% - 58px - 64px)}
+  .подпись{position:absolute;left:0;right:0;bottom:8px;text-align:center;color:var(--mut);font-size:12px;pointer-events:none}
+  .низ{height:64px;display:flex;align-items:center;gap:14px;padding:0 16px;background:#0a0c12;border-top:1px solid #1b2130}
+  .буквы{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .чип{padding:4px 9px;border-radius:7px;font-size:13px;background:#11151f;border:1px solid #222c3e}
+  .чип b{font-size:15px}
+  .чип span{color:var(--mut);font-size:11px;margin-left:5px}
+  .чип.акт{box-shadow:0 0 0 2px var(--acc) inset;background:#15223a}
+  #смысл{color:var(--mut);font-size:12px;max-width:46%;line-height:1.45}
+</style>
+</head>
+<body>
+<div class="верх">
+  <h1>ТРИНИТИ · Слово <small>звук → образ → слово (сложение образов букв)</small></h1>
+  <input id="слово" maxlength="14" value="МИРЪ" spellcheck="false">
+  <button class="gl" id="кн_собрать">Собрать образ</button>
+  <button id="кн_звук">▶ Озвучить</button>
+  <span id="подсказка" style="color:var(--mut);font-size:12px">загрузка карты…</span>
+</div>
+<div class="сцена">
+  <div id="холст"></div>
+  <div class="подпись">тяни мышью — вращение · каждая буква = образ-архетип из буквицы, цвет = её hue</div>
+</div>
+<div class="низ">
+  <div class="буквы" id="чипы"></div>
+  <div id="смысл"></div>
+</div>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const $=s=>document.querySelector(s);
+let КАРТА=null;
+fetch(encodeURI('../../данные/буквица_карта.json')).then(r=>r.json()).then(d=>{
+  КАРТА={}; d.буквы.forEach(b=>КАРТА[b.буква]=b);
+  $('#подсказка').textContent='карта: '+d.буквы.length+' букв';
+  собрать();
+}).catch(e=>{ $('#подсказка').textContent='не удалось загрузить карту'; console.error(e); });
+
+// ── 3D ──
+const wrap=$('#холст');
+const scene=new THREE.Scene(); scene.background=new THREE.Color(0x05060a);
+const cam=new THREE.PerspectiveCamera(50,1,0.1,1000); cam.position.set(0,0,12);
+const renderer=new THREE.WebGLRenderer({antialias:true}); renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+wrap.appendChild(renderer.domElement);
+const controls=new OrbitControls(cam,renderer.domElement); controls.enableDamping=true; controls.dampingFactor=0.08;
+function resize(){ const w=wrap.clientWidth||1,h=wrap.clientHeight||1; renderer.setSize(w,h,false); cam.aspect=w/h; cam.updateProjectionMatrix(); }
+new ResizeObserver(resize).observe(wrap); resize();
+
+function glowTex(){ const c=document.createElement('canvas'); c.width=c.height=64; const g=c.getContext('2d');
+  const gr=g.createRadialGradient(32,32,0,32,32,32); gr.addColorStop(0,'rgba(255,255,255,1)'); gr.addColorStop(.35,'rgba(255,255,255,.5)'); gr.addColorStop(1,'rgba(255,255,255,0)');
+  g.fillStyle=gr; g.fillRect(0,0,64,64); const t=new THREE.CanvasTexture(c); t.needsUpdate=true; return t; }
+const TEX=glowTex();
+function ptMaterial(){ return new THREE.ShaderMaterial({ uniforms:{uTex:{value:TEX}},
+  vertexShader:'attribute float size;\nattribute vec3 color;\nvarying vec3 vC;\nvoid main(){vC=color;vec4 mv=modelViewMatrix*vec4(position,1.0);gl_PointSize=size*(300.0/-mv.z);gl_Position=projectionMatrix*mv;}',
+  fragmentShader:'uniform sampler2D uTex;\nvarying vec3 vC;\nvoid main(){vec4 t=texture2D(uTex,gl_PointCoord);if(t.a<0.02)discard;gl_FragColor=vec4(vC,1.0)*t;}',
+  transparent:true,depthWrite:false,blending:THREE.AdditiveBlending }); }
+
+function hsl(h,s,l){ h=(h%360)/360; const a=s*Math.min(l,1-l); const f=k=>{const x=(k+h*12)%12; return l-a*Math.max(-1,Math.min(x-3,9-x,1));}; return [f(0),f(8),f(4)]; }
+const R=(a=1,b=0)=>b+(a-b)*Math.random();
+const G=(s=1)=>{ let u=0,v=0; while(!u)u=Math.random(); while(!v)v=Math.random(); return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)*s; };
+
+// ── архетипы формы (локально, центр в 0, размер ~1) ──
+function форма(tag,n){
+  const p=[]; const push=(x,y,z)=>p.push([x,y,z]);
+  for(let i=0;i<n;i++){
+    let x=0,y=0,z=0;
+    switch(tag){
+      case 'восхождение': case 'огонь': { y=R(1.15,-1.05); const k=1-(y+1)/2.2*0.6; x=G(0.16)*k; z=G(0.16)*k; break; }
+      case 'дыхание': case 'кольцо/объём': case 'покой/симметрия': { const u=R(6.283),v=Math.acos(R(1,-1)),r=Math.cbrt(R())*0.9; x=Math.sin(v)*Math.cos(u)*r; y=Math.cos(v)*r; z=Math.sin(v)*Math.sin(u)*r; break; }
+      case 'пульс': { x=G(0.4); y=G(0.4); z=G(0.32); break; }
+      case 'волны': { x=R(1,-1); z=R(0.6,-0.6); y=0.45*Math.sin(x*3.0)+G(0.05); break; }
+      case 'удар': { if(Math.random()<0.7){ x=G(0.05); y=R(1.1,-1.1); z=G(0.05); } else { const a=R(6.283),r=R(0.9); x=Math.cos(a)*r; y=Math.sin(a)*r*0.5; z=G(0.1);} break; }
+      case 'ветвление': { const br=Math.random(); if(br<0.4){ x=G(0.06); y=R(0.1,-1.1); z=G(0.06);} else { const side=Math.random()<0.5?-1:1, t=R(1); x=side*t*0.9; y=-0.1+t*1.0+G(0.05); z=G(0.12);} break; }
+      case 'связь': case 'рой/связь': { const t=R(1,-1); x=t; y=0.85*(1-t*t)-0.35+G(0.05); z=G(0.12); break; }
+      case 'спираль': { const t=R(1); const a=t*6.283*1.6; x=Math.cos(a)*0.65; y=t*2-1; z=Math.sin(a)*0.65; break; }
+      case 'покой': { x=R(0.95,-0.95); z=R(0.6,-0.6); y=G(0.07); break; }
+      case 'ручей': case 'ветер': { x=R(1.05,-1.05); y=G(0.2); z=R(0.4,-0.4); break; }
+      case 'ширь': { x=R(1.25,-1.25); y=G(0.05); z=R(0.32,-0.32); break; }
+      case 'пересечение': { const d=Math.random()<0.5?1:-1, t=R(1,-1); x=t; y=t*d; z=G(0.1); break; }
+      case 'касание': case 'становление': { const s=Math.random()<0.5?-0.5:0.5; x=s+G(0.22); y=G(0.3); z=G(0.22); break; }
+      default: { x=G(0.45); y=G(0.45); z=G(0.4); }
+    }
+    push(x,y,z);
+  }
+  return p;
+}
+
+let cloud=null, geom=null, sizes=null, базис=null, активные=[];
+function dispose(){ if(cloud){ scene.remove(cloud); geom.dispose(); cloud.material.dispose(); cloud=null; } }
+
+function собрать(){
+  if(!КАРТА) return;
+  const raw=[...($('#слово').value||'').toUpperCase()];
+  const letters=raw.filter(ch=>КАРТА[ch]);
+  dispose(); активные=[];
+  $('#чипы').innerHTML='';
+  if(!letters.length){ $('#подсказка').textContent='нет известных букв'; return; }
+  const PER=460, n=letters.length, spacing=2.3;
+  const pos=[], col=[], sz=[];
+  let смысл=[];
+  letters.forEach((L,li)=>{
+    const b=КАРТА[L]; const slotX=(li-(n-1)/2)*spacing;
+    const pts=форма(b.динамика,PER); const start=pos.length/3;
+    const пз=b.параметры_звука||{}; const sat=0.4+((пз.harmonicity!=null?пз.harmonicity:0.6))*0.5;  // тембр буквы → насыщенность
+    for(const q of pts){
+      pos.push(slotX+q[0]*0.8, q[1]*0.95, q[2]*0.8);
+      const [r,g,bl]=hsl(b.цвет_hue,sat,0.46+R(0.22)); col.push(r,g,bl);
+      sz.push(0.05+R(0.055));
+    }
+    активные.push({start,count:PER,letter:L,slotX,hue:b.цвет_hue});
+    смысл.push(L+' — '+b.образ.split(';')[0]);
+    const chip=document.createElement('div'); chip.className='чип'; chip.dataset.li=li;
+    const [cr,cg,cb]=hsl(b.цвет_hue,0.7,0.55);
+    const пзи=b.параметры_звука||{};
+    chip.title=b.имя+' · '+b.образ+(пзи.centroid?(' · звук: centroid '+пзи.centroid+'Гц, тембр '+пзи.harmonicity+(пзи.formantF1?(', форманты '+пзи.formantF1+'/'+пзи.formantF2):'')):'');
+    chip.innerHTML='<b style="color:rgb('+(cr*255|0)+','+(cg*255|0)+','+(cb*255|0)+')">'+L+'</b><span>'+b.динамика+'</span>';
+    $('#чипы').appendChild(chip);
+  });
+  base_build(pos,col,sz);
+  $('#смысл').textContent='сложение образов: '+смысл.join(' · ');
+  $('#подсказка').textContent=letters.length+' букв · '+(pos.length/3)+' атомов';
+  // камера по ширине слова
+  const half=(n*spacing)/2+1.5; cam.position.set(0,0,Math.max(9,half/Math.tan(0.43))); controls.target.set(0,0,0); controls.update();
+}
+function base_build(pos,col,sz){
+  geom=new THREE.BufferGeometry();
+  geom.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));
+  geom.setAttribute('color',new THREE.Float32BufferAttribute(col,3));
+  sizes=new Float32Array(sz); базис=Float32Array.from(sz);
+  geom.setAttribute('size',new THREE.BufferAttribute(sizes,1));
+  cloud=new THREE.Points(geom,ptMaterial()); scene.add(cloud);
+}
+
+// ── ЗВУК: фонемы букв ──
+let ctx=null;
+const ГЛАСН={ 'А':[700,1100],'О':[500,900],'У':[320,800],'Э':[600,1800],'Ы':[300,1500],'И':[280,2300],'Е':[440,2000],'Ё':[400,1850],'Ю':[320,1650],'Я':[680,1700] };
+const ЗВОНК={ 'Б':300,'В':1000,'Г':1200,'Д':1800,'Ж':2500,'З':5000,'Л':600,'М':250,'Н':1500,'Р':1300,'Й':2200 };
+const ГЛУХ ={ 'К':1500,'П':800,'С':6500,'Т':3000,'Ф':1500,'Х':1800,'Ц':5200,'Ч':2600,'Ш':3600,'Щ':4600 };
+function noiseBuf(d){ const N=Math.ceil(d*ctx.sampleRate); const b=ctx.createBuffer(1,N,ctx.sampleRate); const a=b.getChannelData(0); for(let i=0;i<N;i++)a[i]=Math.random()*2-1; return b; }
+function phon(L,t0){
+  // длительность по типу
+  let dur = ГЛАСН[L]?0.26 : ЗВОНК[L]?0.16 : ГЛУХ[L]?0.13 : 0.05;
+  const g=ctx.createGain(); g.connect(ctx.destination); g.gain.setValueAtTime(0,t0);
+  if(ГЛАСН[L]){
+    const [f1,f2]=ГЛАСН[L]; const o=ctx.createOscillator(); o.type='sawtooth'; o.frequency.value=140;
+    const b1=ctx.createBiquadFilter(); b1.type='bandpass'; b1.frequency.value=f1; b1.Q.value=6;
+    const b2=ctx.createBiquadFilter(); b2.type='bandpass'; b2.frequency.value=f2; b2.Q.value=9;
+    o.connect(b1).connect(g); o.connect(b2).connect(g);
+    g.gain.linearRampToValueAtTime(0.5,t0+0.03); g.gain.setValueAtTime(0.5,t0+dur-0.06); g.gain.linearRampToValueAtTime(0,t0+dur);
+    o.start(t0); o.stop(t0+dur+0.02);
+  } else if(ЗВОНК[L]){
+    const f=ЗВОНК[L]; const o=ctx.createOscillator(); o.type='sawtooth'; o.frequency.value=115;
+    const bp=ctx.createBiquadFilter(); bp.type='bandpass'; bp.frequency.value=f; bp.Q.value=4; o.connect(bp).connect(g);
+    g.gain.linearRampToValueAtTime(0.42,t0+0.02); g.gain.linearRampToValueAtTime(0,t0+dur);
+    o.start(t0); o.stop(t0+dur+0.02);
+  } else if(ГЛУХ[L]){
+    const f=ГЛУХ[L]; const s=ctx.createBufferSource(); s.buffer=noiseBuf(dur+0.02);
+    const bp=ctx.createBiquadFilter(); bp.type='bandpass'; bp.frequency.value=f; bp.Q.value=0.9; s.connect(bp).connect(g);
+    g.gain.linearRampToValueAtTime(0.4,t0+0.012); g.gain.linearRampToValueAtTime(0,t0+dur);
+    s.start(t0); s.stop(t0+dur+0.02);
+  } // Ъ/Ь — пауза
+  return dur+0.04;
+}
+let играем=false, расписание=[], играСтарт=0, играВсего=0;
+function озвучить(){
+  if(!активные.length) return;
+  if(!ctx) ctx=new (window.AudioContext||window.webkitAudioContext)();
+  if(ctx.state==='suspended') ctx.resume();
+  расписание=[]; let t=ctx.currentTime+0.08;
+  активные.forEach((a,li)=>{ const d=phon(a.letter,t); расписание.push({li,t0:t-(ctx.currentTime),dur:d}); t+=d; });
+  играСтарт=performance.now()+80; играВсего=(t-ctx.currentTime)*1000; играем=true;
+}
+$('#кн_звук').onclick=озвучить;
+$('#кн_собрать').onclick=собрать;
+$('#слово').addEventListener('keydown',e=>{ if(e.key==='Enter'){ собрать(); озвучить(); } });
+
+// ── анимация: подсветка активной буквы в такт фонеме ──
+function tick(){
+  controls.update();
+  if(cloud && базис){
+    let актLi=-1;
+    if(играем){ const el=(performance.now()-играСтарт)/1000;
+      if(el>играВсего/1000+0.1){ играем=false; } else {
+        for(const r of расписание){ if(el>=r.t0 && el<r.t0+r.dur){ актLi=r.li; break; } }
+      }
+    }
+    const sz=geom.getAttribute('size').array;
+    for(let i=0;i<активные.length;i++){ const a=активные[i]; const boost=(i===актLi)?2.0:1.0;
+      for(let k=0;k<a.count;k++){ sz[a.start+k]=базис[a.start+k]*boost; } }
+    geom.getAttribute('size').needsUpdate=true;
+    // подсветка чипа
+    document.querySelectorAll('.чип').forEach((c,ci)=>c.classList.toggle('акт',ci===актLi));
+  }
+  renderer.render(scene,cam); requestAnimationFrame(tick);
+}
+tick();
+</script>
+</body>
+</html>

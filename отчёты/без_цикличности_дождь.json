@@ -1,0 +1,29 @@
+{
+  "narrow_эталон": 0.398,
+  "narrow_было_синус": 0.651,
+  "narrow_стало": 0.554,
+  "mod_peak": 2.69,
+  "оси": {
+    "fd": 0.715,
+    "selfsim_r2": 0.988,
+    "nestedness": 0.166,
+    "mod_depth": 0.18,
+    "mod_rate": 2.7
+  },
+  "цель": {
+    "fd": 0.714,
+    "selfsim_r2": 0.987,
+    "nestedness": 0.177,
+    "mod_depth": 0.212,
+    "mod_rate": 10.8
+  },
+  "flatness": 0.4269,
+  "band_corr": 0.9265,
+  "params": {
+    "decor": 0.7,
+    "blend": 0.9,
+    "tilt": 0.55,
+    "hiss": 0.08
+  },
+  "wav": "выход/причина_дождь/калибр_оси/сборка_без_цикла.wav"
+}

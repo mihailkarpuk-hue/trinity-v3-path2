@@ -1,0 +1,2743 @@
+{
+  "results": [
+    {
+      "file": "живая_Ё_протяжное.json",
+      "predicted": {
+        "лево_f0": 284.4474,
+        "право_centroid": 2204.271,
+        "верх_nestedness": 0.1544,
+        "низ_fd": 0.3673,
+        "центр_phase": "тон",
+        "центр_r2": 0.8577,
+        "crosses_used": 4949,
+        "решетка": {
+          "nodes": 1443,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 4949,
+          "inter_edges_by_axis": {
+            "harmonic": 2066,
+            "time": 1442,
+            "freq": 1441
+          },
+          "atoms_full_connectivity_ge6": 1097,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 6.86,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 1443,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 1443,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 1216,
+              "percent": 84.3
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 285.792403,
+        "право_centroid": 2201.155954,
+        "верх_nestedness": 0.180518,
+        "низ_fd": 0.459566,
+        "центр_r2": 0.857655
+      },
+      "compare": {
+        "лево": {
+          "predicted": 284.4474,
+          "aggregate": 285.792403,
+          "delta_norm": 0.004
+        },
+        "право": {
+          "predicted": 2204.271,
+          "aggregate": 2201.155954,
+          "delta_norm": 0.0004
+        },
+        "верх": {
+          "predicted": 0.1544,
+          "aggregate": 0.180518,
+          "delta_norm": 0.0261
+        },
+        "низ": {
+          "predicted": 0.3673,
+          "aggregate": 0.459566,
+          "delta_norm": 0.0769
+        },
+        "центр_r2": {
+          "predicted": 0.8577,
+          "aggregate": 0.857655,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0215
+      }
+    },
+    {
+      "file": "живая_А.json",
+      "predicted": {
+        "лево_f0": 1132.7187,
+        "право_centroid": 1389.2569,
+        "верх_nestedness": 0.4526,
+        "низ_fd": 0.4537,
+        "центр_phase": "шум",
+        "центр_r2": 0.7662,
+        "crosses_used": 1155,
+        "решетка": {
+          "nodes": 438,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 1155,
+          "inter_edges_by_axis": {
+            "time": 437,
+            "harmonic": 283,
+            "freq": 435
+          },
+          "atoms_full_connectivity_ge6": 157,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.27,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 438,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 438,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 224,
+              "percent": 51.1
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 1134.18593,
+        "право_centroid": 1388.232877,
+        "верх_nestedness": 0.408676,
+        "низ_fd": 0.451699,
+        "центр_r2": 0.766194
+      },
+      "compare": {
+        "лево": {
+          "predicted": 1132.7187,
+          "aggregate": 1134.18593,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1389.2569,
+          "aggregate": 1388.232877,
+          "delta_norm": 0.0001
+        },
+        "верх": {
+          "predicted": 0.4526,
+          "aggregate": 0.408676,
+          "delta_norm": 0.0439
+        },
+        "низ": {
+          "predicted": 0.4537,
+          "aggregate": 0.451699,
+          "delta_norm": 0.0017
+        },
+        "центр_r2": {
+          "predicted": 0.7662,
+          "aggregate": 0.766194,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0091
+      }
+    },
+    {
+      "file": "живая_А_протяжная.json",
+      "predicted": {
+        "лево_f0": 1059.137,
+        "право_centroid": 1719.704,
+        "верх_nestedness": 0.2201,
+        "низ_fd": 0.4872,
+        "центр_phase": "тон",
+        "центр_r2": 0.9092,
+        "crosses_used": 20174,
+        "решетка": {
+          "nodes": 5445,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 20174,
+          "inter_edges_by_axis": {
+            "time": 5444,
+            "harmonic": 9286,
+            "freq": 5444
+          },
+          "atoms_full_connectivity_ge6": 4719,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 7.41,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 5445,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 5445,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 4909,
+              "percent": 90.2
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 1059.504132,
+        "право_centroid": 1719.231571,
+        "верх_nestedness": 0.174685,
+        "низ_fd": 0.489059,
+        "центр_r2": 0.909163
+      },
+      "compare": {
+        "лево": {
+          "predicted": 1059.137,
+          "aggregate": 1059.504132,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1719.704,
+          "aggregate": 1719.231571,
+          "delta_norm": 0.0001
+        },
+        "верх": {
+          "predicted": 0.2201,
+          "aggregate": 0.174685,
+          "delta_norm": 0.0454
+        },
+        "низ": {
+          "predicted": 0.4872,
+          "aggregate": 0.489059,
+          "delta_norm": 0.0015
+        },
+        "центр_r2": {
+          "predicted": 0.9092,
+          "aggregate": 0.909163,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0094
+      }
+    },
+    {
+      "file": "живая_Б.json",
+      "predicted": {
+        "лево_f0": 1074.7064,
+        "право_centroid": 1151.4042,
+        "верх_nestedness": 0.4133,
+        "низ_fd": 0.2019,
+        "центр_phase": "шум",
+        "центр_r2": 0.8942,
+        "crosses_used": 833,
+        "решетка": {
+          "nodes": 304,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 833,
+          "inter_edges_by_axis": {
+            "time": 303,
+            "harmonic": 227,
+            "freq": 303
+          },
+          "atoms_full_connectivity_ge6": 117,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.48,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 304,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 304,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 191,
+              "percent": 62.8
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 1073.087993,
+        "право_centroid": 1145.966397,
+        "верх_nestedness": 0.393816,
+        "низ_fd": 0.211013,
+        "центр_r2": 0.894194
+      },
+      "compare": {
+        "лево": {
+          "predicted": 1074.7064,
+          "aggregate": 1073.087993,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1151.4042,
+          "aggregate": 1145.966397,
+          "delta_norm": 0.0007
+        },
+        "верх": {
+          "predicted": 0.4133,
+          "aggregate": 0.393816,
+          "delta_norm": 0.0195
+        },
+        "низ": {
+          "predicted": 0.2019,
+          "aggregate": 0.211013,
+          "delta_norm": 0.0076
+        },
+        "центр_r2": {
+          "predicted": 0.8942,
+          "aggregate": 0.894194,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0056
+      }
+    },
+    {
+      "file": "живая_В.json",
+      "predicted": {
+        "лево_f0": 227.2161,
+        "право_centroid": 2218.0638,
+        "верх_nestedness": 0.4029,
+        "низ_fd": 0.6234,
+        "центр_phase": "шум",
+        "центр_r2": 0.9488,
+        "crosses_used": 1376,
+        "решетка": {
+          "nodes": 528,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 1376,
+          "inter_edges_by_axis": {
+            "time": 527,
+            "harmonic": 323,
+            "freq": 526
+          },
+          "atoms_full_connectivity_ge6": 169,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.21,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 528,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 527,
+              "percent": 99.8
+            },
+            "harmonic": {
+              "atoms_covered": 274,
+              "percent": 51.9
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 228.915128,
+        "право_centroid": 2214.342991,
+        "верх_nestedness": 0.371674,
+        "низ_fd": 0.561256,
+        "центр_r2": 0.948831
+      },
+      "compare": {
+        "лево": {
+          "predicted": 227.2161,
+          "aggregate": 228.915128,
+          "delta_norm": 0.005
+        },
+        "право": {
+          "predicted": 2218.0638,
+          "aggregate": 2214.342991,
+          "delta_norm": 0.0005
+        },
+        "верх": {
+          "predicted": 0.4029,
+          "aggregate": 0.371674,
+          "delta_norm": 0.0312
+        },
+        "низ": {
+          "predicted": 0.6234,
+          "aggregate": 0.561256,
+          "delta_norm": 0.0518
+        },
+        "центр_r2": {
+          "predicted": 0.9488,
+          "aggregate": 0.948831,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0177
+      }
+    },
+    {
+      "file": "живая_Г.json",
+      "predicted": {
+        "лево_f0": 762.3663,
+        "право_centroid": 1393.0643,
+        "верх_nestedness": 0.4376,
+        "низ_fd": 0.2032,
+        "центр_phase": "тон",
+        "центр_r2": 0.9317,
+        "crosses_used": 1006,
+        "решетка": {
+          "nodes": 340,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 1006,
+          "inter_edges_by_axis": {
+            "time": 339,
+            "harmonic": 330,
+            "freq": 337
+          },
+          "atoms_full_connectivity_ge6": 183,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.92,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 340,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 340,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 241,
+              "percent": 70.9
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 767.899816,
+        "право_centroid": 1390.168857,
+        "верх_nestedness": 0.418435,
+        "низ_fd": 0.244553,
+        "центр_r2": 0.931724
+      },
+      "compare": {
+        "лево": {
+          "predicted": 762.3663,
+          "aggregate": 767.899816,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1393.0643,
+          "aggregate": 1390.168857,
+          "delta_norm": 0.0004
+        },
+        "верх": {
+          "predicted": 0.4376,
+          "aggregate": 0.418435,
+          "delta_norm": 0.0192
+        },
+        "низ": {
+          "predicted": 0.2032,
+          "aggregate": 0.244553,
+          "delta_norm": 0.0345
+        },
+        "центр_r2": {
+          "predicted": 0.9317,
+          "aggregate": 0.931724,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0108
+      }
+    },
+    {
+      "file": "живая_Д.json",
+      "predicted": {
+        "лево_f0": 1102.7062,
+        "право_centroid": 1274.7473,
+        "верх_nestedness": 0.5387,
+        "низ_fd": 0.1918,
+        "центр_phase": "тон",
+        "центр_r2": 0.925,
+        "crosses_used": 722,
+        "решетка": {
+          "nodes": 256,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 722,
+          "inter_edges_by_axis": {
+            "time": 255,
+            "harmonic": 212,
+            "freq": 255
+          },
+          "atoms_full_connectivity_ge6": 118,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.64,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 256,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 256,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 178,
+              "percent": 69.5
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 1107.727051,
+        "право_centroid": 1272.336197,
+        "верх_nestedness": 0.52475,
+        "низ_fd": 0.211293,
+        "центр_r2": 0.925008
+      },
+      "compare": {
+        "лево": {
+          "predicted": 1102.7062,
+          "aggregate": 1107.727051,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1274.7473,
+          "aggregate": 1272.336197,
+          "delta_norm": 0.0003
+        },
+        "верх": {
+          "predicted": 0.5387,
+          "aggregate": 0.52475,
+          "delta_norm": 0.0139
+        },
+        "низ": {
+          "predicted": 0.1918,
+          "aggregate": 0.211293,
+          "delta_norm": 0.0162
+        },
+        "центр_r2": {
+          "predicted": 0.925,
+          "aggregate": 0.925008,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0061
+      }
+    },
+    {
+      "file": "живая_Е_протяжная.json",
+      "predicted": {
+        "лево_f0": 1340.5275,
+        "право_centroid": 2198.2158,
+        "верх_nestedness": 0.1264,
+        "низ_fd": 0.2698,
+        "центр_phase": "тон",
+        "центр_r2": 0.9627,
+        "crosses_used": 15005,
+        "решетка": {
+          "nodes": 4287,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 15005,
+          "inter_edges_by_axis": {
+            "time": 4286,
+            "harmonic": 6433,
+            "freq": 4286
+          },
+          "atoms_full_connectivity_ge6": 3281,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 7.0,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 4287,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 4287,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 3631,
+              "percent": 84.7
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 1341.422834,
+        "право_centroid": 2197.228439,
+        "верх_nestedness": 0.162911,
+        "низ_fd": 0.370574,
+        "центр_r2": 0.962735
+      },
+      "compare": {
+        "лево": {
+          "predicted": 1340.5275,
+          "aggregate": 1341.422834,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 2198.2158,
+          "aggregate": 2197.228439,
+          "delta_norm": 0.0001
+        },
+        "верх": {
+          "predicted": 0.1264,
+          "aggregate": 0.162911,
+          "delta_norm": 0.0365
+        },
+        "низ": {
+          "predicted": 0.2698,
+          "aggregate": 0.370574,
+          "delta_norm": 0.084
+        },
+        "центр_r2": {
+          "predicted": 0.9627,
+          "aggregate": 0.962735,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0241
+      }
+    },
+    {
+      "file": "живая_Ж.json",
+      "predicted": {
+        "лево_f0": 226.1902,
+        "право_centroid": 3058.5019,
+        "верх_nestedness": 0.2624,
+        "низ_fd": 0.8322,
+        "центр_phase": "тон",
+        "центр_r2": 0.9641,
+        "crosses_used": 2827,
+        "решетка": {
+          "nodes": 935,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 2827,
+          "inter_edges_by_axis": {
+            "time": 934,
+            "harmonic": 959,
+            "freq": 934
+          },
+          "atoms_full_connectivity_ge6": 530,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 6.05,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 935,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 935,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 717,
+              "percent": 76.7
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 228.450869,
+        "право_centroid": 3051.248099,
+        "верх_nestedness": 0.168136,
+        "низ_fd": 0.780934,
+        "центр_r2": 0.964096
+      },
+      "compare": {
+        "лево": {
+          "predicted": 226.1902,
+          "aggregate": 228.450869,
+          "delta_norm": 0.0066
+        },
+        "право": {
+          "predicted": 3058.5019,
+          "aggregate": 3051.248099,
+          "delta_norm": 0.0009
+        },
+        "верх": {
+          "predicted": 0.2624,
+          "aggregate": 0.168136,
+          "delta_norm": 0.0943
+        },
+        "низ": {
+          "predicted": 0.8322,
+          "aggregate": 0.780934,
+          "delta_norm": 0.0427
+        },
+        "центр_r2": {
+          "predicted": 0.9641,
+          "aggregate": 0.964096,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0289
+      }
+    },
+    {
+      "file": "живая_З.json",
+      "predicted": {
+        "лево_f0": 798.6582,
+        "право_centroid": 3556.2574,
+        "верх_nestedness": 0.389,
+        "низ_fd": 0.7144,
+        "центр_phase": "тон",
+        "центр_r2": 0.9634,
+        "crosses_used": 1819,
+        "решетка": {
+          "nodes": 660,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 1819,
+          "inter_edges_by_axis": {
+            "time": 659,
+            "harmonic": 503,
+            "freq": 657
+          },
+          "atoms_full_connectivity_ge6": 262,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.51,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 660,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 660,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 423,
+              "percent": 64.1
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 800.94697,
+        "право_centroid": 3536.675146,
+        "верх_nestedness": 0.378164,
+        "низ_fd": 0.693417,
+        "центр_r2": 0.963427
+      },
+      "compare": {
+        "лево": {
+          "predicted": 798.6582,
+          "aggregate": 800.94697,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 3556.2574,
+          "aggregate": 3536.675146,
+          "delta_norm": 0.0025
+        },
+        "верх": {
+          "predicted": 0.389,
+          "aggregate": 0.378164,
+          "delta_norm": 0.0108
+        },
+        "низ": {
+          "predicted": 0.7144,
+          "aggregate": 0.693417,
+          "delta_norm": 0.0175
+        },
+        "центр_r2": {
+          "predicted": 0.9634,
+          "aggregate": 0.963427,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0062
+      }
+    },
+    {
+      "file": "живая_И_протяжное.json",
+      "predicted": {
+        "лево_f0": 2128.1569,
+        "право_centroid": 1604.5608,
+        "верх_nestedness": 0.1538,
+        "низ_fd": 0.1754,
+        "центр_phase": "тон",
+        "центр_r2": 0.9617,
+        "crosses_used": 4885,
+        "решетка": {
+          "nodes": 1475,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 4885,
+          "inter_edges_by_axis": {
+            "time": 1474,
+            "harmonic": 1938,
+            "freq": 1473
+          },
+          "atoms_full_connectivity_ge6": 889,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 6.62,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 1475,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 1475,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 1174,
+              "percent": 79.6
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 2128.310381,
+        "право_centroid": 1604.536831,
+        "верх_nestedness": 0.152534,
+        "низ_fd": 0.172181,
+        "центр_r2": 0.961701
+      },
+      "compare": {
+        "лево": {
+          "predicted": 2128.1569,
+          "aggregate": 2128.310381,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1604.5608,
+          "aggregate": 1604.536831,
+          "delta_norm": 0.0
+        },
+        "верх": {
+          "predicted": 0.1538,
+          "aggregate": 0.152534,
+          "delta_norm": 0.0013
+        },
+        "низ": {
+          "predicted": 0.1754,
+          "aggregate": 0.172181,
+          "delta_norm": 0.0027
+        },
+        "центр_r2": {
+          "predicted": 0.9617,
+          "aggregate": 0.961701,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0008
+      }
+    },
+    {
+      "file": "живая_К.json",
+      "predicted": {
+        "лево_f0": 561.0629,
+        "право_centroid": 1291.7743,
+        "верх_nestedness": 0.6482,
+        "низ_fd": 0.405,
+        "центр_phase": "шум",
+        "центр_r2": 0.8094,
+        "crosses_used": 1030,
+        "решетка": {
+          "nodes": 399,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 1030,
+          "inter_edges_by_axis": {
+            "time": 398,
+            "harmonic": 235,
+            "freq": 397
+          },
+          "atoms_full_connectivity_ge6": 122,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.16,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 399,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 399,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 211,
+              "percent": 52.9
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 561.48183,
+        "право_centroid": 1294.103298,
+        "верх_nestedness": 0.531388,
+        "низ_fd": 0.387797,
+        "центр_r2": 0.809429
+      },
+      "compare": {
+        "лево": {
+          "predicted": 561.0629,
+          "aggregate": 561.48183,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1291.7743,
+          "aggregate": 1294.103298,
+          "delta_norm": 0.0003
+        },
+        "верх": {
+          "predicted": 0.6482,
+          "aggregate": 0.531388,
+          "delta_norm": 0.1168
+        },
+        "низ": {
+          "predicted": 0.405,
+          "aggregate": 0.387797,
+          "delta_norm": 0.0143
+        },
+        "центр_r2": {
+          "predicted": 0.8094,
+          "aggregate": 0.809429,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0263
+      }
+    },
+    {
+      "file": "живая_Л.json",
+      "predicted": {
+        "лево_f0": 486.2915,
+        "право_centroid": 1670.5119,
+        "верх_nestedness": 0.4515,
+        "низ_fd": 0.4348,
+        "центр_phase": "шум",
+        "центр_r2": 0.9405,
+        "crosses_used": 2043,
+        "решетка": {
+          "nodes": 744,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 2043,
+          "inter_edges_by_axis": {
+            "time": 743,
+            "harmonic": 559,
+            "freq": 741
+          },
+          "atoms_full_connectivity_ge6": 254,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.49,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 744,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 744,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 434,
+              "percent": 58.3
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 487.546203,
+        "право_centroid": 1669.711012,
+        "верх_nestedness": 0.448202,
+        "низ_fd": 0.408132,
+        "центр_r2": 0.940454
+      },
+      "compare": {
+        "лево": {
+          "predicted": 486.2915,
+          "aggregate": 487.546203,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1670.5119,
+          "aggregate": 1669.711012,
+          "delta_norm": 0.0001
+        },
+        "верх": {
+          "predicted": 0.4515,
+          "aggregate": 0.448202,
+          "delta_norm": 0.0033
+        },
+        "низ": {
+          "predicted": 0.4348,
+          "aggregate": 0.408132,
+          "delta_norm": 0.0222
+        },
+        "центр_r2": {
+          "predicted": 0.9405,
+          "aggregate": 0.940454,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0051
+      }
+    },
+    {
+      "file": "живая_М.json",
+      "predicted": {
+        "лево_f0": 597.5951,
+        "право_centroid": 1693.2053,
+        "верх_nestedness": 0.4336,
+        "низ_fd": 0.4862,
+        "центр_phase": "шум",
+        "центр_r2": 0.9424,
+        "crosses_used": 1403,
+        "решетка": {
+          "nodes": 507,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 1403,
+          "inter_edges_by_axis": {
+            "time": 506,
+            "harmonic": 392,
+            "freq": 505
+          },
+          "atoms_full_connectivity_ge6": 210,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.53,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 507,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 507,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 324,
+              "percent": 63.9
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 593.071992,
+        "право_centroid": 1695.030996,
+        "верх_nestedness": 0.425734,
+        "низ_fd": 0.391345,
+        "центр_r2": 0.942361
+      },
+      "compare": {
+        "лево": {
+          "predicted": 597.5951,
+          "aggregate": 593.071992,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1693.2053,
+          "aggregate": 1695.030996,
+          "delta_norm": 0.0002
+        },
+        "верх": {
+          "predicted": 0.4336,
+          "aggregate": 0.425734,
+          "delta_norm": 0.0079
+        },
+        "низ": {
+          "predicted": 0.4862,
+          "aggregate": 0.391345,
+          "delta_norm": 0.079
+        },
+        "центр_r2": {
+          "predicted": 0.9424,
+          "aggregate": 0.942361,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0174
+      }
+    },
+    {
+      "file": "живая_Н.json",
+      "predicted": {
+        "лево_f0": 370.5692,
+        "право_centroid": 1298.0582,
+        "верх_nestedness": 0.5683,
+        "низ_fd": 0.2459,
+        "центр_phase": "шум",
+        "центр_r2": 0.8987,
+        "crosses_used": 1033,
+        "решетка": {
+          "nodes": 386,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 1033,
+          "inter_edges_by_axis": {
+            "time": 385,
+            "harmonic": 264,
+            "freq": 384
+          },
+          "atoms_full_connectivity_ge6": 145,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.35,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 386,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 386,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 226,
+              "percent": 58.5
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 374.291613,
+        "право_centroid": 1296.532275,
+        "верх_nestedness": 0.481873,
+        "низ_fd": 0.238876,
+        "центр_r2": 0.898731
+      },
+      "compare": {
+        "лево": {
+          "predicted": 370.5692,
+          "aggregate": 374.291613,
+          "delta_norm": 0.0109
+        },
+        "право": {
+          "predicted": 1298.0582,
+          "aggregate": 1296.532275,
+          "delta_norm": 0.0002
+        },
+        "верх": {
+          "predicted": 0.5683,
+          "aggregate": 0.481873,
+          "delta_norm": 0.0864
+        },
+        "низ": {
+          "predicted": 0.2459,
+          "aggregate": 0.238876,
+          "delta_norm": 0.0059
+        },
+        "центр_r2": {
+          "predicted": 0.8987,
+          "aggregate": 0.898731,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0207
+      }
+    },
+    {
+      "file": "живая_О.json",
+      "predicted": {
+        "лево_f0": 535.121,
+        "право_centroid": 885.312,
+        "верх_nestedness": 0.5135,
+        "низ_fd": 0.1604,
+        "центр_phase": "шум",
+        "центр_r2": 0.7671,
+        "crosses_used": 406,
+        "решетка": {
+          "nodes": 160,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 406,
+          "inter_edges_by_axis": {
+            "time": 159,
+            "harmonic": 88,
+            "freq": 159
+          },
+          "atoms_full_connectivity_ge6": 44,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.08,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 160,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 160,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 85,
+              "percent": 53.1
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 541.259766,
+        "право_centroid": 887.954313,
+        "верх_nestedness": 0.464106,
+        "низ_fd": 0.1693,
+        "центр_r2": 0.767062
+      },
+      "compare": {
+        "лево": {
+          "predicted": 535.121,
+          "aggregate": 541.259766,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 885.312,
+          "aggregate": 887.954313,
+          "delta_norm": 0.0003
+        },
+        "верх": {
+          "predicted": 0.5135,
+          "aggregate": 0.464106,
+          "delta_norm": 0.0494
+        },
+        "низ": {
+          "predicted": 0.1604,
+          "aggregate": 0.1693,
+          "delta_norm": 0.0074
+        },
+        "центр_r2": {
+          "predicted": 0.7671,
+          "aggregate": 0.767062,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0114
+      }
+    },
+    {
+      "file": "живая_О_протяжное.json",
+      "predicted": {
+        "лево_f0": 592.0695,
+        "право_centroid": 880.7315,
+        "верх_nestedness": 0.2376,
+        "низ_fd": 0.1219,
+        "центр_phase": "шум",
+        "центр_r2": 0.7698,
+        "crosses_used": 3559,
+        "решетка": {
+          "nodes": 1451,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 3559,
+          "inter_edges_by_axis": {
+            "time": 1450,
+            "harmonic": 659,
+            "freq": 1450
+          },
+          "atoms_full_connectivity_ge6": 189,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 4.91,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 1451,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 1451,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 514,
+              "percent": 35.4
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 591.967824,
+        "право_centroid": 880.409157,
+        "верх_nestedness": 0.197755,
+        "низ_fd": 0.122266,
+        "центр_r2": 0.769763
+      },
+      "compare": {
+        "лево": {
+          "predicted": 592.0695,
+          "aggregate": 591.967824,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 880.7315,
+          "aggregate": 880.409157,
+          "delta_norm": 0.0
+        },
+        "верх": {
+          "predicted": 0.2376,
+          "aggregate": 0.197755,
+          "delta_norm": 0.0398
+        },
+        "низ": {
+          "predicted": 0.1219,
+          "aggregate": 0.122266,
+          "delta_norm": 0.0003
+        },
+        "центр_r2": {
+          "predicted": 0.7698,
+          "aggregate": 0.769763,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.008
+      }
+    },
+    {
+      "file": "живая_П.json",
+      "predicted": {
+        "лево_f0": 1273.0761,
+        "право_centroid": 1265.4779,
+        "верх_nestedness": 0.4057,
+        "низ_fd": 0.2669,
+        "центр_phase": "тон",
+        "центр_r2": 0.8966,
+        "crosses_used": 799,
+        "решетка": {
+          "nodes": 285,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 799,
+          "inter_edges_by_axis": {
+            "time": 284,
+            "harmonic": 231,
+            "freq": 284
+          },
+          "atoms_full_connectivity_ge6": 139,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.61,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 285,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 285,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 177,
+              "percent": 62.1
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 1273.273026,
+        "право_centroid": 1262.979966,
+        "верх_nestedness": 0.358428,
+        "низ_fd": 0.292807,
+        "центр_r2": 0.896596
+      },
+      "compare": {
+        "лево": {
+          "predicted": 1273.0761,
+          "aggregate": 1273.273026,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1265.4779,
+          "aggregate": 1262.979966,
+          "delta_norm": 0.0003
+        },
+        "верх": {
+          "predicted": 0.4057,
+          "aggregate": 0.358428,
+          "delta_norm": 0.0473
+        },
+        "низ": {
+          "predicted": 0.2669,
+          "aggregate": 0.292807,
+          "delta_norm": 0.0216
+        },
+        "центр_r2": {
+          "predicted": 0.8966,
+          "aggregate": 0.896596,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0138
+      }
+    },
+    {
+      "file": "живая_Р.json",
+      "predicted": {
+        "лево_f0": 375.5941,
+        "право_centroid": 1450.4053,
+        "верх_nestedness": 0.3701,
+        "низ_fd": 0.3484,
+        "центр_phase": "шум",
+        "центр_r2": 0.9351,
+        "crosses_used": 1339,
+        "решетка": {
+          "nodes": 494,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 1339,
+          "inter_edges_by_axis": {
+            "time": 493,
+            "harmonic": 353,
+            "freq": 493
+          },
+          "atoms_full_connectivity_ge6": 192,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.42,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 494,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 494,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 266,
+              "percent": 53.8
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 375.996331,
+        "право_centroid": 1451.615818,
+        "верх_nestedness": 0.369626,
+        "низ_fd": 0.346532,
+        "центр_r2": 0.935097
+      },
+      "compare": {
+        "лево": {
+          "predicted": 375.5941,
+          "aggregate": 375.996331,
+          "delta_norm": 0.0012
+        },
+        "право": {
+          "predicted": 1450.4053,
+          "aggregate": 1451.615818,
+          "delta_norm": 0.0002
+        },
+        "верх": {
+          "predicted": 0.3701,
+          "aggregate": 0.369626,
+          "delta_norm": 0.0005
+        },
+        "низ": {
+          "predicted": 0.3484,
+          "aggregate": 0.346532,
+          "delta_norm": 0.0016
+        },
+        "центр_r2": {
+          "predicted": 0.9351,
+          "aggregate": 0.935097,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0007
+      }
+    },
+    {
+      "file": "живая_С_протяжное.json",
+      "predicted": {
+        "лево_f0": 81.1525,
+        "право_centroid": 5827.8777,
+        "верх_nestedness": 0.451,
+        "низ_fd": 1.0477,
+        "центр_phase": "шум",
+        "центр_r2": 0.9319,
+        "crosses_used": 18165,
+        "решетка": {
+          "nodes": 6326,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 18165,
+          "inter_edges_by_axis": {
+            "time": 6325,
+            "harmonic": 5515,
+            "freq": 6325
+          },
+          "atoms_full_connectivity_ge6": 483,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.74,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 6326,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 6326,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 5474,
+              "percent": 86.5
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 81.138358,
+        "право_centroid": 5827.842848,
+        "верх_nestedness": 0.416747,
+        "низ_fd": 1.047092,
+        "центр_r2": 0.931878
+      },
+      "compare": {
+        "лево": {
+          "predicted": 81.1525,
+          "aggregate": 81.138358,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 5827.8777,
+          "aggregate": 5827.842848,
+          "delta_norm": 0.0
+        },
+        "верх": {
+          "predicted": 0.451,
+          "aggregate": 0.416747,
+          "delta_norm": 0.0343
+        },
+        "низ": {
+          "predicted": 1.0477,
+          "aggregate": 1.047092,
+          "delta_norm": 0.0005
+        },
+        "центр_r2": {
+          "predicted": 0.9319,
+          "aggregate": 0.931878,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.007
+      }
+    },
+    {
+      "file": "живая_Тт.json",
+      "predicted": {
+        "лево_f0": 1214.3073,
+        "право_centroid": 1413.3385,
+        "верх_nestedness": 0.6751,
+        "низ_fd": 0.2547,
+        "центр_phase": "тон",
+        "центр_r2": 0.9322,
+        "crosses_used": 1025,
+        "решетка": {
+          "nodes": 377,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 1025,
+          "inter_edges_by_axis": {
+            "time": 376,
+            "harmonic": 273,
+            "freq": 376
+          },
+          "atoms_full_connectivity_ge6": 157,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.44,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 377,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 377,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 251,
+              "percent": 66.6
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 1216.719164,
+        "право_centroid": 1413.302069,
+        "верх_nestedness": 0.656236,
+        "низ_fd": 0.268724,
+        "центр_r2": 0.932186
+      },
+      "compare": {
+        "лево": {
+          "predicted": 1214.3073,
+          "aggregate": 1216.719164,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1413.3385,
+          "aggregate": 1413.302069,
+          "delta_norm": 0.0
+        },
+        "верх": {
+          "predicted": 0.6751,
+          "aggregate": 0.656236,
+          "delta_norm": 0.0189
+        },
+        "низ": {
+          "predicted": 0.2547,
+          "aggregate": 0.268724,
+          "delta_norm": 0.0117
+        },
+        "центр_r2": {
+          "predicted": 0.9322,
+          "aggregate": 0.932186,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0061
+      }
+    },
+    {
+      "file": "живая_У.json",
+      "predicted": {
+        "лево_f0": 327.079,
+        "право_centroid": 2102.3841,
+        "верх_nestedness": 0.6276,
+        "низ_fd": 0.4955,
+        "центр_phase": "шум",
+        "центр_r2": 0.859,
+        "crosses_used": 372,
+        "решетка": {
+          "nodes": 161,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 372,
+          "inter_edges_by_axis": {
+            "time": 160,
+            "harmonic": 53,
+            "freq": 159
+          },
+          "atoms_full_connectivity_ge6": 24,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 4.62,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 161,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 161,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 59,
+              "percent": 36.6
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 334.093556,
+        "право_centroid": 2075.346755,
+        "верх_nestedness": 0.625416,
+        "низ_fd": 0.472739,
+        "центр_r2": 0.859043
+      },
+      "compare": {
+        "лево": {
+          "predicted": 327.079,
+          "aggregate": 334.093556,
+          "delta_norm": 0.0206
+        },
+        "право": {
+          "predicted": 2102.3841,
+          "aggregate": 2075.346755,
+          "delta_norm": 0.0035
+        },
+        "верх": {
+          "predicted": 0.6276,
+          "aggregate": 0.625416,
+          "delta_norm": 0.0022
+        },
+        "низ": {
+          "predicted": 0.4955,
+          "aggregate": 0.472739,
+          "delta_norm": 0.019
+        },
+        "центр_r2": {
+          "predicted": 0.859,
+          "aggregate": 0.859043,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0091
+      }
+    },
+    {
+      "file": "живая_У_протяжное.json",
+      "predicted": {
+        "лево_f0": 245.1759,
+        "право_centroid": 719.9648,
+        "верх_nestedness": 0.3825,
+        "низ_fd": 0.0804,
+        "центр_phase": "шум",
+        "центр_r2": 0.7562,
+        "crosses_used": 2225,
+        "решетка": {
+          "nodes": 875,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 2225,
+          "inter_edges_by_axis": {
+            "time": 874,
+            "harmonic": 477,
+            "freq": 874
+          },
+          "atoms_full_connectivity_ge6": 192,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.09,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 875,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 875,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 296,
+              "percent": 33.8
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 245.294643,
+        "право_centroid": 721.609716,
+        "верх_nestedness": 0.203713,
+        "низ_fd": 0.075885,
+        "центр_r2": 0.756201
+      },
+      "compare": {
+        "лево": {
+          "predicted": 245.1759,
+          "aggregate": 245.294643,
+          "delta_norm": 0.0003
+        },
+        "право": {
+          "predicted": 719.9648,
+          "aggregate": 721.609716,
+          "delta_norm": 0.0002
+        },
+        "верх": {
+          "predicted": 0.3825,
+          "aggregate": 0.203713,
+          "delta_norm": 0.1788
+        },
+        "низ": {
+          "predicted": 0.0804,
+          "aggregate": 0.075885,
+          "delta_norm": 0.0038
+        },
+        "центр_r2": {
+          "predicted": 0.7562,
+          "aggregate": 0.756201,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0366
+      }
+    },
+    {
+      "file": "живая_Ф.json",
+      "predicted": {
+        "лево_f0": 769.797,
+        "право_centroid": 2583.888,
+        "верх_nestedness": 0.3504,
+        "низ_fd": 0.7802,
+        "центр_phase": "шум",
+        "центр_r2": 0.9717,
+        "crosses_used": 2540,
+        "решетка": {
+          "nodes": 962,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 2540,
+          "inter_edges_by_axis": {
+            "time": 961,
+            "harmonic": 618,
+            "freq": 961
+          },
+          "atoms_full_connectivity_ge6": 242,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.28,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 962,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 962,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 606,
+              "percent": 63.0
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 770.725052,
+        "право_centroid": 2581.293592,
+        "верх_nestedness": 0.310199,
+        "низ_fd": 0.750018,
+        "центр_r2": 0.971666
+      },
+      "compare": {
+        "лево": {
+          "predicted": 769.797,
+          "aggregate": 770.725052,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 2583.888,
+          "aggregate": 2581.293592,
+          "delta_norm": 0.0003
+        },
+        "верх": {
+          "predicted": 0.3504,
+          "aggregate": 0.310199,
+          "delta_norm": 0.0402
+        },
+        "низ": {
+          "predicted": 0.7802,
+          "aggregate": 0.750018,
+          "delta_norm": 0.0252
+        },
+        "центр_r2": {
+          "predicted": 0.9717,
+          "aggregate": 0.971666,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0131
+      }
+    },
+    {
+      "file": "живая_Х.json",
+      "predicted": {
+        "лево_f0": 379.1285,
+        "право_centroid": 2771.8021,
+        "верх_nestedness": 0.4171,
+        "низ_fd": 0.8467,
+        "центр_phase": "шум",
+        "центр_r2": 0.8955,
+        "crosses_used": 2886,
+        "решетка": {
+          "nodes": 1080,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 2886,
+          "inter_edges_by_axis": {
+            "time": 1079,
+            "harmonic": 728,
+            "freq": 1079
+          },
+          "atoms_full_connectivity_ge6": 291,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.34,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 1080,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 1080,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 683,
+              "percent": 63.2
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 379.318576,
+        "право_centroid": 2768.296246,
+        "верх_nestedness": 0.399719,
+        "низ_fd": 0.792369,
+        "центр_r2": 0.895501
+      },
+      "compare": {
+        "лево": {
+          "predicted": 379.1285,
+          "aggregate": 379.318576,
+          "delta_norm": 0.0006
+        },
+        "право": {
+          "predicted": 2771.8021,
+          "aggregate": 2768.296246,
+          "delta_norm": 0.0004
+        },
+        "верх": {
+          "predicted": 0.4171,
+          "aggregate": 0.399719,
+          "delta_norm": 0.0174
+        },
+        "низ": {
+          "predicted": 0.8467,
+          "aggregate": 0.792369,
+          "delta_norm": 0.0453
+        },
+        "центр_r2": {
+          "predicted": 0.8955,
+          "aggregate": 0.895501,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0127
+      }
+    },
+    {
+      "file": "живая_Ц.json",
+      "predicted": {
+        "лево_f0": 362.521,
+        "право_centroid": 3694.3381,
+        "верх_nestedness": 0.5217,
+        "низ_fd": 0.7953,
+        "центр_phase": "шум",
+        "центр_r2": 0.9587,
+        "crosses_used": 1594,
+        "решетка": {
+          "nodes": 617,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 1594,
+          "inter_edges_by_axis": {
+            "time": 616,
+            "harmonic": 363,
+            "freq": 615
+          },
+          "atoms_full_connectivity_ge6": 160,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.17,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 617,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 617,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 371,
+              "percent": 60.1
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 365.452796,
+        "право_centroid": 3683.369663,
+        "верх_nestedness": 0.520284,
+        "низ_fd": 0.726412,
+        "центр_r2": 0.958689
+      },
+      "compare": {
+        "лево": {
+          "predicted": 362.521,
+          "aggregate": 365.452796,
+          "delta_norm": 0.0086
+        },
+        "право": {
+          "predicted": 3694.3381,
+          "aggregate": 3683.369663,
+          "delta_norm": 0.0014
+        },
+        "верх": {
+          "predicted": 0.5217,
+          "aggregate": 0.520284,
+          "delta_norm": 0.0014
+        },
+        "низ": {
+          "predicted": 0.7953,
+          "aggregate": 0.726412,
+          "delta_norm": 0.0574
+        },
+        "центр_r2": {
+          "predicted": 0.9587,
+          "aggregate": 0.958689,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0138
+      }
+    },
+    {
+      "file": "живая_Ч.json",
+      "predicted": {
+        "лево_f0": 494.0637,
+        "право_centroid": 3541.4333,
+        "верх_nestedness": 0.2203,
+        "низ_fd": 0.8731,
+        "центр_phase": "шум",
+        "центр_r2": 0.9597,
+        "crosses_used": 1411,
+        "решетка": {
+          "nodes": 538,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 1411,
+          "inter_edges_by_axis": {
+            "time": 537,
+            "harmonic": 337,
+            "freq": 537
+          },
+          "atoms_full_connectivity_ge6": 167,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.25,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 538,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 538,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 328,
+              "percent": 61.0
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 497.749187,
+        "право_centroid": 3523.419081,
+        "верх_nestedness": 0.244141,
+        "низ_fd": 0.768364,
+        "центр_r2": 0.959743
+      },
+      "compare": {
+        "лево": {
+          "predicted": 494.0637,
+          "aggregate": 497.749187,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 3541.4333,
+          "aggregate": 3523.419081,
+          "delta_norm": 0.0023
+        },
+        "верх": {
+          "predicted": 0.2203,
+          "aggregate": 0.244141,
+          "delta_norm": 0.0238
+        },
+        "низ": {
+          "predicted": 0.8731,
+          "aggregate": 0.768364,
+          "delta_norm": 0.0873
+        },
+        "центр_r2": {
+          "predicted": 0.9597,
+          "aggregate": 0.959743,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0227
+      }
+    },
+    {
+      "file": "живая_Ш.json",
+      "predicted": {
+        "лево_f0": 308.2075,
+        "право_centroid": 3363.4609,
+        "верх_nestedness": 0.2272,
+        "низ_fd": 0.8894,
+        "центр_phase": "шум",
+        "центр_r2": 0.9696,
+        "crosses_used": 2536,
+        "решетка": {
+          "nodes": 955,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 2536,
+          "inter_edges_by_axis": {
+            "time": 954,
+            "harmonic": 629,
+            "freq": 953
+          },
+          "atoms_full_connectivity_ge6": 264,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.31,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 955,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 955,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 622,
+              "percent": 65.1
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 309.980366,
+        "право_centroid": 3351.81498,
+        "верх_nestedness": 0.259556,
+        "низ_fd": 0.845449,
+        "центр_r2": 0.969552
+      },
+      "compare": {
+        "лево": {
+          "predicted": 308.2075,
+          "aggregate": 309.980366,
+          "delta_norm": 0.0052
+        },
+        "право": {
+          "predicted": 3363.4609,
+          "aggregate": 3351.81498,
+          "delta_norm": 0.0015
+        },
+        "верх": {
+          "predicted": 0.2272,
+          "aggregate": 0.259556,
+          "delta_norm": 0.0324
+        },
+        "низ": {
+          "predicted": 0.8894,
+          "aggregate": 0.845449,
+          "delta_norm": 0.0366
+        },
+        "центр_r2": {
+          "predicted": 0.9696,
+          "aggregate": 0.969552,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0151
+      }
+    },
+    {
+      "file": "живая_Щ.json",
+      "predicted": {
+        "лево_f0": 339.1516,
+        "право_centroid": 3811.7631,
+        "верх_nestedness": 0.4604,
+        "низ_fd": 0.979,
+        "центр_phase": "шум",
+        "центр_r2": 0.9655,
+        "crosses_used": 3934,
+        "решетка": {
+          "nodes": 1463,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 3934,
+          "inter_edges_by_axis": {
+            "time": 1462,
+            "harmonic": 1011,
+            "freq": 1461
+          },
+          "atoms_full_connectivity_ge6": 386,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.38,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 1463,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 1463,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 1001,
+              "percent": 68.4
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 339.018712,
+        "право_centroid": 3804.871263,
+        "верх_nestedness": 0.414299,
+        "низ_fd": 0.892932,
+        "центр_r2": 0.965467
+      },
+      "compare": {
+        "лево": {
+          "predicted": 339.1516,
+          "aggregate": 339.018712,
+          "delta_norm": 0.0004
+        },
+        "право": {
+          "predicted": 3811.7631,
+          "aggregate": 3804.871263,
+          "delta_norm": 0.0009
+        },
+        "верх": {
+          "predicted": 0.4604,
+          "aggregate": 0.414299,
+          "delta_norm": 0.0461
+        },
+        "низ": {
+          "predicted": 0.979,
+          "aggregate": 0.892932,
+          "delta_norm": 0.0717
+        },
+        "центр_r2": {
+          "predicted": 0.9655,
+          "aggregate": 0.965467,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0238
+      }
+    },
+    {
+      "file": "живая_Щ_протяжное.json",
+      "predicted": {
+        "лево_f0": 117.6722,
+        "право_centroid": 5516.8095,
+        "верх_nestedness": 0.4606,
+        "низ_fd": 1.0557,
+        "центр_phase": "шум",
+        "центр_r2": 0.9716,
+        "crosses_used": 6746,
+        "решетка": {
+          "nodes": 2469,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 6746,
+          "inter_edges_by_axis": {
+            "time": 2468,
+            "harmonic": 1811,
+            "freq": 2467
+          },
+          "atoms_full_connectivity_ge6": 262,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.46,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 2469,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 2469,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 1956,
+              "percent": 79.2
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 117.551387,
+        "право_centroid": 5513.398417,
+        "верх_nestedness": 0.460595,
+        "низ_fd": 1.056088,
+        "центр_r2": 0.971599
+      },
+      "compare": {
+        "лево": {
+          "predicted": 117.6722,
+          "aggregate": 117.551387,
+          "delta_norm": 0.0004
+        },
+        "право": {
+          "predicted": 5516.8095,
+          "aggregate": 5513.398417,
+          "delta_norm": 0.0004
+        },
+        "верх": {
+          "predicted": 0.4606,
+          "aggregate": 0.460595,
+          "delta_norm": 0.0
+        },
+        "низ": {
+          "predicted": 1.0557,
+          "aggregate": 1.056088,
+          "delta_norm": 0.0003
+        },
+        "центр_r2": {
+          "predicted": 0.9716,
+          "aggregate": 0.971599,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0002
+      }
+    },
+    {
+      "file": "живая_Ы.json",
+      "predicted": {
+        "лево_f0": 483.8854,
+        "право_centroid": 2585.6771,
+        "верх_nestedness": 0.5203,
+        "низ_fd": 0.7383,
+        "центр_phase": "шум",
+        "центр_r2": 0.9237,
+        "crosses_used": 935,
+        "решетка": {
+          "nodes": 386,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 935,
+          "inter_edges_by_axis": {
+            "time": 385,
+            "harmonic": 168,
+            "freq": 382
+          },
+          "atoms_full_connectivity_ge6": 68,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 4.84,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 386,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 386,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 169,
+              "percent": 43.8
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 493.907869,
+        "право_centroid": 2577.857944,
+        "верх_nestedness": 0.526731,
+        "низ_fd": 0.698417,
+        "центр_r2": 0.923689
+      },
+      "compare": {
+        "лево": {
+          "predicted": 483.8854,
+          "aggregate": 493.907869,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 2585.6771,
+          "aggregate": 2577.857944,
+          "delta_norm": 0.001
+        },
+        "верх": {
+          "predicted": 0.5203,
+          "aggregate": 0.526731,
+          "delta_norm": 0.0064
+        },
+        "низ": {
+          "predicted": 0.7383,
+          "aggregate": 0.698417,
+          "delta_norm": 0.0332
+        },
+        "центр_r2": {
+          "predicted": 0.9237,
+          "aggregate": 0.923689,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0081
+      }
+    },
+    {
+      "file": "живая_Э.json",
+      "predicted": {
+        "лево_f0": 1242.1233,
+        "право_centroid": 1439.7422,
+        "верх_nestedness": 0.4791,
+        "низ_fd": 0.2334,
+        "центр_phase": "тон",
+        "центр_r2": 0.9396,
+        "crosses_used": 1615,
+        "решетка": {
+          "nodes": 540,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 1615,
+          "inter_edges_by_axis": {
+            "time": 539,
+            "harmonic": 537,
+            "freq": 539
+          },
+          "atoms_full_connectivity_ge6": 324,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.98,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 540,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 540,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 415,
+              "percent": 76.9
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 1240.697338,
+        "право_centroid": 1439.812004,
+        "верх_nestedness": 0.484169,
+        "низ_fd": 0.260604,
+        "центр_r2": 0.939581
+      },
+      "compare": {
+        "лево": {
+          "predicted": 1242.1233,
+          "aggregate": 1240.697338,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1439.7422,
+          "aggregate": 1439.812004,
+          "delta_norm": 0.0
+        },
+        "верх": {
+          "predicted": 0.4791,
+          "aggregate": 0.484169,
+          "delta_norm": 0.0051
+        },
+        "низ": {
+          "predicted": 0.2334,
+          "aggregate": 0.260604,
+          "delta_norm": 0.0227
+        },
+        "центр_r2": {
+          "predicted": 0.9396,
+          "aggregate": 0.939581,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0056
+      }
+    },
+    {
+      "file": "живая_Э_протяжное.json",
+      "predicted": {
+        "лево_f0": 2200.6488,
+        "право_centroid": 1649.4468,
+        "верх_nestedness": 0.2165,
+        "низ_fd": 0.2342,
+        "центр_phase": "тон",
+        "центр_r2": 0.9794,
+        "crosses_used": 10530,
+        "решетка": {
+          "nodes": 3074,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 10530,
+          "inter_edges_by_axis": {
+            "time": 3073,
+            "harmonic": 4384,
+            "freq": 3073
+          },
+          "atoms_full_connectivity_ge6": 2126,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 6.85,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 3074,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 3074,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 2463,
+              "percent": 80.1
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 2200.832588,
+        "право_centroid": 1649.202808,
+        "верх_nestedness": 0.243396,
+        "низ_fd": 0.233015,
+        "центр_r2": 0.979377
+      },
+      "compare": {
+        "лево": {
+          "predicted": 2200.6488,
+          "aggregate": 2200.832588,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1649.4468,
+          "aggregate": 1649.202808,
+          "delta_norm": 0.0
+        },
+        "верх": {
+          "predicted": 0.2165,
+          "aggregate": 0.243396,
+          "delta_norm": 0.0269
+        },
+        "низ": {
+          "predicted": 0.2342,
+          "aggregate": 0.233015,
+          "delta_norm": 0.001
+        },
+        "центр_r2": {
+          "predicted": 0.9794,
+          "aggregate": 0.979377,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0056
+      }
+    },
+    {
+      "file": "живая_Ю.json",
+      "predicted": {
+        "лево_f0": 182.1003,
+        "право_centroid": 2984.5953,
+        "верх_nestedness": 0.1491,
+        "низ_fd": 0.2138,
+        "центр_phase": "тон",
+        "центр_r2": 0.923,
+        "crosses_used": 1950,
+        "решетка": {
+          "nodes": 595,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 1950,
+          "inter_edges_by_axis": {
+            "time": 594,
+            "harmonic": 763,
+            "freq": 593
+          },
+          "atoms_full_connectivity_ge6": 490,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 6.55,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 595,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 595,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 556,
+              "percent": 93.4
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 189.929097,
+        "право_centroid": 2960.398087,
+        "верх_nestedness": 0.1694,
+        "низ_fd": 0.597728,
+        "центр_r2": 0.923003
+      },
+      "compare": {
+        "лево": {
+          "predicted": 182.1003,
+          "aggregate": 189.929097,
+          "delta_norm": 0.023
+        },
+        "право": {
+          "predicted": 2984.5953,
+          "aggregate": 2960.398087,
+          "delta_norm": 0.0031
+        },
+        "верх": {
+          "predicted": 0.1491,
+          "aggregate": 0.1694,
+          "delta_norm": 0.0203
+        },
+        "низ": {
+          "predicted": 0.2138,
+          "aggregate": 0.597728,
+          "delta_norm": 0.3199
+        },
+        "центр_r2": {
+          "predicted": 0.923,
+          "aggregate": 0.923003,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0733
+      }
+    },
+    {
+      "file": "живая_Ю_протяжное.json",
+      "predicted": {
+        "лево_f0": 158.5139,
+        "право_centroid": 2302.0767,
+        "верх_nestedness": 0.1629,
+        "низ_fd": 0.0938,
+        "центр_phase": "тон",
+        "центр_r2": 0.8599,
+        "crosses_used": 3553,
+        "решетка": {
+          "nodes": 1140,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 3553,
+          "inter_edges_by_axis": {
+            "time": 1139,
+            "harmonic": 1277,
+            "freq": 1137
+          },
+          "atoms_full_connectivity_ge6": 590,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 6.23,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 1140,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 1140,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 912,
+              "percent": 80.0
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 162.205318,
+        "право_centroid": 2291.622857,
+        "верх_nestedness": 0.170486,
+        "низ_fd": 0.435736,
+        "центр_r2": 0.859907
+      },
+      "compare": {
+        "лево": {
+          "predicted": 158.5139,
+          "aggregate": 162.205318,
+          "delta_norm": 0.0109
+        },
+        "право": {
+          "predicted": 2302.0767,
+          "aggregate": 2291.622857,
+          "delta_norm": 0.0013
+        },
+        "верх": {
+          "predicted": 0.1629,
+          "aggregate": 0.170486,
+          "delta_norm": 0.0076
+        },
+        "низ": {
+          "predicted": 0.0938,
+          "aggregate": 0.435736,
+          "delta_norm": 0.2849
+        },
+        "центр_r2": {
+          "predicted": 0.8599,
+          "aggregate": 0.859907,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0609
+      }
+    },
+    {
+      "file": "живая_Я.json",
+      "predicted": {
+        "лево_f0": 1038.7635,
+        "право_centroid": 1752.7847,
+        "верх_nestedness": 0.3087,
+        "низ_fd": 0.4206,
+        "центр_phase": "шум",
+        "центр_r2": 0.9027,
+        "crosses_used": 976,
+        "решетка": {
+          "nodes": 378,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 976,
+          "inter_edges_by_axis": {
+            "time": 377,
+            "harmonic": 223,
+            "freq": 376
+          },
+          "atoms_full_connectivity_ge6": 106,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 5.16,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 378,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 377,
+              "percent": 99.7
+            },
+            "harmonic": {
+              "atoms_covered": 231,
+              "percent": 61.1
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 1038.483796,
+        "право_centroid": 1760.712201,
+        "верх_nestedness": 0.329415,
+        "низ_fd": 0.426368,
+        "центр_r2": 0.902746
+      },
+      "compare": {
+        "лево": {
+          "predicted": 1038.7635,
+          "aggregate": 1038.483796,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1752.7847,
+          "aggregate": 1760.712201,
+          "delta_norm": 0.001
+        },
+        "верх": {
+          "predicted": 0.3087,
+          "aggregate": 0.329415,
+          "delta_norm": 0.0207
+        },
+        "низ": {
+          "predicted": 0.4206,
+          "aggregate": 0.426368,
+          "delta_norm": 0.0048
+        },
+        "центр_r2": {
+          "predicted": 0.9027,
+          "aggregate": 0.902746,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0053
+      }
+    },
+    {
+      "file": "живая_Я_протяжное.json",
+      "predicted": {
+        "лево_f0": 857.9375,
+        "право_centroid": 1779.1676,
+        "верх_nestedness": 0.2341,
+        "низ_fd": 0.4774,
+        "центр_phase": "тон",
+        "центр_r2": 0.8872,
+        "crosses_used": 13045,
+        "решетка": {
+          "nodes": 3639,
+          "internal_edges_per_atom": 3,
+          "inter_edges_total": 13045,
+          "inter_edges_by_axis": {
+            "time": 3638,
+            "harmonic": 5770,
+            "freq": 3637
+          },
+          "atoms_full_connectivity_ge6": 2925,
+          "atoms_isolated_0": 0,
+          "avg_inter_degree": 7.17,
+          "axis_coverage": {
+            "time": {
+              "atoms_covered": 3639,
+              "percent": 100.0
+            },
+            "freq": {
+              "atoms_covered": 3639,
+              "percent": 100.0
+            },
+            "harmonic": {
+              "atoms_covered": 3250,
+              "percent": 89.3
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "лево_f0": 858.608563,
+        "право_centroid": 1778.65462,
+        "верх_nestedness": 0.222606,
+        "низ_fd": 0.48871,
+        "центр_r2": 0.887238
+      },
+      "compare": {
+        "лево": {
+          "predicted": 857.9375,
+          "aggregate": 858.608563,
+          "delta_norm": 0.0
+        },
+        "право": {
+          "predicted": 1779.1676,
+          "aggregate": 1778.65462,
+          "delta_norm": 0.0001
+        },
+        "верх": {
+          "predicted": 0.2341,
+          "aggregate": 0.222606,
+          "delta_norm": 0.0115
+        },
+        "низ": {
+          "predicted": 0.4774,
+          "aggregate": 0.48871,
+          "delta_norm": 0.0094
+        },
+        "центр_r2": {
+          "predicted": 0.8872,
+          "aggregate": 0.887238,
+          "delta_norm": 0.0
+        },
+        "mean_delta_norm": 0.0042
+      }
+    }
+  ],
+  "count": 37
+}

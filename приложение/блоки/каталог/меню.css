@@ -1,0 +1,136 @@
+/* Тринити Альфа — Блок 3 «Каталог» · меню */
+
+.каталог-корень {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0 0;
+}
+
+.каталог-заголовок {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: var(--текст-вторичный);
+    margin: 0 16px 12px;
+}
+
+.каталог-группы {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 0 16px;
+}
+
+/* кастомный тонкий скроллбар */
+.каталог-группы::-webkit-scrollbar { width: 6px; }
+.каталог-группы::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+    border-radius: 3px;
+}
+.каталог-группы::-webkit-scrollbar-track { background: transparent; }
+
+/* === Группа === */
+.группа { display: block; }
+
+.группа-заголовок {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 8px 16px;
+    background: transparent;
+    border: none;
+    border-top: 1px solid #161616;
+    color: var(--текст-основной);
+    font-size: 13px;
+    font-family: var(--шрифт-основной);
+    letter-spacing: 0.5px;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.группа-заголовок:hover { background: #141414; }
+
+.группа-стрелка {
+    display: inline-block;
+    width: 12px;
+    color: var(--текст-вторичный);
+    font-size: 10px;
+    transition: transform 0.25s ease;
+    text-align: center;
+}
+
+.группа.раскрыта .группа-стрелка { transform: rotate(0deg); }
+
+.группа-имя { flex: 1; text-transform: capitalize; }
+
+.группа-счётчик {
+    color: var(--текст-тусклый);
+    font-size: 11px;
+    font-variant-numeric: tabular-nums;
+}
+
+/* === Список клеточек в группе === */
+.клеточки {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+}
+
+.группа.раскрыта .клеточки { max-height: 9999px; }
+
+.клеточка {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px 6px 32px;
+    color: var(--текст-вторичный);
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    font-family: var(--шрифт-основной);
+}
+
+.клеточка:hover { background: #141414; color: var(--текст-основной); }
+
+.клеточка-точка {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #333;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+
+.клеточка-имя {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* активная клеточка */
+.клеточка.активна {
+    background: #1f1f1f;
+    color: var(--текст-основной);
+}
+.клеточка.активна .клеточка-точка {
+    background: var(--акцент-главный);
+    box-shadow: 0 0 6px rgba(255, 215, 0, 0.4);
+}
+.клеточка:focus-visible {
+    background: #181818;
+}
+
+/* флаг «фокус мой» — лёгкая полоса вдоль левого края панели (визуально незаметно, но как отметка) */
+.каталог-корень[data-фокус="да"] .каталог-заголовок { color: var(--текст-основной); }

@@ -1,0 +1,97 @@
+/* Тринити Альфа — Блок 6 «Просмотр клеточки» */
+
+.просмотр-корень {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background: var(--фон-главный);
+}
+
+/* Холст / iframe каждой проекции */
+.проекция {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.проекция.активна {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.проекция-сцена iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.проекция-3d, .проекция-образ {
+    background: var(--фон-главный);
+}
+.проекция-3d canvas, .проекция-образ canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+}
+.проекция-образ.активна .подсказка-вращения { opacity: 1; }
+
+.подсказка-вращения {
+    position: absolute;
+    left: 50%;
+    bottom: 14px;
+    transform: translateX(-50%);
+    color: var(--текст-тусклый);
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.подсказка-осей {
+    position: absolute;
+    left: 14px;
+    bottom: 14px;
+    color: var(--текст-вторичный);
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+    line-height: 1.6;
+    font-family: 'Menlo', 'Courier New', monospace;
+    display: none;
+}
+
+.проекция-3d.активна.режим-физика .подсказка-осей { display: block; }
+
+.подсказка-осей .ось-x { color: #FF6347; }
+.подсказка-осей .ось-y { color: #32CD32; }
+.подсказка-осей .ось-z { color: #4682B4; }
+
+.проекция-3d.активна .подсказка-вращения {
+    opacity: 0.7;
+}
+
+.индикатор-загрузки {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--текст-тусклый);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.пустое-облако {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--текст-тусклый);
+    font-size: 13px;
+    text-align: center;
+    padding: 0 24px;
+}

@@ -1,0 +1,165 @@
+{
+  "дата": "2026-08-01",
+  "цель": "все оси анализатора ≈ эталон",
+  "эталон_оси": {
+    "fd": 0.714,
+    "selfsim_r2": 0.987,
+    "nestedness": 0.177,
+    "mod_depth": 0.212,
+    "mod_rate": 10.8
+  },
+  "база_клетка_оси": {
+    "fd": 0.673,
+    "selfsim_r2": 0.962,
+    "nestedness": 0.282,
+    "mod_depth": 0.28,
+    "mod_rate": 2.7
+  },
+  "база_band_stft": {
+    "band": 0.6831,
+    "stft": 0.6705
+  },
+  "результат_оси": {
+    "fd": 0.738,
+    "selfsim_r2": 0.973,
+    "nestedness": 0.16,
+    "mod_depth": 0.163,
+    "mod_rate": 10.8
+  },
+  "результат_band_stft": {
+    "band": 0.7757,
+    "stft": 0.4463
+  },
+  "допуски": {
+    "fd": 0.04,
+    "selfsim_r2": 0.03,
+    "nestedness": 0.05,
+    "mod_depth": 0.06,
+    "mod_rate": 2.5
+  },
+  "ошибка_в_допусках": {
+    "fd": 0.6,
+    "selfsim_r2": 0.467,
+    "nestedness": 0.34,
+    "mod_depth": 0.817,
+    "mod_rate": 0.0
+  },
+  "pass_все_оси": true,
+  "params": {
+    "decor": 0.7,
+    "stitch": 0.0,
+    "mod_depth": 0.18,
+    "mod_rate": 10.8,
+    "fd_delta": 0.04,
+    "iter_step": 3,
+    "iter_nestedness": 0.16
+  },
+  "score": 4.4161,
+  "top5": [
+    {
+      "params": {
+        "decor": 0.7,
+        "stitch": 0.0,
+        "mod_depth": 0.18,
+        "mod_rate": 10.8,
+        "fd_delta": 0.04
+      },
+      "оси": {
+        "fd": 0.764,
+        "selfsim_r2": 0.989,
+        "nestedness": 0.332,
+        "mod_depth": 0.294,
+        "mod_rate": 10.8
+      },
+      "band_corr": 0.9239,
+      "stft_corr": 0.4662,
+      "score": 9.3301,
+      "pass": false
+    },
+    {
+      "params": {
+        "decor": 0.7,
+        "stitch": 0.0,
+        "mod_depth": 0.22,
+        "mod_rate": 10.8,
+        "fd_delta": 0.04
+      },
+      "оси": {
+        "fd": 0.764,
+        "selfsim_r2": 0.989,
+        "nestedness": 0.339,
+        "mod_depth": 0.296,
+        "mod_rate": 10.8
+      },
+      "band_corr": 0.9237,
+      "stft_corr": 0.4653,
+      "score": 9.5827,
+      "pass": false
+    },
+    {
+      "params": {
+        "decor": 0.7,
+        "stitch": 0.0,
+        "mod_depth": 0.22,
+        "mod_rate": 12.0,
+        "fd_delta": 0.04
+      },
+      "оси": {
+        "fd": 0.764,
+        "selfsim_r2": 0.989,
+        "nestedness": 0.343,
+        "mod_depth": 0.297,
+        "mod_rate": 10.8
+      },
+      "band_corr": 0.9238,
+      "stft_corr": 0.4658,
+      "score": 9.7212,
+      "pass": false
+    },
+    {
+      "params": {
+        "decor": 0.7,
+        "stitch": 0.0,
+        "mod_depth": 0.18,
+        "mod_rate": 10.0,
+        "fd_delta": 0.04
+      },
+      "оси": {
+        "fd": 0.763,
+        "selfsim_r2": 0.989,
+        "nestedness": 0.342,
+        "mod_depth": 0.302,
+        "mod_rate": 10.8
+      },
+      "band_corr": 0.9238,
+      "stft_corr": 0.4665,
+      "score": 9.7593,
+      "pass": false
+    },
+    {
+      "params": {
+        "decor": 0.7,
+        "stitch": 0.0,
+        "mod_depth": 0.22,
+        "mod_rate": 10.0,
+        "fd_delta": 0.04
+      },
+      "оси": {
+        "fd": 0.763,
+        "selfsim_r2": 0.989,
+        "nestedness": 0.349,
+        "mod_depth": 0.305,
+        "mod_rate": 10.8
+      },
+      "band_corr": 0.9237,
+      "stft_corr": 0.4657,
+      "score": 10.0317,
+      "pass": false
+    }
+  ],
+  "files": {
+    "эталон": "выход/причина_дождь/калибр_оси/эталон.wav",
+    "база": "выход/причина_дождь/калибр_оси/база_клетка_synth.wav",
+    "калибр": "выход/причина_дождь/калибр_оси/сборка_калибр_все_оси.wav"
+  }
+}

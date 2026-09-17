@@ -1,0 +1,1593 @@
+[
+  {
+    "file": "живая_Ё_протяжное.json",
+    "atoms": {
+      "in": 1443,
+      "out": 1817,
+      "ratio": 1.259
+    },
+    "crosses": {
+      "in": 4949,
+      "out": 6106,
+      "ratio": 1.234
+    },
+    "axes_in": {
+      "harmonic": 2066,
+      "time": 1442,
+      "freq": 1441
+    },
+    "axes_out": {
+      "harmonic": 2475,
+      "time": 1816,
+      "freq": 1815
+    },
+    "fd": {
+      "orig_audio": 0.27,
+      "synth_audio": 0.301
+    },
+    "nestedness": {
+      "orig_audio": 0.244,
+      "synth_audio": 0.054
+    },
+    "stitch_верх": {
+      "in": 0.1544,
+      "out": 0.3681
+    },
+    "stitch_низ": {
+      "in": 0.3673,
+      "out": 0.5075
+    },
+    "coverage_harmonic": {
+      "in": 84.3,
+      "out": 83.1
+    }
+  },
+  {
+    "file": "живая_А.json",
+    "atoms": {
+      "in": 438,
+      "out": 590,
+      "ratio": 1.347
+    },
+    "crosses": {
+      "in": 1155,
+      "out": 1742,
+      "ratio": 1.508
+    },
+    "axes_in": {
+      "time": 437,
+      "harmonic": 283,
+      "freq": 435
+    },
+    "axes_out": {
+      "time": 589,
+      "harmonic": 564,
+      "freq": 589
+    },
+    "fd": {
+      "orig_audio": 0.082,
+      "synth_audio": 0.094
+    },
+    "nestedness": {
+      "orig_audio": 0.515,
+      "synth_audio": 0.333
+    },
+    "stitch_верх": {
+      "in": 0.4526,
+      "out": 0.4599
+    },
+    "stitch_низ": {
+      "in": 0.4537,
+      "out": 0.4047
+    },
+    "coverage_harmonic": {
+      "in": 51.1,
+      "out": 75.4
+    }
+  },
+  {
+    "file": "живая_А_протяжная.json",
+    "atoms": {
+      "in": 5445,
+      "out": 5374,
+      "ratio": 0.987
+    },
+    "crosses": {
+      "in": 20174,
+      "out": 17645,
+      "ratio": 0.875
+    },
+    "axes_in": {
+      "time": 5444,
+      "harmonic": 9286,
+      "freq": 5444
+    },
+    "axes_out": {
+      "time": 5373,
+      "harmonic": 6899,
+      "freq": 5373
+    },
+    "fd": {
+      "orig_audio": 0.261,
+      "synth_audio": 0.34
+    },
+    "nestedness": {
+      "orig_audio": 0.56,
+      "synth_audio": 0.281
+    },
+    "stitch_верх": {
+      "in": 0.2201,
+      "out": 0.1251
+    },
+    "stitch_низ": {
+      "in": 0.4872,
+      "out": 0.6078
+    },
+    "coverage_harmonic": {
+      "in": 90.2,
+      "out": 86.3
+    }
+  },
+  {
+    "file": "живая_Б.json",
+    "atoms": {
+      "in": 304,
+      "out": 391,
+      "ratio": 1.286
+    },
+    "crosses": {
+      "in": 833,
+      "out": 1107,
+      "ratio": 1.329
+    },
+    "axes_in": {
+      "time": 303,
+      "harmonic": 227,
+      "freq": 303
+    },
+    "axes_out": {
+      "harmonic": 327,
+      "time": 390,
+      "freq": 390
+    },
+    "fd": {
+      "orig_audio": 0.079,
+      "synth_audio": 0.092
+    },
+    "nestedness": {
+      "orig_audio": 0.275,
+      "synth_audio": 0.293
+    },
+    "stitch_верх": {
+      "in": 0.4133,
+      "out": 0.4714
+    },
+    "stitch_низ": {
+      "in": 0.2019,
+      "out": 0.3083
+    },
+    "coverage_harmonic": {
+      "in": 62.8,
+      "out": 66.0
+    }
+  },
+  {
+    "file": "живая_В.json",
+    "atoms": {
+      "in": 528,
+      "out": 843,
+      "ratio": 1.597
+    },
+    "crosses": {
+      "in": 1376,
+      "out": 2291,
+      "ratio": 1.665
+    },
+    "axes_in": {
+      "time": 527,
+      "harmonic": 323,
+      "freq": 526
+    },
+    "axes_out": {
+      "time": 842,
+      "harmonic": 608,
+      "freq": 841
+    },
+    "fd": {
+      "orig_audio": 0.188,
+      "synth_audio": 0.244
+    },
+    "nestedness": {
+      "orig_audio": 0.574,
+      "synth_audio": 0.454
+    },
+    "stitch_верх": {
+      "in": 0.4029,
+      "out": 0.4699
+    },
+    "stitch_низ": {
+      "in": 0.6234,
+      "out": 0.7829
+    },
+    "coverage_harmonic": {
+      "in": 51.9,
+      "out": 63.1
+    }
+  },
+  {
+    "file": "живая_Г.json",
+    "atoms": {
+      "in": 340,
+      "out": 469,
+      "ratio": 1.379
+    },
+    "crosses": {
+      "in": 1006,
+      "out": 1424,
+      "ratio": 1.416
+    },
+    "axes_in": {
+      "time": 339,
+      "harmonic": 330,
+      "freq": 337
+    },
+    "axes_out": {
+      "time": 468,
+      "harmonic": 489,
+      "freq": 467
+    },
+    "fd": {
+      "orig_audio": 0.103,
+      "synth_audio": 0.177
+    },
+    "nestedness": {
+      "orig_audio": 0.576,
+      "synth_audio": 0.385
+    },
+    "stitch_верх": {
+      "in": 0.4376,
+      "out": 0.4397
+    },
+    "stitch_низ": {
+      "in": 0.2032,
+      "out": 0.441
+    },
+    "coverage_harmonic": {
+      "in": 70.9,
+      "out": 69.9
+    }
+  },
+  {
+    "file": "живая_Д.json",
+    "atoms": {
+      "in": 256,
+      "out": 362,
+      "ratio": 1.414
+    },
+    "crosses": {
+      "in": 722,
+      "out": 1015,
+      "ratio": 1.406
+    },
+    "axes_in": {
+      "time": 255,
+      "harmonic": 212,
+      "freq": 255
+    },
+    "axes_out": {
+      "time": 361,
+      "harmonic": 293,
+      "freq": 361
+    },
+    "fd": {
+      "orig_audio": 0.091,
+      "synth_audio": 0.109
+    },
+    "nestedness": {
+      "orig_audio": 0.49,
+      "synth_audio": 0.306
+    },
+    "stitch_верх": {
+      "in": 0.5387,
+      "out": 0.5218
+    },
+    "stitch_низ": {
+      "in": 0.1918,
+      "out": 0.3007
+    },
+    "coverage_harmonic": {
+      "in": 69.5,
+      "out": 70.4
+    }
+  },
+  {
+    "file": "живая_Е_протяжная.json",
+    "atoms": {
+      "in": 4287,
+      "out": 4819,
+      "ratio": 1.124
+    },
+    "crosses": {
+      "in": 15005,
+      "out": 15280,
+      "ratio": 1.018
+    },
+    "axes_in": {
+      "time": 4286,
+      "harmonic": 6433,
+      "freq": 4286
+    },
+    "axes_out": {
+      "time": 4818,
+      "harmonic": 5644,
+      "freq": 4818
+    },
+    "fd": {
+      "orig_audio": 0.352,
+      "synth_audio": 0.643
+    },
+    "nestedness": {
+      "orig_audio": 0.344,
+      "synth_audio": 0.131
+    },
+    "stitch_верх": {
+      "in": 0.1264,
+      "out": 0.1509
+    },
+    "stitch_низ": {
+      "in": 0.2698,
+      "out": 0.8493
+    },
+    "coverage_harmonic": {
+      "in": 84.7,
+      "out": 81.5
+    }
+  },
+  {
+    "file": "живая_Ж.json",
+    "atoms": {
+      "in": 935,
+      "out": 1080,
+      "ratio": 1.155
+    },
+    "crosses": {
+      "in": 2827,
+      "out": 3315,
+      "ratio": 1.173
+    },
+    "axes_in": {
+      "time": 934,
+      "harmonic": 959,
+      "freq": 934
+    },
+    "axes_out": {
+      "time": 1079,
+      "harmonic": 1157,
+      "freq": 1079
+    },
+    "fd": {
+      "orig_audio": 0.461,
+      "synth_audio": 0.509
+    },
+    "nestedness": {
+      "orig_audio": 0.115,
+      "synth_audio": 0.093
+    },
+    "stitch_верх": {
+      "in": 0.2624,
+      "out": 0.4779
+    },
+    "stitch_низ": {
+      "in": 0.8322,
+      "out": 0.8759
+    },
+    "coverage_harmonic": {
+      "in": 76.7,
+      "out": 79.5
+    }
+  },
+  {
+    "file": "живая_З.json",
+    "atoms": {
+      "in": 660,
+      "out": 926,
+      "ratio": 1.403
+    },
+    "crosses": {
+      "in": 1819,
+      "out": 2813,
+      "ratio": 1.546
+    },
+    "axes_in": {
+      "time": 659,
+      "harmonic": 503,
+      "freq": 657
+    },
+    "axes_out": {
+      "time": 925,
+      "harmonic": 965,
+      "freq": 923
+    },
+    "fd": {
+      "orig_audio": 0.164,
+      "synth_audio": 0.573
+    },
+    "nestedness": {
+      "orig_audio": 0.531,
+      "synth_audio": 0.35
+    },
+    "stitch_верх": {
+      "in": 0.389,
+      "out": 0.3135
+    },
+    "stitch_низ": {
+      "in": 0.7144,
+      "out": 0.8026
+    },
+    "coverage_harmonic": {
+      "in": 64.1,
+      "out": 76.9
+    }
+  },
+  {
+    "file": "живая_И_протяжное.json",
+    "atoms": {
+      "in": 1475,
+      "out": 1977,
+      "ratio": 1.34
+    },
+    "crosses": {
+      "in": 4885,
+      "out": 6770,
+      "ratio": 1.386
+    },
+    "axes_in": {
+      "time": 1474,
+      "harmonic": 1938,
+      "freq": 1473
+    },
+    "axes_out": {
+      "time": 1976,
+      "harmonic": 2818,
+      "freq": 1976
+    },
+    "fd": {
+      "orig_audio": 0.17,
+      "synth_audio": 0.544
+    },
+    "nestedness": {
+      "orig_audio": 0.761,
+      "synth_audio": 0.274
+    },
+    "stitch_верх": {
+      "in": 0.1538,
+      "out": 0.3498
+    },
+    "stitch_низ": {
+      "in": 0.1754,
+      "out": 0.6159
+    },
+    "coverage_harmonic": {
+      "in": 79.6,
+      "out": 87.1
+    }
+  },
+  {
+    "file": "живая_К.json",
+    "atoms": {
+      "in": 399,
+      "out": 522,
+      "ratio": 1.308
+    },
+    "crosses": {
+      "in": 1030,
+      "out": 1495,
+      "ratio": 1.451
+    },
+    "axes_in": {
+      "time": 398,
+      "harmonic": 235,
+      "freq": 397
+    },
+    "axes_out": {
+      "time": 521,
+      "harmonic": 453,
+      "freq": 521
+    },
+    "fd": {
+      "orig_audio": 0.084,
+      "synth_audio": 0.102
+    },
+    "nestedness": {
+      "orig_audio": 0.648,
+      "synth_audio": 0.347
+    },
+    "stitch_верх": {
+      "in": 0.6482,
+      "out": 0.564
+    },
+    "stitch_низ": {
+      "in": 0.405,
+      "out": 0.5247
+    },
+    "coverage_harmonic": {
+      "in": 52.9,
+      "out": 68.4
+    }
+  },
+  {
+    "file": "живая_Л.json",
+    "atoms": {
+      "in": 744,
+      "out": 929,
+      "ratio": 1.249
+    },
+    "crosses": {
+      "in": 2043,
+      "out": 2585,
+      "ratio": 1.265
+    },
+    "axes_in": {
+      "time": 743,
+      "harmonic": 559,
+      "freq": 741
+    },
+    "axes_out": {
+      "time": 928,
+      "harmonic": 729,
+      "freq": 928
+    },
+    "fd": {
+      "orig_audio": 0.154,
+      "synth_audio": 0.203
+    },
+    "nestedness": {
+      "orig_audio": 0.766,
+      "synth_audio": 0.265
+    },
+    "stitch_верх": {
+      "in": 0.4515,
+      "out": 0.4198
+    },
+    "stitch_низ": {
+      "in": 0.4348,
+      "out": 0.6283
+    },
+    "coverage_harmonic": {
+      "in": 58.3,
+      "out": 63.0
+    }
+  },
+  {
+    "file": "живая_М.json",
+    "atoms": {
+      "in": 507,
+      "out": 709,
+      "ratio": 1.398
+    },
+    "crosses": {
+      "in": 1403,
+      "out": 2030,
+      "ratio": 1.447
+    },
+    "axes_in": {
+      "time": 506,
+      "harmonic": 392,
+      "freq": 505
+    },
+    "axes_out": {
+      "time": 708,
+      "harmonic": 614,
+      "freq": 708
+    },
+    "fd": {
+      "orig_audio": 0.177,
+      "synth_audio": 0.157
+    },
+    "nestedness": {
+      "orig_audio": 0.687,
+      "synth_audio": 0.26
+    },
+    "stitch_верх": {
+      "in": 0.4336,
+      "out": 0.4778
+    },
+    "stitch_низ": {
+      "in": 0.4862,
+      "out": 0.7536
+    },
+    "coverage_harmonic": {
+      "in": 63.9,
+      "out": 69.5
+    }
+  },
+  {
+    "file": "живая_Н.json",
+    "atoms": {
+      "in": 386,
+      "out": 537,
+      "ratio": 1.391
+    },
+    "crosses": {
+      "in": 1033,
+      "out": 1559,
+      "ratio": 1.509
+    },
+    "axes_in": {
+      "time": 385,
+      "harmonic": 264,
+      "freq": 384
+    },
+    "axes_out": {
+      "time": 536,
+      "harmonic": 488,
+      "freq": 535
+    },
+    "fd": {
+      "orig_audio": 0.08,
+      "synth_audio": 0.154
+    },
+    "nestedness": {
+      "orig_audio": 0.618,
+      "synth_audio": 0.189
+    },
+    "stitch_верх": {
+      "in": 0.5683,
+      "out": 0.51
+    },
+    "stitch_низ": {
+      "in": 0.2459,
+      "out": 0.5222
+    },
+    "coverage_harmonic": {
+      "in": 58.5,
+      "out": 70.6
+    }
+  },
+  {
+    "file": "живая_О.json",
+    "atoms": {
+      "in": 160,
+      "out": 214,
+      "ratio": 1.337
+    },
+    "crosses": {
+      "in": 406,
+      "out": 579,
+      "ratio": 1.426
+    },
+    "axes_in": {
+      "time": 159,
+      "harmonic": 88,
+      "freq": 159
+    },
+    "axes_out": {
+      "time": 213,
+      "harmonic": 154,
+      "freq": 212
+    },
+    "fd": {
+      "orig_audio": 0.025,
+      "synth_audio": 0.029
+    },
+    "nestedness": {
+      "orig_audio": 0.276,
+      "synth_audio": 0.451
+    },
+    "stitch_верх": {
+      "in": 0.5135,
+      "out": 0.6152
+    },
+    "stitch_низ": {
+      "in": 0.1604,
+      "out": 0.2071
+    },
+    "coverage_harmonic": {
+      "in": 53.1,
+      "out": 65.4
+    }
+  },
+  {
+    "file": "живая_О_протяжное.json",
+    "atoms": {
+      "in": 1451,
+      "out": 1602,
+      "ratio": 1.104
+    },
+    "crosses": {
+      "in": 3559,
+      "out": 4325,
+      "ratio": 1.215
+    },
+    "axes_in": {
+      "time": 1450,
+      "harmonic": 659,
+      "freq": 1450
+    },
+    "axes_out": {
+      "time": 1601,
+      "harmonic": 1123,
+      "freq": 1601
+    },
+    "fd": {
+      "orig_audio": 0.026,
+      "synth_audio": 0.029
+    },
+    "nestedness": {
+      "orig_audio": 0.697,
+      "synth_audio": 0.222
+    },
+    "stitch_верх": {
+      "in": 0.2376,
+      "out": 0.4021
+    },
+    "stitch_низ": {
+      "in": 0.1219,
+      "out": 0.1365
+    },
+    "coverage_harmonic": {
+      "in": 35.4,
+      "out": 54.9
+    }
+  },
+  {
+    "file": "живая_П.json",
+    "atoms": {
+      "in": 285,
+      "out": 414,
+      "ratio": 1.453
+    },
+    "crosses": {
+      "in": 799,
+      "out": 1245,
+      "ratio": 1.558
+    },
+    "axes_in": {
+      "time": 284,
+      "harmonic": 231,
+      "freq": 284
+    },
+    "axes_out": {
+      "time": 413,
+      "harmonic": 419,
+      "freq": 413
+    },
+    "fd": {
+      "orig_audio": 0.085,
+      "synth_audio": 0.149
+    },
+    "nestedness": {
+      "orig_audio": 0.378,
+      "synth_audio": 0.294
+    },
+    "stitch_верх": {
+      "in": 0.4057,
+      "out": 0.3512
+    },
+    "stitch_низ": {
+      "in": 0.2669,
+      "out": 0.5038
+    },
+    "coverage_harmonic": {
+      "in": 62.1,
+      "out": 72.7
+    }
+  },
+  {
+    "file": "живая_Р.json",
+    "atoms": {
+      "in": 494,
+      "out": 627,
+      "ratio": 1.269
+    },
+    "crosses": {
+      "in": 1339,
+      "out": 1823,
+      "ratio": 1.361
+    },
+    "axes_in": {
+      "time": 493,
+      "harmonic": 353,
+      "freq": 493
+    },
+    "axes_out": {
+      "time": 626,
+      "harmonic": 571,
+      "freq": 626
+    },
+    "fd": {
+      "orig_audio": 0.114,
+      "synth_audio": 0.168
+    },
+    "nestedness": {
+      "orig_audio": 0.517,
+      "synth_audio": 0.412
+    },
+    "stitch_верх": {
+      "in": 0.3701,
+      "out": 0.5278
+    },
+    "stitch_низ": {
+      "in": 0.3484,
+      "out": 0.5447
+    },
+    "coverage_harmonic": {
+      "in": 53.8,
+      "out": 63.5
+    }
+  },
+  {
+    "file": "живая_С_протяжное.json",
+    "atoms": {
+      "in": 6326,
+      "out": 6346,
+      "ratio": 1.003
+    },
+    "crosses": {
+      "in": 18165,
+      "out": 18061,
+      "ratio": 0.994
+    },
+    "axes_in": {
+      "time": 6325,
+      "harmonic": 5515,
+      "freq": 6325
+    },
+    "axes_out": {
+      "time": 6345,
+      "harmonic": 5371,
+      "freq": 6345
+    },
+    "fd": {
+      "orig_audio": 0.934,
+      "synth_audio": 0.97
+    },
+    "nestedness": {
+      "orig_audio": 0.016,
+      "synth_audio": 0.0
+    },
+    "stitch_верх": {
+      "in": 0.451,
+      "out": 0.4842
+    },
+    "stitch_низ": {
+      "in": 1.0477,
+      "out": 1.0358
+    },
+    "coverage_harmonic": {
+      "in": 86.5,
+      "out": 82.6
+    }
+  },
+  {
+    "file": "живая_Тт.json",
+    "atoms": {
+      "in": 377,
+      "out": 544,
+      "ratio": 1.443
+    },
+    "crosses": {
+      "in": 1025,
+      "out": 1579,
+      "ratio": 1.54
+    },
+    "axes_in": {
+      "time": 376,
+      "harmonic": 273,
+      "freq": 376
+    },
+    "axes_out": {
+      "time": 543,
+      "harmonic": 493,
+      "freq": 543
+    },
+    "fd": {
+      "orig_audio": 0.123,
+      "synth_audio": 0.23
+    },
+    "nestedness": {
+      "orig_audio": 0.633,
+      "synth_audio": 0.443
+    },
+    "stitch_верх": {
+      "in": 0.6751,
+      "out": 0.5857
+    },
+    "stitch_низ": {
+      "in": 0.2547,
+      "out": 0.5218
+    },
+    "coverage_harmonic": {
+      "in": 66.6,
+      "out": 72.2
+    }
+  },
+  {
+    "file": "живая_У.json",
+    "atoms": {
+      "in": 161,
+      "out": 289,
+      "ratio": 1.795
+    },
+    "crosses": {
+      "in": 372,
+      "out": 706,
+      "ratio": 1.898
+    },
+    "axes_in": {
+      "time": 160,
+      "harmonic": 53,
+      "freq": 159
+    },
+    "axes_out": {
+      "time": 288,
+      "harmonic": 130,
+      "freq": 288
+    },
+    "fd": {
+      "orig_audio": 0.099,
+      "synth_audio": 0.239
+    },
+    "nestedness": {
+      "orig_audio": 0.332,
+      "synth_audio": 0.222
+    },
+    "stitch_верх": {
+      "in": 0.6276,
+      "out": 0.3877
+    },
+    "stitch_низ": {
+      "in": 0.4955,
+      "out": 0.6618
+    },
+    "coverage_harmonic": {
+      "in": 36.6,
+      "out": 49.5
+    }
+  },
+  {
+    "file": "живая_У_протяжное.json",
+    "atoms": {
+      "in": 875,
+      "out": 1049,
+      "ratio": 1.199
+    },
+    "crosses": {
+      "in": 2225,
+      "out": 3025,
+      "ratio": 1.36
+    },
+    "axes_in": {
+      "time": 874,
+      "harmonic": 477,
+      "freq": 874
+    },
+    "axes_out": {
+      "time": 1048,
+      "harmonic": 930,
+      "freq": 1047
+    },
+    "fd": {
+      "orig_audio": 0.014,
+      "synth_audio": 0.022
+    },
+    "nestedness": {
+      "orig_audio": 0.607,
+      "synth_audio": 0.378
+    },
+    "stitch_верх": {
+      "in": 0.3825,
+      "out": 0.4133
+    },
+    "stitch_низ": {
+      "in": 0.0804,
+      "out": 0.1547
+    },
+    "coverage_harmonic": {
+      "in": 33.8,
+      "out": 53.3
+    }
+  },
+  {
+    "file": "живая_Ф.json",
+    "atoms": {
+      "in": 962,
+      "out": 1130,
+      "ratio": 1.175
+    },
+    "crosses": {
+      "in": 2540,
+      "out": 3210,
+      "ratio": 1.264
+    },
+    "axes_in": {
+      "time": 961,
+      "harmonic": 618,
+      "freq": 961
+    },
+    "axes_out": {
+      "time": 1129,
+      "harmonic": 952,
+      "freq": 1129
+    },
+    "fd": {
+      "orig_audio": 0.149,
+      "synth_audio": 0.33
+    },
+    "nestedness": {
+      "orig_audio": 0.575,
+      "synth_audio": 0.483
+    },
+    "stitch_верх": {
+      "in": 0.3504,
+      "out": 0.5116
+    },
+    "stitch_низ": {
+      "in": 0.7802,
+      "out": 0.8189
+    },
+    "coverage_harmonic": {
+      "in": 63.0,
+      "out": 69.6
+    }
+  },
+  {
+    "file": "живая_Х.json",
+    "atoms": {
+      "in": 1080,
+      "out": 1117,
+      "ratio": 1.034
+    },
+    "crosses": {
+      "in": 2886,
+      "out": 2952,
+      "ratio": 1.023
+    },
+    "axes_in": {
+      "time": 1079,
+      "harmonic": 728,
+      "freq": 1079
+    },
+    "axes_out": {
+      "time": 1116,
+      "harmonic": 722,
+      "freq": 1114
+    },
+    "fd": {
+      "orig_audio": 0.448,
+      "synth_audio": 0.451
+    },
+    "nestedness": {
+      "orig_audio": 0.449,
+      "synth_audio": 0.381
+    },
+    "stitch_верх": {
+      "in": 0.4171,
+      "out": 0.4804
+    },
+    "stitch_низ": {
+      "in": 0.8467,
+      "out": 0.8816
+    },
+    "coverage_harmonic": {
+      "in": 63.2,
+      "out": 61.8
+    }
+  },
+  {
+    "file": "живая_Ц.json",
+    "atoms": {
+      "in": 617,
+      "out": 735,
+      "ratio": 1.191
+    },
+    "crosses": {
+      "in": 1594,
+      "out": 1999,
+      "ratio": 1.254
+    },
+    "axes_in": {
+      "time": 616,
+      "harmonic": 363,
+      "freq": 615
+    },
+    "axes_out": {
+      "time": 734,
+      "harmonic": 531,
+      "freq": 734
+    },
+    "fd": {
+      "orig_audio": 0.342,
+      "synth_audio": 0.641
+    },
+    "nestedness": {
+      "orig_audio": 0.338,
+      "synth_audio": 0.399
+    },
+    "stitch_верх": {
+      "in": 0.5217,
+      "out": 0.4653
+    },
+    "stitch_низ": {
+      "in": 0.7953,
+      "out": 0.8867
+    },
+    "coverage_harmonic": {
+      "in": 60.1,
+      "out": 65.2
+    }
+  },
+  {
+    "file": "живая_Ч.json",
+    "atoms": {
+      "in": 538,
+      "out": 736,
+      "ratio": 1.368
+    },
+    "crosses": {
+      "in": 1411,
+      "out": 2045,
+      "ratio": 1.449
+    },
+    "axes_in": {
+      "time": 537,
+      "harmonic": 337,
+      "freq": 537
+    },
+    "axes_out": {
+      "time": 735,
+      "harmonic": 575,
+      "freq": 735
+    },
+    "fd": {
+      "orig_audio": 0.586,
+      "synth_audio": 0.674
+    },
+    "nestedness": {
+      "orig_audio": 0.087,
+      "synth_audio": 0.14
+    },
+    "stitch_верх": {
+      "in": 0.2203,
+      "out": 0.3503
+    },
+    "stitch_низ": {
+      "in": 0.8731,
+      "out": 0.9474
+    },
+    "coverage_harmonic": {
+      "in": 61.0,
+      "out": 65.4
+    }
+  },
+  {
+    "file": "живая_Ш.json",
+    "atoms": {
+      "in": 955,
+      "out": 1097,
+      "ratio": 1.149
+    },
+    "crosses": {
+      "in": 2536,
+      "out": 3035,
+      "ratio": 1.197
+    },
+    "axes_in": {
+      "time": 954,
+      "harmonic": 629,
+      "freq": 953
+    },
+    "axes_out": {
+      "time": 1096,
+      "harmonic": 843,
+      "freq": 1096
+    },
+    "fd": {
+      "orig_audio": 0.536,
+      "synth_audio": 0.576
+    },
+    "nestedness": {
+      "orig_audio": 0.151,
+      "synth_audio": 0.101
+    },
+    "stitch_верх": {
+      "in": 0.2272,
+      "out": 0.2864
+    },
+    "stitch_низ": {
+      "in": 0.8894,
+      "out": 0.9635
+    },
+    "coverage_harmonic": {
+      "in": 65.1,
+      "out": 64.7
+    }
+  },
+  {
+    "file": "живая_Щ.json",
+    "atoms": {
+      "in": 1463,
+      "out": 1566,
+      "ratio": 1.07
+    },
+    "crosses": {
+      "in": 3934,
+      "out": 4370,
+      "ratio": 1.111
+    },
+    "axes_in": {
+      "time": 1462,
+      "harmonic": 1011,
+      "freq": 1461
+    },
+    "axes_out": {
+      "time": 1565,
+      "harmonic": 1242,
+      "freq": 1563
+    },
+    "fd": {
+      "orig_audio": 0.697,
+      "synth_audio": 0.728
+    },
+    "nestedness": {
+      "orig_audio": 0.112,
+      "synth_audio": 0.073
+    },
+    "stitch_верх": {
+      "in": 0.4604,
+      "out": 0.3507
+    },
+    "stitch_низ": {
+      "in": 0.979,
+      "out": 1.0014
+    },
+    "coverage_harmonic": {
+      "in": 68.4,
+      "out": 75.6
+    }
+  },
+  {
+    "file": "живая_Щ_протяжное.json",
+    "atoms": {
+      "in": 2469,
+      "out": 2436,
+      "ratio": 0.987
+    },
+    "crosses": {
+      "in": 6746,
+      "out": 6579,
+      "ratio": 0.975
+    },
+    "axes_in": {
+      "time": 2468,
+      "harmonic": 1811,
+      "freq": 2467
+    },
+    "axes_out": {
+      "time": 2435,
+      "harmonic": 1711,
+      "freq": 2433
+    },
+    "fd": {
+      "orig_audio": 0.915,
+      "synth_audio": 0.935
+    },
+    "nestedness": {
+      "orig_audio": 0.267,
+      "synth_audio": 0.206
+    },
+    "stitch_верх": {
+      "in": 0.4606,
+      "out": 0.5117
+    },
+    "stitch_низ": {
+      "in": 1.0557,
+      "out": 1.0556
+    },
+    "coverage_harmonic": {
+      "in": 79.2,
+      "out": 76.8
+    }
+  },
+  {
+    "file": "живая_Ы.json",
+    "atoms": {
+      "in": 386,
+      "out": 386,
+      "ratio": 1.0
+    },
+    "crosses": {
+      "in": 935,
+      "out": 952,
+      "ratio": 1.018
+    },
+    "axes_in": {
+      "time": 385,
+      "harmonic": 168,
+      "freq": 382
+    },
+    "axes_out": {
+      "time": 385,
+      "harmonic": 188,
+      "freq": 379
+    },
+    "fd": {
+      "orig_audio": 0.252,
+      "synth_audio": 0.339
+    },
+    "nestedness": {
+      "orig_audio": 0.426,
+      "synth_audio": 0.389
+    },
+    "stitch_верх": {
+      "in": 0.5203,
+      "out": 0.3222
+    },
+    "stitch_низ": {
+      "in": 0.7383,
+      "out": 0.8595
+    },
+    "coverage_harmonic": {
+      "in": 43.8,
+      "out": 40.7
+    }
+  },
+  {
+    "file": "живая_Э.json",
+    "atoms": {
+      "in": 540,
+      "out": 672,
+      "ratio": 1.244
+    },
+    "crosses": {
+      "in": 1615,
+      "out": 2118,
+      "ratio": 1.311
+    },
+    "axes_in": {
+      "time": 539,
+      "harmonic": 537,
+      "freq": 539
+    },
+    "axes_out": {
+      "time": 671,
+      "harmonic": 776,
+      "freq": 671
+    },
+    "fd": {
+      "orig_audio": 0.111,
+      "synth_audio": 0.25
+    },
+    "nestedness": {
+      "orig_audio": 0.323,
+      "synth_audio": 0.433
+    },
+    "stitch_верх": {
+      "in": 0.4791,
+      "out": 0.5726
+    },
+    "stitch_низ": {
+      "in": 0.2334,
+      "out": 0.4864
+    },
+    "coverage_harmonic": {
+      "in": 76.9,
+      "out": 83.2
+    }
+  },
+  {
+    "file": "живая_Э_протяжное.json",
+    "atoms": {
+      "in": 3074,
+      "out": 3578,
+      "ratio": 1.164
+    },
+    "crosses": {
+      "in": 10530,
+      "out": 11818,
+      "ratio": 1.122
+    },
+    "axes_in": {
+      "time": 3073,
+      "harmonic": 4384,
+      "freq": 3073
+    },
+    "axes_out": {
+      "time": 3577,
+      "harmonic": 4664,
+      "freq": 3577
+    },
+    "fd": {
+      "orig_audio": 0.163,
+      "synth_audio": 0.345
+    },
+    "nestedness": {
+      "orig_audio": 0.589,
+      "synth_audio": 0.278
+    },
+    "stitch_верх": {
+      "in": 0.2165,
+      "out": 0.3117
+    },
+    "stitch_низ": {
+      "in": 0.2342,
+      "out": 0.6094
+    },
+    "coverage_harmonic": {
+      "in": 80.1,
+      "out": 84.0
+    }
+  },
+  {
+    "file": "живая_Ю.json",
+    "atoms": {
+      "in": 595,
+      "out": 789,
+      "ratio": 1.326
+    },
+    "crosses": {
+      "in": 1950,
+      "out": 2537,
+      "ratio": 1.301
+    },
+    "axes_in": {
+      "time": 594,
+      "harmonic": 763,
+      "freq": 593
+    },
+    "axes_out": {
+      "time": 788,
+      "harmonic": 965,
+      "freq": 784
+    },
+    "fd": {
+      "orig_audio": 0.417,
+      "synth_audio": 0.669
+    },
+    "nestedness": {
+      "orig_audio": 0.228,
+      "synth_audio": 0.043
+    },
+    "stitch_верх": {
+      "in": 0.1491,
+      "out": 0.2062
+    },
+    "stitch_низ": {
+      "in": 0.2138,
+      "out": 0.4958
+    },
+    "coverage_harmonic": {
+      "in": 93.4,
+      "out": 88.3
+    }
+  },
+  {
+    "file": "живая_Ю_протяжное.json",
+    "atoms": {
+      "in": 1140,
+      "out": 1428,
+      "ratio": 1.253
+    },
+    "crosses": {
+      "in": 3553,
+      "out": 4690,
+      "ratio": 1.32
+    },
+    "axes_in": {
+      "time": 1139,
+      "harmonic": 1277,
+      "freq": 1137
+    },
+    "axes_out": {
+      "time": 1427,
+      "harmonic": 1836,
+      "freq": 1427
+    },
+    "fd": {
+      "orig_audio": 0.211,
+      "synth_audio": 0.281
+    },
+    "nestedness": {
+      "orig_audio": 0.209,
+      "synth_audio": 0.028
+    },
+    "stitch_верх": {
+      "in": 0.1629,
+      "out": 0.2514
+    },
+    "stitch_низ": {
+      "in": 0.0938,
+      "out": 0.2135
+    },
+    "coverage_harmonic": {
+      "in": 80.0,
+      "out": 84.2
+    }
+  },
+  {
+    "file": "живая_Я.json",
+    "atoms": {
+      "in": 378,
+      "out": 570,
+      "ratio": 1.508
+    },
+    "crosses": {
+      "in": 976,
+      "out": 1682,
+      "ratio": 1.723
+    },
+    "axes_in": {
+      "time": 377,
+      "harmonic": 223,
+      "freq": 376
+    },
+    "axes_out": {
+      "time": 569,
+      "harmonic": 545,
+      "freq": 568
+    },
+    "fd": {
+      "orig_audio": 0.127,
+      "synth_audio": 0.221
+    },
+    "nestedness": {
+      "orig_audio": 0.314,
+      "synth_audio": 0.121
+    },
+    "stitch_верх": {
+      "in": 0.3087,
+      "out": 0.243
+    },
+    "stitch_низ": {
+      "in": 0.4206,
+      "out": 0.4854
+    },
+    "coverage_harmonic": {
+      "in": 61.1,
+      "out": 75.1
+    }
+  },
+  {
+    "file": "живая_Я_протяжное.json",
+    "atoms": {
+      "in": 3639,
+      "out": 4302,
+      "ratio": 1.182
+    },
+    "crosses": {
+      "in": 13045,
+      "out": 13539,
+      "ratio": 1.038
+    },
+    "axes_in": {
+      "time": 3638,
+      "harmonic": 5770,
+      "freq": 3637
+    },
+    "axes_out": {
+      "time": 4301,
+      "harmonic": 4937,
+      "freq": 4301
+    },
+    "fd": {
+      "orig_audio": 0.17,
+      "synth_audio": 0.261
+    },
+    "nestedness": {
+      "orig_audio": 0.397,
+      "synth_audio": 0.128
+    },
+    "stitch_верх": {
+      "in": 0.2341,
+      "out": 0.2306
+    },
+    "stitch_низ": {
+      "in": 0.4774,
+      "out": 0.6567
+    },
+    "coverage_harmonic": {
+      "in": 89.3,
+      "out": 82.3
+    }
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "дата": "2026-08-04",
+  "метод": "FULL synth; выбор=base_full_synth (пост только если не хуже базы)",
+  "клетка": "данные/клеточки/клеточки_полные/etalon_ogon.json",
+  "n_atoms": 7945,
+  "оси_эталон": {
+    "fd": 0.86,
+    "selfsim_r2": 0.994,
+    "nestedness": 0.385,
+    "mod_depth": 0.457,
+    "mod_rate": 2.7
+  },
+  "оси_база": {
+    "fd": 0.907,
+    "selfsim_r2": 0.991,
+    "nestedness": 0.381,
+    "mod_depth": 0.455,
+    "mod_rate": 2.7
+  },
+  "оси_сборка": {
+    "fd": 0.907,
+    "selfsim_r2": 0.991,
+    "nestedness": 0.381,
+    "mod_depth": 0.455,
+    "mod_rate": 2.7
+  },
+  "band_corr_база": 0.781,
+  "band_corr_пост": 0.668,
+  "band_corr": 0.781,
+  "stft_corr": 0.7154,
+  "chosen": "base_full_synth",
+  "wav": "выход/причина_огонь/калибр_оси/сборка_без_цикла.wav",
+  "note": "ogon_real vs video NCC≈0.04 → axes_decoupled; калибр только по звуку"
+}

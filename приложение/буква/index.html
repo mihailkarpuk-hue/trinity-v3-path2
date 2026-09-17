@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trinity — буква</title>
+  <link rel="stylesheet" href="../стили/палитра.css">
+  <style>
+    :root { --bg: #0a0a0c; --fg: #e8e6e1; --mute: #8a8780; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; background: var(--bg); color: var(--fg);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+      display: grid; place-items: center; padding: 2rem 1rem;
+    }
+    main { width: min(720px, 100%); text-align: center; }
+    .бренд { letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.75rem; color: var(--mute); margin: 0 0 0.5rem; }
+    h1 { font-weight: 400; font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 0 0 0.35rem; }
+    .под { color: var(--mute); margin: 0 0 1.5rem; font-size: 0.95rem; }
+    .образ {
+      width: 100%; aspect-ratio: 1; background: #000; display: block;
+      border: 0; margin: 0 auto 1.25rem;
+    }
+    button {
+      appearance: none; border: 1px solid #3a3935; background: transparent;
+      color: var(--fg); padding: 0.7rem 1.4rem; font: inherit; cursor: pointer;
+      letter-spacing: 0.04em;
+    }
+    button:hover { border-color: #c4bfb4; }
+    .мета { margin-top: 1.25rem; color: var(--mute); font-size: 0.85rem; line-height: 1.5; }
+    a { color: #c4bfb4; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="бренд">Trinity · алфавит природы</p>
+    <h1 id="имя">буква</h1>
+    <p class="под" id="под">момент ~46 мс</p>
+    <img class="образ" id="картинка" alt="образ буквы">
+    <button type="button" id="играть">слушать букву</button>
+    <p class="мета" id="мета"></p>
+    <p class="мета"><a href="../галерея_стихий/">галерея</a> · <a href="../организмы/">организмы</a></p>
+  </main>
+  <script type="module">
+    const r = await fetch("../../выход/буквы/dozhd_a0287.json");
+    const m = await r.json();
+    document.getElementById("имя").textContent = m.id;
+    document.getElementById("под").textContent =
+      `${m.стихия} · t=${m.t} с · дом ${m.частота_дом} Гц · ${m.точек} точек`;
+    document.getElementById("картинка").src = m.png;
+    document.getElementById("мета").textContent =
+      `образ из ${m.образ_источник} · синхрон со звуком`;
+    const audio = new Audio(m.wav);
+    document.getElementById("играть").onclick = () => {
+      audio.currentTime = 0;
+      audio.play();
+    };
+  </script>
+</body>
+</html>

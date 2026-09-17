@@ -1,0 +1,127 @@
+/* Организмы — путь 2. Вписывается в палитру V3, без карточной сетки. */
+@import url("https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Manrope:wght@400;600&display=swap");
+
+:root {
+  --фон0: #0c1210;
+  --фон1: #15201c;
+  --текст: #e8efe9;
+  --мут: #9aada3;
+  --акцент: #c4a35a;
+  --линия: rgba(232, 239, 233, 0.12);
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(120% 80% at 50% -10%, #24352e 0%, transparent 55%),
+    linear-gradient(165deg, var(--фон1), var(--фон0));
+  color: var(--текст);
+  font-family: Manrope, system-ui, sans-serif;
+}
+
+.сцена {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 12vh 1.5rem 4rem;
+}
+
+.бренд {
+  margin: 0 0 0.35rem;
+  font-family: Literata, Georgia, serif;
+  font-size: clamp(2rem, 6vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.верх h1 {
+  margin: 0;
+  font-family: Literata, Georgia, serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: var(--акцент);
+}
+
+.под {
+  margin: 0.6rem 0 2.2rem;
+  color: var(--мут);
+  font-size: 0.95rem;
+  line-height: 1.45;
+  max-width: 28rem;
+}
+
+.список {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--линия);
+}
+
+.ряд {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.05rem 0;
+  border-bottom: 1px solid var(--линия);
+  opacity: 0;
+  transform: translateY(8px);
+  animation: вход 0.55s ease forwards;
+}
+
+.ряд:nth-child(1) { animation-delay: 0.05s; }
+.ряд:nth-child(2) { animation-delay: 0.12s; }
+.ряд:nth-child(3) { animation-delay: 0.19s; }
+.ряд:nth-child(4) { animation-delay: 0.26s; }
+.ряд:nth-child(5) { animation-delay: 0.33s; }
+
+@keyframes вход {
+  to { opacity: 1; transform: none; }
+}
+
+.имя {
+  margin: 0;
+  font-family: Literata, Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.состав {
+  margin: 0.2rem 0 0;
+  color: var(--мут);
+  font-size: 0.85rem;
+}
+
+.кнопка {
+  appearance: none;
+  border: 1px solid var(--линия);
+  background: transparent;
+  color: var(--текст);
+  font: inherit;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.кнопка:hover {
+  border-color: var(--акцент);
+  color: var(--акцент);
+}
+
+.кнопка.играет {
+  background: var(--акцент);
+  border-color: var(--акцент);
+  color: #1a1610;
+}
+
+.низ {
+  margin-top: 2.5rem;
+  color: var(--мут);
+  font-size: 0.75rem;
+}
+
+.низ code { color: var(--текст); opacity: 0.7; }

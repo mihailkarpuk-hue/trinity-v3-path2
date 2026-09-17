@@ -1,0 +1,117 @@
+/* Тринити Альфа — Блок 1 «Вход» */
+
+.экран-входа {
+    background: var(--фон-главный);
+    color: var(--текст-основной);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.вход {
+    text-align: center;
+    max-width: 720px;
+    padding: 0 24px;
+}
+
+/* === ГЛАВНАЯ ФРАЗА === */
+.фраза {
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    line-height: 1.25;
+    margin: 0;
+    opacity: 0;
+    animation: появление 1s ease-out 0.1s forwards;
+}
+
+.фраза .бренд {
+    font-weight: 400;            /* лёгкий акцент на имени */
+    letter-spacing: 2px;
+}
+
+.фраза .разделитель {
+    color: var(--текст-вторичный);
+    margin: 0 8px;
+}
+
+.фраза .хвост {
+    font-weight: 200;
+}
+
+/* === КНОПКА «ВОЙТИ» === */
+.кнопка-войти {
+    display: inline-block;
+    margin-top: 60px;
+    padding: 16px 48px;
+    background: transparent;
+    color: var(--текст-основной);
+    font-size: 16px;
+    font-family: var(--шрифт-основной);
+    letter-spacing: 1.5px;
+    border: 1px solid var(--текст-основной);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: появление 1s ease-out 0.6s forwards;
+}
+
+.кнопка-войти:hover,
+.кнопка-войти:focus-visible {
+    background: var(--текст-основной);
+    color: var(--фон-главный);
+    outline: none;
+}
+
+.кнопка-войти:active {
+    transform: scale(0.98);
+}
+
+/* === ПОДПИСЬ === */
+.подпись {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--текст-тусклый);
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    opacity: 0;
+    animation: появление 1s ease-out 1.1s forwards;
+}
+
+/* === ПЕРЕКРЫТИЕ (fade-out при клике «Войти») === */
+.перекрытие {
+    position: fixed;
+    inset: 0;
+    background: var(--фон-главный);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.перекрытие.активно {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* === АНИМАЦИЯ ПОЯВЛЕНИЯ === */
+@keyframes появление {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Уважение к prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    .фраза, .кнопка-войти, .подпись {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    .перекрытие { transition: none; }
+}

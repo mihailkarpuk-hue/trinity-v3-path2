@@ -1,0 +1,13 @@
+{
+  "дата": "2026-08-04",
+  "n_atoms": 6380,
+  "n_keys_params_104": 108,
+  "elapsed_s": 60.3,
+  "cell_copy": "выход/атомы_полные_гром/etalon_grom_with_104.json",
+  "sample": {
+    "fd": 0.634,
+    "spectral_flatness": 0.37595826089352247,
+    "tonality": 0.35975073370689176,
+    "high_mid_freq_ratio": 0.21034162491544842
+  }
+}

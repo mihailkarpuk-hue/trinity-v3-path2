@@ -1,0 +1,68 @@
+{
+  "пилот": "dozhd",
+  "дата": "2026-07-21",
+  "путь": "путь-2-момент",
+  "звук_эталон": {
+    "path": "данные/клеточки/эталоны/dozhd_real.wav",
+    "sec": 2.4,
+    "sr": 22050,
+    "channels": 1,
+    "exists": true
+  },
+  "видео": {
+    "video_live_01.mp4": {
+      "path": "данные/стихии_живые/dozhd/video_live_01.mp4",
+      "exists": true,
+      "sec": 61.061,
+      "fps": 29.97,
+      "frames": 1830,
+      "has_audio": true,
+      "audio_sec": 61.1,
+      "container_sec": 61.1
+    },
+    "video_live_02.mp4": {
+      "path": "данные/стихии_живые/dozhd/video_live_02.mp4",
+      "exists": true,
+      "sec": 9.9322,
+      "fps": 59.0,
+      "frames": 586,
+      "has_audio": true,
+      "audio_sec": 9.94,
+      "container_sec": 9.94
+    },
+    "clean_video.mp4": {
+      "path": "данные/стихии_живые/dozhd/clean_video.mp4",
+      "exists": true,
+      "sec": 9.9322,
+      "fps": 59.0,
+      "frames": 586,
+      "has_audio": true,
+      "audio_sec": 9.93,
+      "container_sec": 9.93
+    }
+  },
+  "атомы_model3d": {
+    "path": "данные/клеточки/эталоны/dozhd_model3d.json",
+    "exists": true,
+    "atoms_count": 19,
+    "birth_min": 0.0,
+    "birth_max": 0.0,
+    "span_sec": 0.0,
+    "длительность_сек_meta": 2.4
+  },
+  "атомы_клетка": {
+    "path": "данные/клеточки/клеточки_полные/etalon_dozhd.json",
+    "exists": true,
+    "atoms_count": 7350,
+    "birth_min": 0.0,
+    "birth_max": 2.336,
+    "span_sec": 2.336,
+    "длительность_сек_meta": null
+  },
+  "mismatches": {
+    "mismatch_wav_vs_video_live_02": true,
+    "mismatch_wav_vs_atom_span_model3d": true,
+    "mismatch_video_vs_atom_span_model3d": true,
+    "note": "Эталон dozhd_real.wav короче video_live_02 — нельзя считать их одной осью без явного правила."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "стихия": "reka",
+  "правило": "звук из видео, без вшивания",
+  "дата": "2026-07-15",
+  "источники": [
+    {
+      "файл": "video_live_01.mp4",
+      "источник": "File:Chandra river flowing in Sissu Valley.webm",
+      "звук": "родной"
+    },
+    {
+      "файл": "video_live_02.mp4",
+      "источник": "File:Wallowa River.webm",
+      "звук": "родной"
+    },
+    {
+      "файл": "video_live_03.mp4",
+      "источник": "File:River flowing.webm",
+      "звук": "родной"
+    }
+  ]
+}

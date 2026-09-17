@@ -1,0 +1,117 @@
+{
+  "sync": {
+    "дата": "2026-08-10",
+    "clip": "данные/стихии_живые/vodopad/video_live_03_niagara.mp4",
+    "clip_имя": "Niagara Horseshoe Falls (boat, 2006)",
+    "t0_sec": 38.0,
+    "seg_dur_sec": 2.6,
+    "NCC_segment_vs_clip_window": 1.0,
+    "alignment": "single_live_clip",
+    "etalon_wav": "выход/причина_водопад/live_sync/vodopad_niagara_etalon.wav",
+    "выбор_окна": "max(flat×2+rms)",
+    "n_atoms_window": 19,
+    "n_шум": 19,
+    "flatness": 0.1347,
+    "atom_source": "атомизация",
+    "source": {
+      "commons": "File:NiagaraKanadaHufeisenfall2006Mai.ogv",
+      "author": "Hedwig Storch",
+      "url": "https://commons.wikimedia.org/wiki/File:NiagaraKanadaHufeisenfall2006Mai.ogv",
+      "license": "CC (see Commons page)"
+    },
+    "note": "автор: взять Ниагару; live_02 струйка REJECT; live_01 Syratu сменён",
+    "rejected": [
+      "video_live_02.mp4",
+      "video_live_01.mp4 (заменён по просьбе Niagara)"
+    ]
+  },
+  "sound_score": {
+    "метод": "атомизация → шум-filterbank → EQ",
+    "анализатор": true,
+    "рычаг": "шум_из_атомов",
+    "референс": "Niagara Horseshoe Falls (boat, 2006)",
+    "source": {
+      "commons": "File:NiagaraKanadaHufeisenfall2006Mai.ogv",
+      "author": "Hedwig Storch",
+      "url": "https://commons.wikimedia.org/wiki/File:NiagaraKanadaHufeisenfall2006Mai.ogv",
+      "license": "CC (see Commons page)"
+    },
+    "n_atoms": 19,
+    "n_фаза_шум": 19,
+    "params_104_filled": 19,
+    "band": 0.85,
+    "stft": 0.493,
+    "спектр_эталон": {
+      "flatness": 0.1347,
+      "centroid_hz": 1120.6,
+      "bands": {
+        "0-400": 0.428,
+        "400-1200": 0.348,
+        "1.2-3.8k": 0.131,
+        "3.8-6k": 0.079,
+        "6k+": 0.014
+      }
+    },
+    "спектр_сборка": {
+      "flatness": 0.1948,
+      "centroid_hz": 2344.3,
+      "bands": {
+        "0-400": 0.2,
+        "400-1200": 0.284,
+        "1.2-3.8k": 0.28,
+        "3.8-6k": 0.117,
+        "6k+": 0.119
+      }
+    },
+    "оси_эталон": {
+      "fd": 0.621,
+      "nestedness": -0.026,
+      "mod_rate": 32.3
+    },
+    "оси_сборка": {
+      "fd": 0.799,
+      "nestedness": 0.017,
+      "mod_rate": 32.3
+    },
+    "этапы": {
+      "шум_атомы": {
+        "name": "шум_атомы",
+        "fd": 0.799,
+        "nestedness": 0.028,
+        "mod_rate": 2.7,
+        "selfsim_r2": 0.996,
+        "flatness": 0.163,
+        "centroid_hz": 2340.6,
+        "bands": {
+          "0-400": 0.2,
+          "400-1200": 0.284,
+          "1.2-3.8k": 0.28,
+          "3.8-6k": 0.117,
+          "6k+": 0.119
+        },
+        "band": 0.848,
+        "stft": 0.492
+      },
+      "сборка": {
+        "name": "сборка",
+        "fd": 0.799,
+        "nestedness": 0.017,
+        "mod_rate": 32.3,
+        "selfsim_r2": 0.996,
+        "flatness": 0.1948,
+        "centroid_hz": 2344.3,
+        "bands": {
+          "0-400": 0.2,
+          "400-1200": 0.284,
+          "1.2-3.8k": 0.28,
+          "3.8-6k": 0.117,
+          "6k+": 0.119
+        },
+        "band": 0.85,
+        "stft": 0.493
+      }
+    },
+    "дата": "2026-08-10",
+    "E_вход": "взять за основу Ниагарский водопад"
+  }
+}

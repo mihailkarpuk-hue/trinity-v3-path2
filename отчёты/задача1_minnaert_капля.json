@@ -1,0 +1,151 @@
+{
+  "дата": "2026-07-31",
+  "задача": 1,
+  "гипотеза": "импульс + запаздывающий резонанс Миннарта vs только импульс",
+  "t_impact": 2.2022,
+  "reference": "выход/причина_дождь/reference_drop.wav",
+  "seed": 42,
+  "peak_ref_s": 0.1137,
+  "impulse_only": {
+    "wav": "выход/причина_дождь/synth_drop_impulse_only.wav",
+    "metrics": {
+      "band_corr": 0.866,
+      "centroid_synth_hz": 5594.5,
+      "centroid_ref_hz": 3889.0,
+      "centroid_diff_hz": 1705.6,
+      "band_l2": 4.6507
+    }
+  },
+  "best_minnaert": {
+    "wav": "выход/причина_дождь/synth_drop_minnaert.wav",
+    "passport": {
+      "surface_type": "water",
+      "drop_radius_m": 0.001,
+      "bubble_radius_m": 0.001,
+      "bubble_delay_ms": 1.0,
+      "bubble_decay_ms": 18.0,
+      "impulse_decay_ms": 0.5,
+      "bubble_gain": 1.2
+    },
+    "bubble_freq_hz": 3260.0,
+    "metrics": {
+      "band_corr": 0.8743,
+      "centroid_synth_hz": 4895.1,
+      "centroid_ref_hz": 3889.0,
+      "centroid_diff_hz": 1006.2,
+      "band_l2": 3.8925
+    },
+    "grid_score": 0.8922
+  },
+  "top5": [
+    {
+      "passport": {
+        "surface_type": "water",
+        "drop_radius_m": 0.001,
+        "bubble_radius_m": 0.001,
+        "bubble_delay_ms": 1.0,
+        "bubble_decay_ms": 18.0,
+        "impulse_decay_ms": 0.5,
+        "bubble_gain": 1.2
+      },
+      "bubble_freq_hz": 3260.0,
+      "metrics": {
+        "band_corr": 0.8743,
+        "centroid_synth_hz": 4895.1,
+        "centroid_ref_hz": 3889.0,
+        "centroid_diff_hz": 1006.2,
+        "band_l2": 3.8925
+      },
+      "grid_score": 0.8922
+    },
+    {
+      "passport": {
+        "surface_type": "water",
+        "drop_radius_m": 0.001,
+        "bubble_radius_m": 0.001,
+        "bubble_delay_ms": 1.0,
+        "bubble_decay_ms": 12.0,
+        "impulse_decay_ms": 0.5,
+        "bubble_gain": 1.2
+      },
+      "bubble_freq_hz": 3260.0,
+      "metrics": {
+        "band_corr": 0.875,
+        "centroid_synth_hz": 4903.6,
+        "centroid_ref_hz": 3889.0,
+        "centroid_diff_hz": 1014.6,
+        "band_l2": 3.8926
+      },
+      "grid_score": 0.8929
+    },
+    {
+      "passport": {
+        "surface_type": "water",
+        "drop_radius_m": 0.001,
+        "bubble_radius_m": 0.001,
+        "bubble_delay_ms": 1.0,
+        "bubble_decay_ms": 8.0,
+        "impulse_decay_ms": 0.5,
+        "bubble_gain": 1.2
+      },
+      "bubble_freq_hz": 3260.0,
+      "metrics": {
+        "band_corr": 0.8759,
+        "centroid_synth_hz": 4915.7,
+        "centroid_ref_hz": 3889.0,
+        "centroid_diff_hz": 1026.8,
+        "band_l2": 3.8929
+      },
+      "grid_score": 0.8942
+    },
+    {
+      "passport": {
+        "surface_type": "water",
+        "drop_radius_m": 0.001,
+        "bubble_radius_m": 0.001,
+        "bubble_delay_ms": 1.0,
+        "bubble_decay_ms": 4.0,
+        "impulse_decay_ms": 0.5,
+        "bubble_gain": 1.2
+      },
+      "bubble_freq_hz": 3260.0,
+      "metrics": {
+        "band_corr": 0.8784,
+        "centroid_synth_hz": 4949.2,
+        "centroid_ref_hz": 3889.0,
+        "centroid_diff_hz": 1060.3,
+        "band_l2": 3.8953
+      },
+      "grid_score": 0.8978
+    },
+    {
+      "passport": {
+        "surface_type": "water",
+        "drop_radius_m": 0.001,
+        "bubble_radius_m": 0.001,
+        "bubble_delay_ms": 1.0,
+        "bubble_decay_ms": 18.0,
+        "impulse_decay_ms": 0.5,
+        "bubble_gain": 0.9
+      },
+      "bubble_freq_hz": 3260.0,
+      "metrics": {
+        "band_corr": 0.8827,
+        "centroid_synth_hz": 5068.7,
+        "centroid_ref_hz": 3889.0,
+        "centroid_diff_hz": 1179.8,
+        "band_l2": 3.9897
+      },
+      "grid_score": 0.9285
+    }
+  ],
+  "сравнение": {
+    "band_corr_impulse": 0.866,
+    "band_corr_minnaert": 0.8743,
+    "centroid_diff_impulse": 1705.6,
+    "centroid_diff_minnaert": 1006.2,
+    "minnaert_лучше_по_band_corr": true,
+    "minnaert_лучше_по_centroid": true
+  },
+  "note": "grid_score только для калибровки; вердикт — раздельно band_corr и centroid (Крест Наблюдателя)."
+}

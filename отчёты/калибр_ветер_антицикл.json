@@ -1,0 +1,52 @@
+{
+  "метод": "anti-cycle: sliding births → синтез → soft anti-hiss → развязка полос",
+  "анализатор": true,
+  "рычаг": "анти-цикл (не анти-металл)",
+  "n_atoms": 171,
+  "n_atoms_one_shot": 19,
+  "births_one_shot_unique": [
+    0.0
+  ],
+  "births_sliding_n_unique": 9,
+  "params_104_filled": 171,
+  "band": 0.609442593477483,
+  "stft": 0.48667511290256243,
+  "оси_эталон": {
+    "fd": 0.911,
+    "nestedness": 0.053,
+    "mod_rate": 5.4,
+    "selfsim_r2": 0.994
+  },
+  "оси_one_shot_synth": {
+    "fd": 0.787,
+    "nestedness": 0.796,
+    "mod_rate": 24.1
+  },
+  "оси_после_sliding": {
+    "fd": 0.79,
+    "nestedness": 0.959,
+    "mod_rate": 2.7
+  },
+  "оси_после_anti_hiss": {
+    "fd": 0.76,
+    "nestedness": 0.911,
+    "mod_rate": 2.7
+  },
+  "оси_сборка": {
+    "fd": 0.73,
+    "nestedness": 0.036,
+    "mod_rate": 2.7,
+    "selfsim_r2": 0.941
+  },
+  "развязка_шаги": [
+    {
+      "step": 0,
+      "strength": 0.12,
+      "nestedness": 0.036,
+      "fd": 0.73
+    }
+  ],
+  "диагноз": "все birth=0 при one-shot атомизации → цикл; sliding+развязка",
+  "E_вход": "живой шелест рваный — сборка зациклена",
+  "дата": "2026-08-06"
+}

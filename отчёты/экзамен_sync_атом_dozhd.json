@@ -1,0 +1,112 @@
+{
+  "дата": "2026-07-22",
+  "вердикт": "PASS",
+  "образ_в_синтезе": false,
+  "образ_привязан_файлами": true,
+  "n_sync_atoms": 12,
+  "crops_missing": [],
+  "band_corr": 0.6794,
+  "stft_corr": 0.6701,
+  "fd_orig": 0.714,
+  "fd_synth": 0.671,
+  "порог_band_corr": 0.5,
+  "atoms": [
+    {
+      "id": "dozhd_A_0.0_0",
+      "birth": 0.0,
+      "frame_i": 0,
+      "path": "выход/sync_atoms_dozhd_A/crops/f0000_b0p000.png",
+      "path_ok": true,
+      "долг_params_104": true
+    },
+    {
+      "id": "dozhd_A_0.208_12",
+      "birth": 0.208,
+      "frame_i": 12,
+      "path": "выход/sync_atoms_dozhd_A/crops/f0012_b0p208.png",
+      "path_ok": true,
+      "долг_params_104": true
+    },
+    {
+      "id": "dozhd_A_0.432_25",
+      "birth": 0.432,
+      "frame_i": 25,
+      "path": "выход/sync_atoms_dozhd_A/crops/f0025_b0p432.png",
+      "path_ok": true,
+      "долг_params_104": true
+    },
+    {
+      "id": "dozhd_A_0.64_37",
+      "birth": 0.64,
+      "frame_i": 37,
+      "path": "выход/sync_atoms_dozhd_A/crops/f0037_b0p640.png",
+      "path_ok": true,
+      "долг_params_104": true
+    },
+    {
+      "id": "dozhd_A_0.848_50",
+      "birth": 0.848,
+      "frame_i": 50,
+      "path": "выход/sync_atoms_dozhd_A/crops/f0050_b0p848.png",
+      "path_ok": true,
+      "долг_params_104": true
+    },
+    {
+      "id": "dozhd_A_1.056_62",
+      "birth": 1.056,
+      "frame_i": 62,
+      "path": "выход/sync_atoms_dozhd_A/crops/f0062_b1p056.png",
+      "path_ok": true,
+      "долг_params_104": true
+    },
+    {
+      "id": "dozhd_A_1.28_75",
+      "birth": 1.28,
+      "frame_i": 75,
+      "path": "выход/sync_atoms_dozhd_A/crops/f0075_b1p280.png",
+      "path_ok": true,
+      "долг_params_104": true
+    },
+    {
+      "id": "dozhd_A_1.488_87",
+      "birth": 1.488,
+      "frame_i": 87,
+      "path": "выход/sync_atoms_dozhd_A/crops/f0087_b1p488.png",
+      "path_ok": true,
+      "долг_params_104": true
+    },
+    {
+      "id": "dozhd_A_1.696_100",
+      "birth": 1.696,
+      "frame_i": 100,
+      "path": "выход/sync_atoms_dozhd_A/crops/f0100_b1p696.png",
+      "path_ok": true,
+      "долг_params_104": true
+    },
+    {
+      "id": "dozhd_A_1.904_112",
+      "birth": 1.904,
+      "frame_i": 112,
+      "path": "выход/sync_atoms_dozhd_A/crops/f0112_b1p904.png",
+      "path_ok": true,
+      "долг_params_104": true
+    },
+    {
+      "id": "dozhd_A_2.128_125",
+      "birth": 2.128,
+      "frame_i": 125,
+      "path": "выход/sync_atoms_dozhd_A/crops/f0125_b2p128.png",
+      "path_ok": true,
+      "долг_params_104": true
+    },
+    {
+      "id": "dozhd_A_2.336_137",
+      "birth": 2.336,
+      "frame_i": 137,
+      "path": "выход/sync_atoms_dozhd_A/crops/f0137_b2p336.png",
+      "path_ok": true,
+      "долг_params_104": true
+    }
+  ],
+  "note": "звук: петля клетки; образ: наличие crops, не вход синтеза"
+}

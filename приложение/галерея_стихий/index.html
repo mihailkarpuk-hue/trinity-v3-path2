@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trinity — галерея стихий</title>
+  <link rel="stylesheet" href="../стили/палитра.css">
+  <link rel="stylesheet" href="стиль.css">
+</head>
+<body class="галерея">
+  <div class="оболочка">
+    <aside class="каталог" aria-label="Каталог стихий">
+      <header class="каталог-верх">
+        <p class="бренд">Trinity</p>
+        <h1>Стихии</h1>
+        <p class="под">Живое видео со своим звуком · чистый образ без фона</p>
+      </header>
+      <nav id="список" class="список"></nav>
+      <footer class="каталог-низ">
+        <a href="../организмы/">организмы</a>
+        · каталог.json
+      </footer>
+    </aside>
+
+    <main class="сцена" id="сцена">
+      <div class="пусто" id="пусто">Выбери стихию</div>
+      <article class="карточка" id="карточка" hidden>
+        <header class="шапка">
+          <h2 id="имя"></h2>
+          <p id="мета" class="мета"></p>
+        </header>
+
+        <div class="режим" role="tablist">
+          <button type="button" class="режим-кнопка активен" data-режим="живое" id="р-живое">Живое видео</button>
+          <button type="button" class="режим-кнопка" data-режим="чистое" id="р-чистое">Чистый образ</button>
+        </div>
+
+        <div class="медиа-ряд">
+          <div class="видео-блок">
+            <video id="видео" controls playsinline></video>
+            <p class="подпись-медиа" id="подпись-видео">живое движение</p>
+            <div class="ряд-кнопок" id="выбор-видео"></div>
+          </div>
+          <div class="фото-блок">
+            <img id="фото" alt="">
+            <p class="подпись-медиа" id="подпись-фото">кадр / фото</p>
+            <div class="ряд-кнопок" id="выбор-фото"></div>
+          </div>
+        </div>
+
+        <div class="действия">
+          <button type="button" class="кнопка" id="кн-играть">▶ Смотреть со звуком</button>
+          <button type="button" class="кнопка тихий" id="кн-стоп">Стоп</button>
+          <span id="статус-звука" class="статус"></span>
+        </div>
+        <p class="пояснение">
+          ▶ для роликов <code>video_live_*</code> — звук из самого видео (не вшиваем эталон).
+          Огонь пока на эталоне корпуса. «Чистый образ» — стихия без фона из живого ролика.
+        </p>
+      </article>
+    </main>
+  </div>
+  <script type="module" src="логика.js"></script>
+</body>
+</html>

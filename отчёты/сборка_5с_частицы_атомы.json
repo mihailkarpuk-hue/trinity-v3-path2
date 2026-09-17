@@ -1,0 +1,571 @@
+{
+  "дата": "2026-07-23",
+  "окно": {
+    "t0": 0.0,
+    "dur": 5.0,
+    "video": "video_live_01.mp4"
+  },
+  "n_particles": 54,
+  "synthetic_event_times": false,
+  "size_med": 0.1133,
+  "клетка_вклад_сек": 2.4,
+  "n_atoms_клетки_в_окне": 7350,
+  "band_corr_native_vs_mix": 0.7804,
+  "files": {
+    "native": "выход/сборка_5с_частицы/native_5s.wav",
+    "mix": "выход/сборка_5с_частицы/сборка_из_частиц_атомов.wav"
+  },
+  "particles": [
+    {
+      "id": "drop_000",
+      "t_sec_clip": 1.6683,
+      "t_in_window": 1.6683,
+      "r_mm": 1.28,
+      "v_ms": 7.923,
+      "atom_ref_birth": 1.664,
+      "atom_size": 0.145,
+      "atom_amp": 0.2249,
+      "atom_freq": 366.06,
+      "from": "detector"
+    },
+    {
+      "id": "drop_001",
+      "t_sec_clip": 2.3023,
+      "t_in_window": 2.3023,
+      "r_mm": 1.736,
+      "v_ms": 9.5,
+      "atom_ref_birth": 2.304,
+      "atom_size": 0.1967,
+      "atom_amp": 0.4834,
+      "atom_freq": 21.53,
+      "from": "detector"
+    },
+    {
+      "id": "drop_002",
+      "t_sec_clip": 3.0364,
+      "t_in_window": 3.0364,
+      "r_mm": 1.278,
+      "v_ms": 7.915,
+      "atom_ref_birth": 0.64,
+      "atom_size": 0.1448,
+      "atom_amp": 0.2239,
+      "atom_freq": 947.46,
+      "from": "detector"
+    },
+    {
+      "id": "drop_003",
+      "t_sec_clip": 3.8038,
+      "t_in_window": 3.8038,
+      "r_mm": 1.41,
+      "v_ms": 8.467,
+      "atom_ref_birth": 1.408,
+      "atom_size": 0.1598,
+      "atom_amp": 0.2992,
+      "atom_freq": 21.53,
+      "from": "detector"
+    },
+    {
+      "id": "drop_004",
+      "t_sec_clip": 4.0374,
+      "t_in_window": 4.0374,
+      "r_mm": 1.374,
+      "v_ms": 8.317,
+      "atom_ref_birth": 1.632,
+      "atom_size": 0.1557,
+      "atom_amp": 0.2787,
+      "atom_freq": 581.4,
+      "from": "detector"
+    },
+    {
+      "id": "atom_birth_0.0",
+      "t_sec_clip": 0.0,
+      "t_in_window": 0.0,
+      "r_mm": 1.892,
+      "atom_ref_birth": 0.0,
+      "from": "cell_birth",
+      "atom_size": 0.2144,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_0.048",
+      "t_sec_clip": 0.048,
+      "t_in_window": 0.048,
+      "r_mm": 1.606,
+      "atom_ref_birth": 0.048,
+      "from": "cell_birth",
+      "atom_size": 0.182,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_0.096",
+      "t_sec_clip": 0.096,
+      "t_in_window": 0.096,
+      "r_mm": 1.749,
+      "atom_ref_birth": 0.096,
+      "from": "cell_birth",
+      "atom_size": 0.1982,
+      "atom_freq": 516.8
+    },
+    {
+      "id": "atom_birth_0.144",
+      "t_sec_clip": 0.144,
+      "t_in_window": 0.144,
+      "r_mm": 1.432,
+      "atom_ref_birth": 0.144,
+      "from": "cell_birth",
+      "atom_size": 0.1623,
+      "atom_freq": 624.46
+    },
+    {
+      "id": "atom_birth_0.192",
+      "t_sec_clip": 0.192,
+      "t_in_window": 0.192,
+      "r_mm": 1.866,
+      "atom_ref_birth": 0.192,
+      "from": "cell_birth",
+      "atom_size": 0.2114,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_0.24",
+      "t_sec_clip": 0.24,
+      "t_in_window": 0.24,
+      "r_mm": 1.214,
+      "atom_ref_birth": 0.24,
+      "from": "cell_birth",
+      "atom_size": 0.1376,
+      "atom_freq": 1485.79
+    },
+    {
+      "id": "atom_birth_0.288",
+      "t_sec_clip": 0.288,
+      "t_in_window": 0.288,
+      "r_mm": 1.366,
+      "atom_ref_birth": 0.288,
+      "from": "cell_birth",
+      "atom_size": 0.1548,
+      "atom_freq": 602.93
+    },
+    {
+      "id": "atom_birth_0.336",
+      "t_sec_clip": 0.336,
+      "t_in_window": 0.336,
+      "r_mm": 1.668,
+      "atom_ref_birth": 0.336,
+      "from": "cell_birth",
+      "atom_size": 0.189,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_0.384",
+      "t_sec_clip": 0.384,
+      "t_in_window": 0.384,
+      "r_mm": 1.735,
+      "atom_ref_birth": 0.384,
+      "from": "cell_birth",
+      "atom_size": 0.1966,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_0.432",
+      "t_sec_clip": 0.432,
+      "t_in_window": 0.432,
+      "r_mm": 1.606,
+      "atom_ref_birth": 0.432,
+      "from": "cell_birth",
+      "atom_size": 0.182,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_0.48",
+      "t_sec_clip": 0.48,
+      "t_in_window": 0.48,
+      "r_mm": 1.928,
+      "atom_ref_birth": 0.48,
+      "from": "cell_birth",
+      "atom_size": 0.2184,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_0.528",
+      "t_sec_clip": 0.528,
+      "t_in_window": 0.528,
+      "r_mm": 1.574,
+      "atom_ref_birth": 0.528,
+      "from": "cell_birth",
+      "atom_size": 0.1783,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_0.576",
+      "t_sec_clip": 0.576,
+      "t_in_window": 0.576,
+      "r_mm": 1.267,
+      "atom_ref_birth": 0.576,
+      "from": "cell_birth",
+      "atom_size": 0.1435,
+      "atom_freq": 581.4
+    },
+    {
+      "id": "atom_birth_0.624",
+      "t_sec_clip": 0.624,
+      "t_in_window": 0.624,
+      "r_mm": 1.342,
+      "atom_ref_birth": 0.624,
+      "from": "cell_birth",
+      "atom_size": 0.152,
+      "atom_freq": 624.46
+    },
+    {
+      "id": "atom_birth_0.672",
+      "t_sec_clip": 0.672,
+      "t_in_window": 0.672,
+      "r_mm": 1.304,
+      "atom_ref_birth": 0.672,
+      "from": "cell_birth",
+      "atom_size": 0.1477,
+      "atom_freq": 538.33
+    },
+    {
+      "id": "atom_birth_0.72",
+      "t_sec_clip": 0.72,
+      "t_in_window": 0.72,
+      "r_mm": 1.221,
+      "atom_ref_birth": 0.72,
+      "from": "cell_birth",
+      "atom_size": 0.1383,
+      "atom_freq": 366.06
+    },
+    {
+      "id": "atom_birth_0.768",
+      "t_sec_clip": 0.768,
+      "t_in_window": 0.768,
+      "r_mm": 2.407,
+      "atom_ref_birth": 0.768,
+      "from": "cell_birth",
+      "atom_size": 0.2727,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_0.816",
+      "t_sec_clip": 0.816,
+      "t_in_window": 0.816,
+      "r_mm": 1.209,
+      "atom_ref_birth": 0.816,
+      "from": "cell_birth",
+      "atom_size": 0.137,
+      "atom_freq": 387.6
+    },
+    {
+      "id": "atom_birth_0.864",
+      "t_sec_clip": 0.864,
+      "t_in_window": 0.864,
+      "r_mm": 1.687,
+      "atom_ref_birth": 0.864,
+      "from": "cell_birth",
+      "atom_size": 0.1911,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_0.912",
+      "t_sec_clip": 0.912,
+      "t_in_window": 0.912,
+      "r_mm": 1.613,
+      "atom_ref_birth": 0.912,
+      "from": "cell_birth",
+      "atom_size": 0.1828,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_0.96",
+      "t_sec_clip": 0.96,
+      "t_in_window": 0.96,
+      "r_mm": 1.411,
+      "atom_ref_birth": 0.96,
+      "from": "cell_birth",
+      "atom_size": 0.1599,
+      "atom_freq": 581.4
+    },
+    {
+      "id": "atom_birth_1.008",
+      "t_sec_clip": 1.008,
+      "t_in_window": 1.008,
+      "r_mm": 1.232,
+      "atom_ref_birth": 1.008,
+      "from": "cell_birth",
+      "atom_size": 0.1396,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_1.056",
+      "t_sec_clip": 1.056,
+      "t_in_window": 1.056,
+      "r_mm": 1.223,
+      "atom_ref_birth": 1.056,
+      "from": "cell_birth",
+      "atom_size": 0.1386,
+      "atom_freq": 1313.53
+    },
+    {
+      "id": "atom_birth_1.104",
+      "t_sec_clip": 1.104,
+      "t_in_window": 1.104,
+      "r_mm": 1.331,
+      "atom_ref_birth": 1.104,
+      "from": "cell_birth",
+      "atom_size": 0.1508,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_1.152",
+      "t_sec_clip": 1.152,
+      "t_in_window": 1.152,
+      "r_mm": 1.263,
+      "atom_ref_birth": 1.152,
+      "from": "cell_birth",
+      "atom_size": 0.1431,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_1.2",
+      "t_sec_clip": 1.2,
+      "t_in_window": 1.2,
+      "r_mm": 1.425,
+      "atom_ref_birth": 1.2,
+      "from": "cell_birth",
+      "atom_size": 0.1614,
+      "atom_freq": 581.4
+    },
+    {
+      "id": "atom_birth_1.248",
+      "t_sec_clip": 1.248,
+      "t_in_window": 1.248,
+      "r_mm": 1.207,
+      "atom_ref_birth": 1.248,
+      "from": "cell_birth",
+      "atom_size": 0.1367,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_1.296",
+      "t_sec_clip": 1.296,
+      "t_in_window": 1.296,
+      "r_mm": 1.597,
+      "atom_ref_birth": 1.296,
+      "from": "cell_birth",
+      "atom_size": 0.1809,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_1.344",
+      "t_sec_clip": 1.344,
+      "t_in_window": 1.344,
+      "r_mm": 1.859,
+      "atom_ref_birth": 1.344,
+      "from": "cell_birth",
+      "atom_size": 0.2106,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_1.392",
+      "t_sec_clip": 1.392,
+      "t_in_window": 1.392,
+      "r_mm": 1.368,
+      "atom_ref_birth": 1.392,
+      "from": "cell_birth",
+      "atom_size": 0.155,
+      "atom_freq": 624.46
+    },
+    {
+      "id": "atom_birth_1.44",
+      "t_sec_clip": 1.44,
+      "t_in_window": 1.44,
+      "r_mm": 1.827,
+      "atom_ref_birth": 1.44,
+      "from": "cell_birth",
+      "atom_size": 0.207,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_1.488",
+      "t_sec_clip": 1.488,
+      "t_in_window": 1.488,
+      "r_mm": 1.607,
+      "atom_ref_birth": 1.488,
+      "from": "cell_birth",
+      "atom_size": 0.1821,
+      "atom_freq": 43.07
+    },
+    {
+      "id": "atom_birth_1.536",
+      "t_sec_clip": 1.536,
+      "t_in_window": 1.536,
+      "r_mm": 1.842,
+      "atom_ref_birth": 1.536,
+      "from": "cell_birth",
+      "atom_size": 0.2087,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_1.584",
+      "t_sec_clip": 1.584,
+      "t_in_window": 1.584,
+      "r_mm": 1.341,
+      "atom_ref_birth": 1.584,
+      "from": "cell_birth",
+      "atom_size": 0.1519,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_1.632",
+      "t_sec_clip": 1.632,
+      "t_in_window": 1.632,
+      "r_mm": 1.374,
+      "atom_ref_birth": 1.632,
+      "from": "cell_birth",
+      "atom_size": 0.1557,
+      "atom_freq": 581.4
+    },
+    {
+      "id": "atom_birth_1.68",
+      "t_sec_clip": 1.68,
+      "t_in_window": 1.68,
+      "r_mm": 1.244,
+      "atom_ref_birth": 1.68,
+      "from": "cell_birth",
+      "atom_size": 0.1409,
+      "atom_freq": 43.07
+    },
+    {
+      "id": "atom_birth_1.728",
+      "t_sec_clip": 1.728,
+      "t_in_window": 1.728,
+      "r_mm": 1.425,
+      "atom_ref_birth": 1.728,
+      "from": "cell_birth",
+      "atom_size": 0.1614,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_1.776",
+      "t_sec_clip": 1.776,
+      "t_in_window": 1.776,
+      "r_mm": 1.322,
+      "atom_ref_birth": 1.776,
+      "from": "cell_birth",
+      "atom_size": 0.1498,
+      "atom_freq": 366.06
+    },
+    {
+      "id": "atom_birth_1.824",
+      "t_sec_clip": 1.824,
+      "t_in_window": 1.824,
+      "r_mm": 1.422,
+      "atom_ref_birth": 1.824,
+      "from": "cell_birth",
+      "atom_size": 0.1611,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_1.872",
+      "t_sec_clip": 1.872,
+      "t_in_window": 1.872,
+      "r_mm": 2.214,
+      "atom_ref_birth": 1.872,
+      "from": "cell_birth",
+      "atom_size": 0.2508,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_1.92",
+      "t_sec_clip": 1.92,
+      "t_in_window": 1.92,
+      "r_mm": 1.181,
+      "atom_ref_birth": 1.92,
+      "from": "cell_birth",
+      "atom_size": 0.1338,
+      "atom_freq": 624.46
+    },
+    {
+      "id": "atom_birth_1.968",
+      "t_sec_clip": 1.968,
+      "t_in_window": 1.968,
+      "r_mm": 1.864,
+      "atom_ref_birth": 1.968,
+      "from": "cell_birth",
+      "atom_size": 0.2112,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_2.016",
+      "t_sec_clip": 2.016,
+      "t_in_window": 2.016,
+      "r_mm": 1.354,
+      "atom_ref_birth": 2.016,
+      "from": "cell_birth",
+      "atom_size": 0.1534,
+      "atom_freq": 559.86
+    },
+    {
+      "id": "atom_birth_2.064",
+      "t_sec_clip": 2.064,
+      "t_in_window": 2.064,
+      "r_mm": 1.605,
+      "atom_ref_birth": 2.064,
+      "from": "cell_birth",
+      "atom_size": 0.1818,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_2.112",
+      "t_sec_clip": 2.112,
+      "t_in_window": 2.112,
+      "r_mm": 2.367,
+      "atom_ref_birth": 2.112,
+      "from": "cell_birth",
+      "atom_size": 0.2682,
+      "atom_freq": 43.07
+    },
+    {
+      "id": "atom_birth_2.16",
+      "t_sec_clip": 2.16,
+      "t_in_window": 2.16,
+      "r_mm": 2.168,
+      "atom_ref_birth": 2.16,
+      "from": "cell_birth",
+      "atom_size": 0.2456,
+      "atom_freq": 43.07
+    },
+    {
+      "id": "atom_birth_2.208",
+      "t_sec_clip": 2.208,
+      "t_in_window": 2.208,
+      "r_mm": 2.087,
+      "atom_ref_birth": 2.208,
+      "from": "cell_birth",
+      "atom_size": 0.2365,
+      "atom_freq": 21.53
+    },
+    {
+      "id": "atom_birth_2.256",
+      "t_sec_clip": 2.256,
+      "t_in_window": 2.256,
+      "r_mm": 1.231,
+      "atom_ref_birth": 2.256,
+      "from": "cell_birth",
+      "atom_size": 0.1395,
+      "atom_freq": 646.0
+    },
+    {
+      "id": "atom_birth_2.304",
+      "t_sec_clip": 2.304,
+      "t_in_window": 2.304,
+      "r_mm": 1.736,
+      "atom_ref_birth": 2.304,
+      "from": "cell_birth",
+      "atom_size": 0.1967,
+      "atom_freq": 21.53
+    }
+  ],
+  "note": "5с native vs микс (импульсы частиц∝атомам + фактура клетки 0..2.4с)"
+}

@@ -1,0 +1,90 @@
+/* Тринити Альфа — Блок 7 «Плеер» */
+
+.плеер-корень {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    height: 100%;
+    padding: 0 18px;
+}
+
+.плеер-кнопка {
+    flex: 0 0 auto;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--текст-основной);
+    color: var(--фон-главный);
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    transition: transform 0.15s ease, background 0.2s ease;
+    padding: 0;
+}
+
+.плеер-кнопка:hover { transform: scale(1.05); }
+.плеер-кнопка:active { transform: scale(0.96); }
+
+.плеер-кнопка svg {
+    width: 14px; height: 14px;
+    vertical-align: middle;
+    fill: var(--фон-главный);
+}
+
+.плеер-полоса {
+    flex: 1;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.плеер-полоса::before {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; top: 50%;
+    height: 2px;
+    transform: translateY(-50%);
+    background: #2a2a2a;
+    border-radius: 1px;
+}
+
+.плеер-полоса-заполнение {
+    position: absolute;
+    left: 0; top: 50%;
+    height: 2px;
+    transform: translateY(-50%);
+    background: var(--текст-основной);
+    border-radius: 1px;
+    width: 0%;
+    pointer-events: none;
+}
+
+.плеер-полоса-точка {
+    position: absolute;
+    left: 0; top: 50%;
+    width: 10px; height: 10px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: var(--текст-основной);
+    pointer-events: none;
+    transition: width 0.15s ease, height 0.15s ease;
+}
+
+.плеер-полоса:hover .плеер-полоса-точка {
+    width: 12px; height: 12px;
+}
+
+.плеер-время {
+    flex: 0 0 auto;
+    color: var(--текст-вторичный);
+    font-size: 11px;
+    font-variant-numeric: tabular-nums;
+    font-family: 'Menlo', 'Courier New', monospace;
+    letter-spacing: 0.5px;
+    min-width: 92px;
+    text-align: right;
+}

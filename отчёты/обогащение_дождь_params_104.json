@@ -1,0 +1,21 @@
+{
+  "дата": "2026-08-03",
+  "n_atoms": 7350,
+  "n_keys_params_104": 108,
+  "elapsed_s": 69.8,
+  "cell_out": "выход/атомы_полные_дождь/etalon_dozhd_with_104.json",
+  "pkg_updated": true,
+  "эталон_исходный": "данные/клеточки/клеточки_полные/etalon_dozhd.json (не изменён)",
+  "sample_axes": {
+    "fd": 0.767,
+    "nestedness": 0.83,
+    "mod_rate": 7.8
+  },
+  "agg_axes": {
+    "fd": 0.772218,
+    "nestedness": 0.595973,
+    "mod_depth": 0.783871,
+    "mod_rate": 13.759864,
+    "selfsim_r2": 0.988238
+  }
+}

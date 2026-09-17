@@ -1,0 +1,503 @@
+{
+  "дата": "2026-08-10",
+  "правило": "спека = пересечение пакетов",
+  "n_пакетов": 6,
+  "пакеты": [
+    {
+      "name": "дождь_live",
+      "n_atoms": 40,
+      "E": "PASS",
+      "событие": "drop_impact",
+      "закон": "particle_scale_impulse",
+      "материя": "drop_streak_impact_crown",
+      "alignment_норма": "single_live_clip",
+      "alignment_факт": "single_live_clip",
+      "atom_keys": [
+        "alignment",
+        "birth",
+        "id",
+        "t0_geometry_offset",
+        "t_sec_причина",
+        "video_причина",
+        "звук_ядро",
+        "кресты",
+        "образ_причины",
+        "обратимость",
+        "стихия"
+      ],
+      "oc_keys": [
+        "геометрия",
+        "закон",
+        "метод_сборки",
+        "не_есть",
+        "полёт",
+        "рендер",
+        "событие",
+        "удар",
+        "фаза"
+      ],
+      "zak_keys": [
+        "energy_rel",
+        "lean_px",
+        "r_mm",
+        "size_atom",
+        "size_med",
+        "v_ms",
+        "x_norm",
+        "модель",
+        "формула"
+      ],
+      "ren_keys": [
+        "запрещено",
+        "запрещено_материя",
+        "материя",
+        "тип"
+      ],
+      "yadro_keys": [
+        "amp",
+        "freq",
+        "harmonicity",
+        "lifetime",
+        "size",
+        "фаза"
+      ],
+      "has_params_104_sample": true,
+      "params_104_share_first200": 1.0,
+      "has_кресты": true,
+      "has_материя": true,
+      "has_геометрия": true,
+      "note": null
+    },
+    {
+      "name": "огонь",
+      "n_atoms": 7945,
+      "E": "PASS",
+      "событие": "combustion_crackle",
+      "закон": "buoyancy_rise_crackle",
+      "материя": "flame_tongue_crackle_spark",
+      "alignment_норма": "single_live_clip",
+      "alignment_факт": "single_live_clip",
+      "atom_keys": [
+        "alignment",
+        "birth",
+        "id",
+        "t0_geometry_offset",
+        "t_sec_причина",
+        "video_причина",
+        "звук_ядро",
+        "кресты",
+        "метод_сборки",
+        "образ_причины",
+        "обратимость",
+        "стихия"
+      ],
+      "oc_keys": [
+        "геометрия",
+        "закон",
+        "метод_сборки",
+        "не_есть",
+        "пламя",
+        "рендер",
+        "событие",
+        "треск",
+        "фаза"
+      ],
+      "zak_keys": [
+        "approx",
+        "energy_rel",
+        "size_atom",
+        "size_med",
+        "v_up",
+        "модель",
+        "формула"
+      ],
+      "ren_keys": [
+        "версия",
+        "запрещено",
+        "запрещено_материя",
+        "материя",
+        "параметры_из_атома",
+        "скрипт",
+        "слои",
+        "тип",
+        "цвет_канон"
+      ],
+      "yadro_keys": [
+        "amp",
+        "birth",
+        "color_b",
+        "color_g",
+        "color_r",
+        "freq",
+        "harmonic_index",
+        "harmonicity",
+        "lifetime",
+        "phase",
+        "pos_x",
+        "pos_y",
+        "pos_z",
+        "size"
+      ],
+      "has_params_104_sample": true,
+      "params_104_share_first200": 1.0,
+      "has_кресты": false,
+      "has_материя": true,
+      "has_геометрия": true,
+      "note": null
+    },
+    {
+      "name": "ветер",
+      "n_atoms": 19,
+      "E": "PASS",
+      "событие": "wind_stream_rustle",
+      "закон": "horizontal_flow_sway",
+      "материя": "broken_fiber_fleck",
+      "alignment_норма": "single_live_clip",
+      "alignment_факт": "single_live_clip",
+      "atom_keys": [
+        "alignment",
+        "birth",
+        "id",
+        "t0_geometry_offset",
+        "t_sec_причина",
+        "video_причина",
+        "звук_ядро",
+        "кресты",
+        "образ_причины",
+        "обратимость",
+        "стихия"
+      ],
+      "oc_keys": [
+        "геометрия",
+        "закон",
+        "метод_сборки",
+        "не_есть",
+        "поток",
+        "рендер",
+        "событие",
+        "фаза",
+        "шелест"
+      ],
+      "zak_keys": [
+        "energy_rel",
+        "sign_x",
+        "size_atom",
+        "size_med",
+        "v_x",
+        "y_norm",
+        "модель",
+        "формула"
+      ],
+      "ren_keys": [
+        "запрещено",
+        "запрещено_материя",
+        "материя",
+        "тип"
+      ],
+      "yadro_keys": [
+        "amp",
+        "birth",
+        "freq",
+        "harmonic_index",
+        "harmonicity",
+        "lifetime",
+        "phase",
+        "size"
+      ],
+      "has_params_104_sample": true,
+      "params_104_share_first200": 1.0,
+      "has_кресты": false,
+      "has_материя": true,
+      "has_геометрия": true,
+      "note": null
+    },
+    {
+      "name": "водопад",
+      "n_atoms": 19,
+      "E": "PASS",
+      "событие": "waterfall_fall_spray",
+      "закон": "gravity_fall_spray",
+      "материя": "vertical_ribbon_hard_spray",
+      "alignment_норма": "single_live_clip",
+      "alignment_факт": "single_live_clip",
+      "atom_keys": [
+        "alignment",
+        "birth",
+        "id",
+        "t0_geometry_offset",
+        "t_sec_причина",
+        "video_причина",
+        "звук_ядро",
+        "кресты",
+        "образ_причины",
+        "обратимость",
+        "стихия"
+      ],
+      "oc_keys": [
+        "геометрия",
+        "закон",
+        "каскад",
+        "метод_сборки",
+        "не_есть",
+        "падение",
+        "рендер",
+        "событие",
+        "фаза"
+      ],
+      "zak_keys": [
+        "energy_rel",
+        "size_atom",
+        "size_med",
+        "spray",
+        "v_y",
+        "x_norm",
+        "модель",
+        "формула"
+      ],
+      "ren_keys": [
+        "запрещено",
+        "запрещено_материя",
+        "материя",
+        "тип"
+      ],
+      "yadro_keys": [
+        "amp",
+        "freq",
+        "harmonicity",
+        "lifetime",
+        "size",
+        "фаза"
+      ],
+      "has_params_104_sample": true,
+      "params_104_share_first200": 1.0,
+      "has_кресты": true,
+      "has_материя": true,
+      "has_геометрия": true,
+      "note": null
+    },
+    {
+      "name": "река",
+      "n_atoms": 51,
+      "E": "PASS",
+      "событие": "river_channel_flow",
+      "закон": "channel_flow_current",
+      "материя": "current_filaments_foam",
+      "alignment_норма": "single_live_clip",
+      "alignment_факт": "single_live_clip",
+      "atom_keys": [
+        "alignment",
+        "birth",
+        "id",
+        "t0_geometry_offset",
+        "t_sec_причина",
+        "video_причина",
+        "звук_ядро",
+        "кресты",
+        "образ_причины",
+        "обратимость",
+        "стихия"
+      ],
+      "oc_keys": [
+        "геометрия",
+        "закон",
+        "метод_сборки",
+        "не_есть",
+        "рендер",
+        "русло",
+        "событие",
+        "течение",
+        "фаза"
+      ],
+      "zak_keys": [
+        "energy_rel",
+        "ripple",
+        "sign_x",
+        "size_atom",
+        "size_med",
+        "v_x",
+        "y_norm",
+        "модель",
+        "формула"
+      ],
+      "ren_keys": [
+        "запрещено",
+        "запрещено_материя",
+        "материя",
+        "тип"
+      ],
+      "yadro_keys": [
+        "amp",
+        "freq",
+        "harmonicity",
+        "lifetime",
+        "size",
+        "фаза"
+      ],
+      "has_params_104_sample": true,
+      "params_104_share_first200": 1.0,
+      "has_кресты": true,
+      "has_материя": true,
+      "has_геометрия": true,
+      "note": null
+    },
+    {
+      "name": "гром",
+      "n_atoms": 6380,
+      "E": "PASS (delay долг)",
+      "событие": "flash_shockwave",
+      "закон": "shockwave_delay",
+      "материя": "flash_then_shock_field",
+      "alignment_норма": "axes_decoupled_flash",
+      "alignment_факт": "axes_decoupled_flash",
+      "atom_keys": [
+        "alignment",
+        "birth",
+        "id",
+        "t_sec_причина",
+        "звук_ядро",
+        "кресты",
+        "образ_причины",
+        "обратимость",
+        "стихия"
+      ],
+      "oc_keys": [
+        "вспышка",
+        "закон",
+        "не_есть",
+        "раскат",
+        "рендер",
+        "событие",
+        "фаза"
+      ],
+      "zak_keys": [
+        "approx",
+        "delay_s",
+        "distance_km",
+        "energy_rel",
+        "note",
+        "size_atom",
+        "size_med",
+        "модель",
+        "формула"
+      ],
+      "ren_keys": [
+        "запрещено",
+        "запрещено_материя",
+        "материя",
+        "тип"
+      ],
+      "yadro_keys": [
+        "amp",
+        "birth",
+        "color_b",
+        "color_g",
+        "color_r",
+        "freq",
+        "harmonic_index",
+        "harmonicity",
+        "lifetime",
+        "phase",
+        "pos_x",
+        "pos_y",
+        "pos_z",
+        "size"
+      ],
+      "has_params_104_sample": true,
+      "params_104_share_first200": 1.0,
+      "has_кресты": false,
+      "has_материя": true,
+      "has_геометрия": false,
+      "note": "delay_s=null — постоянный долг"
+    }
+  ],
+  "пересечение": {
+    "atom": [
+      "alignment",
+      "birth",
+      "id",
+      "t_sec_причина",
+      "звук_ядро",
+      "кресты",
+      "образ_причины",
+      "обратимость",
+      "стихия"
+    ],
+    "образ_причины": [
+      "закон",
+      "не_есть",
+      "рендер",
+      "событие",
+      "фаза"
+    ],
+    "закон": [
+      "energy_rel",
+      "size_atom",
+      "size_med",
+      "модель",
+      "формула"
+    ],
+    "рендер": [
+      "запрещено",
+      "запрещено_материя",
+      "материя",
+      "тип"
+    ],
+    "ядро": [
+      "amp",
+      "freq",
+      "harmonicity",
+      "lifetime",
+      "size"
+    ]
+  },
+  "словарь_событий": [
+    {
+      "стихия": "дождь_live",
+      "событие": "drop_impact",
+      "закон": "particle_scale_impulse",
+      "материя": "drop_streak_impact_crown",
+      "E": "PASS",
+      "n": 40
+    },
+    {
+      "стихия": "огонь",
+      "событие": "combustion_crackle",
+      "закон": "buoyancy_rise_crackle",
+      "материя": "flame_tongue_crackle_spark",
+      "E": "PASS",
+      "n": 7945
+    },
+    {
+      "стихия": "ветер",
+      "событие": "wind_stream_rustle",
+      "закон": "horizontal_flow_sway",
+      "материя": "broken_fiber_fleck",
+      "E": "PASS",
+      "n": 19
+    },
+    {
+      "стихия": "водопад",
+      "событие": "waterfall_fall_spray",
+      "закон": "gravity_fall_spray",
+      "материя": "vertical_ribbon_hard_spray",
+      "E": "PASS",
+      "n": 19
+    },
+    {
+      "стихия": "река",
+      "событие": "river_channel_flow",
+      "закон": "channel_flow_current",
+      "материя": "current_filaments_foam",
+      "E": "PASS",
+      "n": 51
+    },
+    {
+      "стихия": "гром",
+      "событие": "flash_shockwave",
+      "закон": "shockwave_delay",
+      "материя": "flash_then_shock_field",
+      "E": "PASS (delay долг)",
+      "n": 6380
+    }
+  ]
+}

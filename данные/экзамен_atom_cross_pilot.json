@@ -1,0 +1,94 @@
+{
+  "пилот": [
+    {
+      "file": "живая_У_протяжное.json",
+      "version": "3.0-atom-first",
+      "params_104_per_atom": 1.0,
+      "atoms": {
+        "in": 875,
+        "out": 1062,
+        "ratio": 1.214
+      },
+      "crosses": {
+        "in": 2225,
+        "out": 3023,
+        "ratio": 1.359
+      },
+      "axes_in": {
+        "time": 874,
+        "harmonic": 477,
+        "freq": 874
+      },
+      "axes_out": {
+        "time": 1061,
+        "harmonic": 902,
+        "freq": 1060
+      },
+      "fd": {
+        "orig_audio": 0.014,
+        "synth_audio": 0.022
+      },
+      "nestedness": {
+        "orig_audio": 0.607,
+        "synth_audio": 0.383
+      },
+      "stitch_верх": {
+        "in": 0.4414,
+        "out": 0.5291
+      },
+      "stitch_низ": {
+        "in": 0.0782,
+        "out": 0.1576
+      },
+      "coverage_harmonic": {
+        "in": 33.8,
+        "out": 52.7
+      }
+    },
+    {
+      "file": "etalon_dozhd.json",
+      "version": "3.0-atom-first",
+      "params_104_per_atom": 0.0,
+      "atoms": {
+        "in": 7350,
+        "out": 6550,
+        "ratio": 0.891
+      },
+      "crosses": {
+        "in": 19825,
+        "out": 20790,
+        "ratio": 1.049
+      },
+      "axes_in": {
+        "time": 7349,
+        "harmonic": 5127,
+        "freq": 7349
+      },
+      "axes_out": {
+        "time": 6549,
+        "harmonic": 7692,
+        "freq": 6549
+      },
+      "fd": {
+        "orig_audio": 0.631,
+        "synth_audio": 0.443
+      },
+      "nestedness": {
+        "orig_audio": 0.724,
+        "synth_audio": 0.229
+      },
+      "stitch_верх": {
+        "in": 0.0,
+        "out": 0.2065
+      },
+      "stitch_низ": {
+        "in": 0.0,
+        "out": 0.7828
+      },
+      "coverage_harmonic": {
+        "in": 51.7,
+        "out": 86.7
+      }
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "эталон_оси": {
+    "fd": 0.714,
+    "selfsim_r2": 0.987,
+    "nestedness": 0.177,
+    "mod_depth": 0.212,
+    "mod_rate": 10.8
+  },
+  "сравнения": [
+    {
+      "name": "эталон",
+      "band_corr": 1.0,
+      "stft_corr": 1.0,
+      "оси": {
+        "fd": 0.714,
+        "selfsim_r2": 0.987,
+        "nestedness": 0.177,
+        "mod_depth": 0.212,
+        "mod_rate": 10.8
+      },
+      "delta_vs_эталон": {
+        "fd": 0.0,
+        "selfsim_r2": 0.0,
+        "nestedness": 0.0,
+        "mod_depth": 0.0,
+        "mod_rate": 0.0
+      }
+    },
+    {
+      "name": "сборка_атом_живой",
+      "band_corr": 0.9171,
+      "stft_corr": 0.5828,
+      "оси": {
+        "fd": 0.73,
+        "selfsim_r2": 0.988,
+        "nestedness": 0.315,
+        "mod_depth": 0.252,
+        "mod_rate": 21.5
+      },
+      "delta_vs_эталон": {
+        "fd": 0.016,
+        "selfsim_r2": 0.001,
+        "nestedness": 0.138,
+        "mod_depth": 0.04,
+        "mod_rate": 10.7
+      }
+    },
+    {
+      "name": "удары_только",
+      "band_corr": 0.5025,
+      "stft_corr": 0.4203,
+      "оси": {
+        "fd": 0.789,
+        "selfsim_r2": 0.991,
+        "nestedness": 0.661,
+        "mod_depth": 1.199,
+        "mod_rate": 10.8
+      },
+      "delta_vs_эталон": {
+        "fd": 0.075,
+        "selfsim_r2": 0.004,
+        "nestedness": 0.484,
+        "mod_depth": 0.987,
+        "mod_rate": 0.0
+      }
+    },
+    {
+      "name": "bed_только",
+      "band_corr": 0.9262,
+      "stft_corr": 0.5925,
+      "оси": {
+        "fd": 0.717,
+        "selfsim_r2": 0.987,
+        "nestedness": 0.346,
+        "mod_depth": 0.223,
+        "mod_rate": 29.6
+      },
+      "delta_vs_эталон": {
+        "fd": 0.003,
+        "selfsim_r2": 0.0,
+        "nestedness": 0.169,
+        "mod_depth": 0.011,
+        "mod_rate": 18.8
+      }
+    },
+    {
+      "name": "серия_средний",
+      "band_corr": 0.4633,
+      "stft_corr": 0.0353,
+      "оси": {
+        "fd": 0.915,
+        "selfsim_r2": 0.999,
+        "nestedness": 0.836,
+        "mod_depth": 3.067,
+        "mod_rate": 2.7
+      },
+      "delta_vs_эталон": {
+        "fd": 0.201,
+        "selfsim_r2": 0.012,
+        "nestedness": 0.659,
+        "mod_depth": 2.855,
+        "mod_rate": -8.1
+      }
+    },
+    {
+      "name": "клетка_synth",
+      "band_corr": 0.6838,
+      "stft_corr": 0.6747,
+      "оси": {
+        "fd": 0.673,
+        "selfsim_r2": 0.962,
+        "nestedness": 0.299,
+        "mod_depth": 0.283,
+        "mod_rate": 2.7
+      },
+      "delta_vs_эталон": {
+        "fd": -0.041,
+        "selfsim_r2": -0.025,
+        "nestedness": 0.122,
+        "mod_depth": 0.071,
+        "mod_rate": -8.1
+      }
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+/* Тринити Альфа — Блок 2 «Каркас главного экрана»
+   CSS Grid: 3 ряда (40 / 1fr / 120) × 2 столбца (260 / 1fr) */
+
+.главный-экран {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 40px 1fr 120px;
+    grid-template-areas:
+        "верх      верх"
+        "каталог   центр"
+        "низ       низ";
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--фон-главный);
+    color: var(--текст-основной);
+}
+
+/* ============= ВЕРХНЯЯ ПОЛОСА ============= */
+
+.полоса-верх {
+    grid-area: верх;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background: var(--фон-вторичный);
+    border-bottom: 1px solid #1a1a1a;
+    position: relative;
+    z-index: 10;
+}
+
+.лого {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: var(--текст-вторичный);
+}
+
+.функции-обёртка {
+    position: relative;
+}
+
+.кнопка-функции {
+    background: transparent;
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    color: var(--текст-основной);
+    font-size: 12px;
+    font-family: var(--шрифт-основной);
+    letter-spacing: 0.5px;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.кнопка-функции:hover,
+.кнопка-функции[aria-expanded="true"] {
+    border-color: var(--текст-основной);
+    background: #1a1a1a;
+}
+
+.кнопка-функции .стрелка {
+    margin-left: 4px;
+    font-size: 10px;
+    color: var(--текст-вторичный);
+}
+
+.панель-функций {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    min-width: 240px;
+    background: var(--фон-панель);
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+    z-index: 20;
+}
+
+.панель-функций li {
+    padding: 10px 16px;
+    font-size: 13px;
+    color: var(--текст-основной);
+    cursor: pointer;
+    transition: background 0.15s ease;
+    white-space: nowrap;
+}
+
+.панель-функций li:hover {
+    background: #2a2a2a;
+}
+
+/* ============= ЛЕВАЯ ПАНЕЛЬ — КАТАЛОГ ============= */
+
+.зона-каталог {
+    grid-area: каталог;
+    background: var(--фон-вторичный);
+    border-right: 1px solid #1a1a1a;
+    overflow-y: auto;
+}
+
+/* ============= ЦЕНТР — СЦЕНА/АТОМЫ/РЕШЁТКА ============= */
+
+.зона-центр {
+    grid-area: центр;
+    position: relative;
+    background: var(--фон-главный);
+    overflow: hidden;
+}
+
+.переключатель-проекций {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 4px;
+    z-index: 5;
+    background: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(6px);
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.прж {
+    background: transparent;
+    color: var(--текст-основной);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: var(--шрифт-основной);
+    letter-spacing: 0.8px;
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.прж:hover {
+    border-color: #3a3a3a;
+}
+
+.прж.активна {
+    background: var(--текст-основной);
+    color: var(--фон-главный);
+    border-color: var(--текст-основной);
+}
+
+/* === ПЕРЕКЛЮЧАТЕЛЬ КООРДИНАТ (виден на проекциях Атомы/Решётка) === */
+
+.переключатель-координат {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 5;
+    background: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(6px);
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    padding: 3px 8px 3px 12px;
+}
+
+.координаты-метка {
+    color: var(--текст-тусклый);
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.кх, .цв {
+    background: transparent;
+    color: var(--текст-вторичный);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 11px;
+    font-family: var(--шрифт-основной);
+    letter-spacing: 0.6px;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.кх:hover, .цв:hover { color: var(--текст-основной); border-color: #3a3a3a; }
+
+.кх.активна, .цв.активна {
+    background: var(--текст-основной);
+    color: var(--фон-главный);
+    border-color: var(--текст-основной);
+}
+
+/* ============= НИЗ — ПЛЕЕР + ПАСПОРТ ============= */
+
+.зона-низ {
+    grid-area: низ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px;
+    background: var(--фон-вторичный);
+    border-top: 1px solid #1a1a1a;
+    gap: 8px;
+}
+
+.зона-плеер {
+    width: min(640px, 90%);
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--фон-панель);
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+}
+
+.паспорт {
+    color: var(--текст-тусклый);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+/* ============= ЗАГЛУШКИ ============= */
+
+.заглушка {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--текст-тусклый);
+    text-align: center;
+    user-select: none;
+}
+
+.заглушка-имя {
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    color: var(--текст-вторичный);
+}
+
+.заглушка-под {
+    font-size: 11px;
+    margin-top: 6px;
+    color: var(--текст-тусклый);
+}
+
+.центр-заглушка .заглушка-имя { font-size: 16px; }
+
+.плеер-заглушка .заглушка-имя {
+    font-family: 'Menlo', 'Courier New', monospace;
+    letter-spacing: 0;
+    color: var(--текст-вторичный);
+}
+
+/* ============= МИНИМУМ ============= */
+/* На <1280×800 — допускается горизонтальный скролл (по спеке) */
+@media (max-width: 1279px), (max-height: 799px) {
+    .главный-экран {
+        min-width: 1280px;
+        min-height: 800px;
+    }
+}

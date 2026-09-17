@@ -1,0 +1,1453 @@
+{
+  "дата": "2026-08-10",
+  "метод": "between-style var / within-style var; eta=between/(between+within)",
+  "пороги": {
+    "law_ratio": 2.0,
+    "instance_ratio": 0.5,
+    "law_eta": 0.45,
+    "instance_eta": 0.2
+  },
+  "запрет": "не вердикт уха; delay_s исключён",
+  "styles": [
+    "дождь_live",
+    "огонь",
+    "ветер",
+    "водопад",
+    "река",
+    "гром"
+  ],
+  "n_per_style": {
+    "дождь_live": 40,
+    "огонь": 400,
+    "ветер": 19,
+    "водопад": 19,
+    "река": 51,
+    "гром": 400
+  },
+  "n_features": 108,
+  "counts": {
+    "law": 24,
+    "mixed": 33,
+    "instance": 51
+  },
+  "features": [
+    {
+      "key": "amplitude_modulation_smoothness",
+      "within": 0.002046,
+      "between": 0.169242,
+      "ratio": 82.719,
+      "eta": 0.9881,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "movement_flow",
+      "within": 0.002046,
+      "between": 0.169242,
+      "ratio": 82.719,
+      "eta": 0.9881,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "noise_floor",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 24.9136,
+      "eta": 0.9614,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "movement_mist",
+      "within": 0.002226,
+      "between": 0.05264,
+      "ratio": 23.6522,
+      "eta": 0.9594,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "spectral_flatness",
+      "within": 0.002226,
+      "between": 0.05264,
+      "ratio": 23.6522,
+      "eta": 0.9594,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "sustain_level",
+      "within": 0.006711,
+      "between": 0.139275,
+      "ratio": 20.754,
+      "eta": 0.954,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "amplitude_avg",
+      "within": 0.000266,
+      "between": 0.002909,
+      "ratio": 10.9216,
+      "eta": 0.9161,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "spectral_spread",
+      "within": 79749.470368,
+      "between": 716627.865796,
+      "ratio": 8.986,
+      "eta": 0.8999,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "amplitude_rms",
+      "within": 0.000674,
+      "between": 0.003458,
+      "ratio": 5.1326,
+      "eta": 0.8369,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "nestedness",
+      "within": 0.022359,
+      "between": 0.107932,
+      "ratio": 4.8272,
+      "eta": 0.8284,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "onset_density",
+      "within": 0.00046,
+      "between": 0.002098,
+      "ratio": 4.5579,
+      "eta": 0.8201,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "loudness_lufs",
+      "within": 3.799287,
+      "between": 16.613652,
+      "ratio": 4.3728,
+      "eta": 0.8139,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "amplitude_peak",
+      "within": 0.015468,
+      "between": 0.065354,
+      "ratio": 4.2251,
+      "eta": 0.8086,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "spectral_flux",
+      "within": 0.004664,
+      "between": 0.0169,
+      "ratio": 3.6235,
+      "eta": 0.7837,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_12",
+      "within": 0.921839,
+      "between": 2.882211,
+      "ratio": 3.1266,
+      "eta": 0.7577,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_10",
+      "within": 1.727984,
+      "between": 5.282285,
+      "ratio": 3.0569,
+      "eta": 0.7535,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_6",
+      "within": 0.061185,
+      "between": 0.18142,
+      "ratio": 2.9651,
+      "eta": 0.7478,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_0",
+      "within": 1666.403424,
+      "between": 4845.001092,
+      "ratio": 2.9075,
+      "eta": 0.7441,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_11",
+      "within": 0.057277,
+      "between": 0.162877,
+      "ratio": 2.8437,
+      "eta": 0.7398,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "tonality",
+      "within": 0.012824,
+      "between": 0.032039,
+      "ratio": 2.4984,
+      "eta": 0.7142,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_4",
+      "within": 0.085284,
+      "between": 0.194834,
+      "ratio": 2.2845,
+      "eta": 0.6955,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "selfsim_r2",
+      "within": 0.003031,
+      "between": 0.006646,
+      "ratio": 2.1923,
+      "eta": 0.6867,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "roughness",
+      "within": 0.013339,
+      "between": 0.029228,
+      "ratio": 2.1912,
+      "eta": 0.6866,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "perceptual_density",
+      "within": 0.000358,
+      "between": 0.000726,
+      "ratio": 2.026,
+      "eta": 0.6695,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_9",
+      "within": 0.046639,
+      "between": 0.084891,
+      "ratio": 1.8202,
+      "eta": 0.6454,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_8",
+      "within": 0.038577,
+      "between": 0.066575,
+      "ratio": 1.7258,
+      "eta": 0.6331,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_5",
+      "within": 0.130042,
+      "between": 0.210587,
+      "ratio": 1.6194,
+      "eta": 0.6182,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_12",
+      "within": 0.078174,
+      "between": 0.126335,
+      "ratio": 1.6161,
+      "eta": 0.6177,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "perceptual_tension",
+      "within": 0.02371,
+      "between": 0.038208,
+      "ratio": 1.6114,
+      "eta": 0.6171,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mod_depth",
+      "within": 0.046156,
+      "between": 0.07366,
+      "ratio": 1.5959,
+      "eta": 0.6148,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "dynamic_range",
+      "within": 0.001898,
+      "between": 0.002983,
+      "ratio": 1.5715,
+      "eta": 0.6111,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "perceptual_brightness",
+      "within": 0.051539,
+      "between": 0.07458,
+      "ratio": 1.4471,
+      "eta": 0.5913,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "perceptual_sharpness",
+      "within": 0.051539,
+      "between": 0.07458,
+      "ratio": 1.4471,
+      "eta": 0.5913,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "perceptual_softness",
+      "within": 0.051539,
+      "between": 0.07458,
+      "ratio": 1.4471,
+      "eta": 0.5913,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "spectral_rolloff_85",
+      "within": 2308868.773577,
+      "between": 3311306.46764,
+      "ratio": 1.4342,
+      "eta": 0.5892,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "attack_time",
+      "within": 0.005278,
+      "between": 0.007526,
+      "ratio": 1.4261,
+      "eta": 0.5878,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "onset_strength",
+      "within": 0.000469,
+      "between": 0.000599,
+      "ratio": 1.2766,
+      "eta": 0.5608,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_9",
+      "within": 2.430091,
+      "between": 2.877667,
+      "ratio": 1.1842,
+      "eta": 0.5422,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_11",
+      "within": 1.408317,
+      "between": 1.664861,
+      "ratio": 1.1822,
+      "eta": 0.5417,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mod_rate",
+      "within": 65.709765,
+      "between": 76.500656,
+      "ratio": 1.1642,
+      "eta": 0.5379,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_10",
+      "within": 0.080166,
+      "between": 0.089978,
+      "ratio": 1.1224,
+      "eta": 0.5288,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "direct_to_reverb_ratio",
+      "within": 4.8e-05,
+      "between": 5.1e-05,
+      "ratio": 1.058,
+      "eta": 0.5141,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_3",
+      "within": 0.380684,
+      "between": 0.386622,
+      "ratio": 1.0156,
+      "eta": 0.5039,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_2",
+      "within": 0.305916,
+      "between": 0.307729,
+      "ratio": 1.0059,
+      "eta": 0.5015,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_8",
+      "within": 4.086229,
+      "between": 4.07425,
+      "ratio": 0.9971,
+      "eta": 0.4993,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_6",
+      "within": 14.012396,
+      "between": 12.658991,
+      "ratio": 0.9034,
+      "eta": 0.4746,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_0",
+      "within": 1.52098,
+      "between": 1.159595,
+      "ratio": 0.7624,
+      "eta": 0.4326,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_7",
+      "within": 0.487261,
+      "between": 0.369896,
+      "ratio": 0.7591,
+      "eta": 0.4315,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "inharmonicity",
+      "within": 0.090075,
+      "between": 0.063227,
+      "ratio": 0.7019,
+      "eta": 0.4124,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "movement_fracture",
+      "within": 0.090075,
+      "between": 0.063227,
+      "ratio": 0.7019,
+      "eta": 0.4124,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_D",
+      "within": 0.002253,
+      "between": 0.001487,
+      "ratio": 0.6598,
+      "eta": 0.3975,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_4",
+      "within": 59.975228,
+      "between": 38.395759,
+      "ratio": 0.6402,
+      "eta": 0.3903,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "zero_crossing_rate",
+      "within": 5699071.609455,
+      "between": 3601754.137437,
+      "ratio": 0.632,
+      "eta": 0.3873,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_1",
+      "within": 1.079924,
+      "between": 0.678688,
+      "ratio": 0.6285,
+      "eta": 0.3859,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "crest_factor",
+      "within": 0.953198,
+      "between": 0.548715,
+      "ratio": 0.5757,
+      "eta": 0.3653,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_B",
+      "within": 0.000567,
+      "between": 0.000308,
+      "ratio": 0.5426,
+      "eta": 0.3517,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "jitter",
+      "within": 0.073023,
+      "between": 0.038466,
+      "ratio": 0.5268,
+      "eta": 0.345,
+      "label": "mixed",
+      "n_styles": 6
+    },
+    {
+      "key": "movement_explosion",
+      "within": 0.005801,
+      "between": 0.002782,
+      "ratio": 0.4796,
+      "eta": 0.3241,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "spectral_centroid",
+      "within": 1485003.472677,
+      "between": 712232.424395,
+      "ratio": 0.4796,
+      "eta": 0.3241,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "ring_decay",
+      "within": 0.000114,
+      "between": 5.3e-05,
+      "ratio": 0.468,
+      "eta": 0.3188,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_Gs",
+      "within": 0.000604,
+      "between": 0.000282,
+      "ratio": 0.4663,
+      "eta": 0.318,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "key_dominant",
+      "within": 9.600431,
+      "between": 4.085861,
+      "ratio": 0.4256,
+      "eta": 0.2985,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "shimmer",
+      "within": 0.008801,
+      "between": 0.003734,
+      "ratio": 0.4243,
+      "eta": 0.2979,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "spectral_slope",
+      "within": 1.470052,
+      "between": 0.565276,
+      "ratio": 0.3845,
+      "eta": 0.2777,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "breathiness",
+      "within": 0.04713,
+      "between": 0.017883,
+      "ratio": 0.3794,
+      "eta": 0.2751,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "harmonic_ratio",
+      "within": 0.04713,
+      "between": 0.017883,
+      "ratio": 0.3794,
+      "eta": 0.2751,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "movement_resonance",
+      "within": 0.04713,
+      "between": 0.017883,
+      "ratio": 0.3794,
+      "eta": 0.2751,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "perceptual_plushness",
+      "within": 0.04713,
+      "between": 0.017883,
+      "ratio": 0.3794,
+      "eta": 0.2751,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "decay_time",
+      "within": 0.002469,
+      "between": 0.000862,
+      "ratio": 0.3493,
+      "eta": 0.2589,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "high_freq_ratio",
+      "within": 0.037895,
+      "between": 0.012142,
+      "ratio": 0.3204,
+      "eta": 0.2427,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "fd",
+      "within": 0.064689,
+      "between": 0.019458,
+      "ratio": 0.3008,
+      "eta": 0.2312,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_Ds",
+      "within": 0.000719,
+      "between": 0.00019,
+      "ratio": 0.2647,
+      "eta": 0.2093,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "perceptual_warmth",
+      "within": 0.126406,
+      "between": 0.032885,
+      "ratio": 0.2602,
+      "eta": 0.2064,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "pitch_fundamental",
+      "within": 12476.129804,
+      "between": 3128.70557,
+      "ratio": 0.2508,
+      "eta": 0.2005,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_2",
+      "within": 410.508895,
+      "between": 90.851223,
+      "ratio": 0.2213,
+      "eta": 0.1812,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_5",
+      "within": 13.126836,
+      "between": 2.820346,
+      "ratio": 0.2149,
+      "eta": 0.1769,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_C",
+      "within": 0.001931,
+      "between": 0.000407,
+      "ratio": 0.2108,
+      "eta": 0.1741,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_As",
+      "within": 0.000569,
+      "between": 0.000117,
+      "ratio": 0.2052,
+      "eta": 0.1702,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "formant_f2",
+      "within": 30274.591851,
+      "between": 5955.326379,
+      "ratio": 0.1967,
+      "eta": 0.1644,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "mid_freq_ratio",
+      "within": 0.050896,
+      "between": 0.009805,
+      "ratio": 0.1926,
+      "eta": 0.1615,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_Fs",
+      "within": 0.000659,
+      "between": 0.000116,
+      "ratio": 0.1761,
+      "eta": 0.1497,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "low_freq_ratio",
+      "within": 0.057283,
+      "between": 0.009602,
+      "ratio": 0.1676,
+      "eta": 0.1436,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "voicing_ratio",
+      "within": 0.018897,
+      "between": 0.00308,
+      "ratio": 0.163,
+      "eta": 0.1402,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_3",
+      "within": 62.50519,
+      "between": 8.810252,
+      "ratio": 0.141,
+      "eta": 0.1235,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "spectral_skewness",
+      "within": 4.09168,
+      "between": 0.576183,
+      "ratio": 0.1408,
+      "eta": 0.1234,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "formant_f3",
+      "within": 253077.666271,
+      "between": 33798.06241,
+      "ratio": 0.1335,
+      "eta": 0.1178,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_1",
+      "within": 1493.807893,
+      "between": 194.908952,
+      "ratio": 0.1305,
+      "eta": 0.1154,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_7",
+      "within": 5.31244,
+      "between": 0.68084,
+      "ratio": 0.1282,
+      "eta": 0.1136,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "formant_f1",
+      "within": 7498.12378,
+      "between": 933.406666,
+      "ratio": 0.1245,
+      "eta": 0.1107,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_Cs",
+      "within": 0.001039,
+      "between": 0.000115,
+      "ratio": 0.1111,
+      "eta": 0.1,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_G",
+      "within": 0.000636,
+      "between": 6.9e-05,
+      "ratio": 0.1087,
+      "eta": 0.0981,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "low_mid_freq_ratio",
+      "within": 0.021002,
+      "between": 0.001963,
+      "ratio": 0.0935,
+      "eta": 0.0855,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_A",
+      "within": 0.000559,
+      "between": 4.8e-05,
+      "ratio": 0.086,
+      "eta": 0.0792,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_F",
+      "within": 0.00219,
+      "between": 0.000183,
+      "ratio": 0.0836,
+      "eta": 0.0772,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "spectral_kurtosis",
+      "within": 123818.936777,
+      "between": 8459.651084,
+      "ratio": 0.0683,
+      "eta": 0.064,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "high_mid_freq_ratio",
+      "within": 0.021554,
+      "between": 0.001269,
+      "ratio": 0.0589,
+      "eta": 0.0556,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_E",
+      "within": 0.000793,
+      "between": 2.6e-05,
+      "ratio": 0.0322,
+      "eta": 0.0312,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "self_similarity_index",
+      "within": 0.001783,
+      "between": 5.4e-05,
+      "ratio": 0.0304,
+      "eta": 0.0295,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "consonance",
+      "within": 0.001021,
+      "between": 1.5e-05,
+      "ratio": 0.0142,
+      "eta": 0.014,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "bpm",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "bpm_isolation",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "bpm_periodicity",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "release_time",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "reverb_estimate",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "rhythm_stability",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "spatial_impression",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "stereo_correlation",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "stereo_width",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    }
+  ],
+  "top_law": [
+    {
+      "key": "amplitude_modulation_smoothness",
+      "within": 0.002046,
+      "between": 0.169242,
+      "ratio": 82.719,
+      "eta": 0.9881,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "movement_flow",
+      "within": 0.002046,
+      "between": 0.169242,
+      "ratio": 82.719,
+      "eta": 0.9881,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "noise_floor",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 24.9136,
+      "eta": 0.9614,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "movement_mist",
+      "within": 0.002226,
+      "between": 0.05264,
+      "ratio": 23.6522,
+      "eta": 0.9594,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "spectral_flatness",
+      "within": 0.002226,
+      "between": 0.05264,
+      "ratio": 23.6522,
+      "eta": 0.9594,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "sustain_level",
+      "within": 0.006711,
+      "between": 0.139275,
+      "ratio": 20.754,
+      "eta": 0.954,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "amplitude_avg",
+      "within": 0.000266,
+      "between": 0.002909,
+      "ratio": 10.9216,
+      "eta": 0.9161,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "spectral_spread",
+      "within": 79749.470368,
+      "between": 716627.865796,
+      "ratio": 8.986,
+      "eta": 0.8999,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "amplitude_rms",
+      "within": 0.000674,
+      "between": 0.003458,
+      "ratio": 5.1326,
+      "eta": 0.8369,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "nestedness",
+      "within": 0.022359,
+      "between": 0.107932,
+      "ratio": 4.8272,
+      "eta": 0.8284,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "onset_density",
+      "within": 0.00046,
+      "between": 0.002098,
+      "ratio": 4.5579,
+      "eta": 0.8201,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "loudness_lufs",
+      "within": 3.799287,
+      "between": 16.613652,
+      "ratio": 4.3728,
+      "eta": 0.8139,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "amplitude_peak",
+      "within": 0.015468,
+      "between": 0.065354,
+      "ratio": 4.2251,
+      "eta": 0.8086,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "spectral_flux",
+      "within": 0.004664,
+      "between": 0.0169,
+      "ratio": 3.6235,
+      "eta": 0.7837,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_12",
+      "within": 0.921839,
+      "between": 2.882211,
+      "ratio": 3.1266,
+      "eta": 0.7577,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_10",
+      "within": 1.727984,
+      "between": 5.282285,
+      "ratio": 3.0569,
+      "eta": 0.7535,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_6",
+      "within": 0.061185,
+      "between": 0.18142,
+      "ratio": 2.9651,
+      "eta": 0.7478,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_0",
+      "within": 1666.403424,
+      "between": 4845.001092,
+      "ratio": 2.9075,
+      "eta": 0.7441,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_11",
+      "within": 0.057277,
+      "between": 0.162877,
+      "ratio": 2.8437,
+      "eta": 0.7398,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "tonality",
+      "within": 0.012824,
+      "between": 0.032039,
+      "ratio": 2.4984,
+      "eta": 0.7142,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_delta_4",
+      "within": 0.085284,
+      "between": 0.194834,
+      "ratio": 2.2845,
+      "eta": 0.6955,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "selfsim_r2",
+      "within": 0.003031,
+      "between": 0.006646,
+      "ratio": 2.1923,
+      "eta": 0.6867,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "roughness",
+      "within": 0.013339,
+      "between": 0.029228,
+      "ratio": 2.1912,
+      "eta": 0.6866,
+      "label": "law",
+      "n_styles": 6
+    },
+    {
+      "key": "perceptual_density",
+      "within": 0.000358,
+      "between": 0.000726,
+      "ratio": 2.026,
+      "eta": 0.6695,
+      "label": "law",
+      "n_styles": 6
+    }
+  ],
+  "top_instance": [
+    {
+      "key": "bpm",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "bpm_isolation",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "bpm_periodicity",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "release_time",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "reverb_estimate",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "rhythm_stability",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "spatial_impression",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "stereo_correlation",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "stereo_width",
+      "within": 0.0,
+      "between": 0.0,
+      "ratio": 0.0,
+      "eta": 0.0,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "consonance",
+      "within": 0.001021,
+      "between": 1.5e-05,
+      "ratio": 0.0142,
+      "eta": 0.014,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "self_similarity_index",
+      "within": 0.001783,
+      "between": 5.4e-05,
+      "ratio": 0.0304,
+      "eta": 0.0295,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_E",
+      "within": 0.000793,
+      "between": 2.6e-05,
+      "ratio": 0.0322,
+      "eta": 0.0312,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "high_mid_freq_ratio",
+      "within": 0.021554,
+      "between": 0.001269,
+      "ratio": 0.0589,
+      "eta": 0.0556,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "spectral_kurtosis",
+      "within": 123818.936777,
+      "between": 8459.651084,
+      "ratio": 0.0683,
+      "eta": 0.064,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_F",
+      "within": 0.00219,
+      "between": 0.000183,
+      "ratio": 0.0836,
+      "eta": 0.0772,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_A",
+      "within": 0.000559,
+      "between": 4.8e-05,
+      "ratio": 0.086,
+      "eta": 0.0792,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "low_mid_freq_ratio",
+      "within": 0.021002,
+      "between": 0.001963,
+      "ratio": 0.0935,
+      "eta": 0.0855,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_G",
+      "within": 0.000636,
+      "between": 6.9e-05,
+      "ratio": 0.1087,
+      "eta": 0.0981,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "chroma_Cs",
+      "within": 0.001039,
+      "between": 0.000115,
+      "ratio": 0.1111,
+      "eta": 0.1,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "formant_f1",
+      "within": 7498.12378,
+      "between": 933.406666,
+      "ratio": 0.1245,
+      "eta": 0.1107,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_7",
+      "within": 5.31244,
+      "between": 0.68084,
+      "ratio": 0.1282,
+      "eta": 0.1136,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_1",
+      "within": 1493.807893,
+      "between": 194.908952,
+      "ratio": 0.1305,
+      "eta": 0.1154,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "formant_f3",
+      "within": 253077.666271,
+      "between": 33798.06241,
+      "ratio": 0.1335,
+      "eta": 0.1178,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "spectral_skewness",
+      "within": 4.09168,
+      "between": 0.576183,
+      "ratio": 0.1408,
+      "eta": 0.1234,
+      "label": "instance",
+      "n_styles": 6
+    },
+    {
+      "key": "mfcc_3",
+      "within": 62.50519,
+      "between": 8.810252,
+      "ratio": 0.141,
+      "eta": 0.1235,
+      "label": "instance",
+      "n_styles": 6
+    }
+  ],
+  "note": "эвристика для разметки корпуса; подтверждать пересборкой звука"
+}

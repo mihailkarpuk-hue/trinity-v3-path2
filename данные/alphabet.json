@@ -1,0 +1,1458 @@
+{
+  "version": "1.0",
+  "description": "TRINITY Sound Alphabet — единый источник истины параметр → образ → 3D",
+  "created": "2026-05-16",
+  "parameters": {
+    "lowFreqRatio": {
+      "description": "Доля энергии в низких частотах (20-250 Hz)",
+      "source": "nature-etalons.js → p.low_freq_ratio",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "лёгкий воздушный",
+        "mid": "сбалансированный",
+        "high": "тёмный тяжёлый глубокий"
+      },
+      "color": {
+        "hue_low": 220,
+        "hue_high": 5,
+        "note": "низкие → тёплый красный, высокие → холодный синий"
+      },
+      "geometry": {
+        "target": "vertex_center_y",
+        "low": 0.3,
+        "high": -0.3,
+        "note": "низкие частоты → масса вниз"
+      },
+      "material": {
+        "low": "gaseous",
+        "high": "fluid"
+      },
+      "temperature": {
+        "low": "cool",
+        "high": "warm"
+      },
+      "space": {
+        "low": "vast",
+        "high": "intimate"
+      }
+    },
+    "harmonicRatio": {
+      "description": "Тональность vs шумовость (0=шум, 1=чистый тон)",
+      "source": "nature-etalons.js → p.harmonic_ratio",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "размытый туманный рассеянный",
+        "mid": "живой органический",
+        "high": "кристальный чистый звонкий"
+      },
+      "color": {
+        "saturation_low": 0.05,
+        "saturation_high": 1.0,
+        "note": "шум → серый, тон → насыщенный"
+      },
+      "geometry": {
+        "target": "surface_smoothness",
+        "low": 0.9,
+        "high": 0.0,
+        "note": "шум → хаотичная, тон → гладкая"
+      },
+      "material": {
+        "low": "smoke",
+        "high": "glass"
+      },
+      "измерено": {
+        "образ_цель": "тон↔шум→насыщенность",
+        "r": 0.744,
+        "закон": "перешкалирован: координата=harmonicity",
+        "источник": "зонд-лесенки V3, 2026-06-10"
+      }
+    },
+    "periodicity": {
+      "description": "Регулярность и ритмичность",
+      "source": "nature-etalons.js → bpm_periodicity / rhythm_stability",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "свободный непредсказуемый хаотичный",
+        "mid": "живой с отклонениями",
+        "high": "ритмичный регулярный точный"
+      },
+      "geometry": {
+        "target": "symmetry_order",
+        "mapping": "0→0, 0.3→2, 0.5→3, 0.7→4, 0.9→6",
+        "note": "высокая периодика → многолопастная симметрия"
+      },
+      "motion": {
+        "low": "chaotic",
+        "high": "pulse"
+      }
+    },
+    "spectralFlux": {
+      "description": "Скорость изменения спектра",
+      "source": "audio-params-104.js → spectral_flux (либо onset_strength)",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "статичный едва дрожащий",
+        "mid": "текущий плавный",
+        "high": "турбулентный взрывной"
+      },
+      "geometry": {
+        "target": "animation_turbulence",
+        "low": 0.02,
+        "high": 1.0
+      },
+      "motion": {
+        "low": "static_tremor",
+        "mid": "flowing",
+        "high": "chaotic_burst"
+      }
+    },
+    "rms": {
+      "description": "RMS амплитуда — громкость",
+      "source": "nature-etalons.js → p.amplitude",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "едва слышный тихий",
+        "mid": "умеренный",
+        "high": "мощный оглушительный"
+      },
+      "color": {
+        "lightness_low": 0.15,
+        "lightness_high": 0.9
+      },
+      "geometry": {
+        "target": "global_scale",
+        "low": 0.3,
+        "high": 1.5
+      },
+      "space": {
+        "modifier": "громче → пространство больше"
+      },
+      "измерено": {
+        "образ_цель": "громкость→размер",
+        "r": 1.0,
+        "закон": "линеен",
+        "источник": "зонд-лесенки V3, 2026-06-10"
+      }
+    },
+    "onsetDensity": {
+      "description": "Плотность атак в секунду",
+      "source": "nature-etalons.js → p.onset_density (нормализован /20)",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "гладкий непрерывный",
+        "mid": "умеренно импульсный",
+        "high": "острый зазубренный множественный"
+      },
+      "geometry": {
+        "target": "edge_spikiness",
+        "low": 0.0,
+        "high": 0.9
+      },
+      "material": {
+        "low": "fluid",
+        "high": "solid_spiky"
+      }
+    },
+    "attack": {
+      "description": "Скорость нарастания (0=плавно, 1=мгновенно)",
+      "source": "audio-params-104.js → 1 - attack_time/500ms",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "нарастает плавно медленно",
+        "high": "взрывной мгновенный резкий"
+      },
+      "geometry": {
+        "target": "apex_sharpness",
+        "low": 0.1,
+        "high": 1.0
+      },
+      "motion": {
+        "modifier": "высокий attack → начало взрывом"
+      },
+      "измерено": {
+        "образ_цель": "атака→резкость",
+        "r": 1.0,
+        "закон": "линеен",
+        "источник": "зонд-лесенки V3, 2026-06-10"
+      }
+    },
+    "decay": {
+      "description": "Длительность затухания (0=мгновенно, 1=долго)",
+      "source": "audio-params-104.js → release_time/3000ms",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "обрывается резко исчезает мгновенно",
+        "high": "долгий след затухает медленно"
+      },
+      "geometry": {
+        "target": "trail_length",
+        "low": 0.0,
+        "high": 1.0
+      },
+      "motion": {
+        "modifier": "высокий decay → длинный инертный след"
+      }
+    },
+    "spectralCentroid": {
+      "description": "Центроид спектра в Hz — где сосредоточена энергия",
+      "source": "nature-etalons.js → spectral_centroid_smooth",
+      "range_hz": [
+        20,
+        8000
+      ],
+      "word": {
+        "low_hz": "глубокий подземный",
+        "mid_hz": "живой телесный",
+        "high_hz": "острый воздушный пронизывающий"
+      },
+      "color": {
+        "note": "главный физический маппинг цвета",
+        "formula": "hue = 270 - (log10(hz/20) / log10(400)) * 270",
+        "20hz": "270° фиолетовый",
+        "250hz": "180° голубой",
+        "2000hz": "90° зелёный",
+        "8000hz": "0° красный"
+      },
+      "geometry": {
+        "target": "vertex_height_bias",
+        "note": "выше центроид → масса выше"
+      },
+      "измерено": {
+        "образ_цель": "высота→Y/hue",
+        "r": 1.0,
+        "закон": "линеен",
+        "источник": "зонд-лесенки V3, 2026-06-10"
+      }
+    },
+    "spectralFlatness": {
+      "description": "Плоскостность спектра (0=тон, 1=белый шум)",
+      "source": "audio-params-104.js → spectral_flatness",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "тональный чистый",
+        "high": "шумовой текстурный"
+      },
+      "geometry": {
+        "target": "surface_chaos",
+        "low": 0.0,
+        "high": 0.8
+      }
+    },
+    "bpm": {
+      "description": "Темп в ударах в минуту",
+      "source": "elements.js → computeBPM().bpm",
+      "range_bpm": [
+        0,
+        200
+      ],
+      "word": {
+        "0": "без ритма",
+        "60": "медленный покойный",
+        "120": "быстрый активный",
+        "180": "стремительный"
+      },
+      "geometry": {
+        "target": "blade_count",
+        "formula": "round(bpm / 30)",
+        "note": "BPM → лопасти фигуры"
+      },
+      "motion": {
+        "modifier": "BPM задаёт частоту пульсации"
+      },
+      "измерено": {
+        "образ_цель": "ритм→повтор/симметрия",
+        "r": 1.0,
+        "закон": "линеен",
+        "источник": "зонд-лесенки V3, 2026-06-10"
+      }
+    },
+    "stereoWidth": {
+      "description": "Ширина стерео (0=моно, 1=широкое)",
+      "source": "audio-params-104.js → stereo_width",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "моно точечный сосредоточенный",
+        "high": "широкий пространственный"
+      },
+      "geometry": {
+        "target": "x_axis_scale",
+        "low": 1.0,
+        "high": 2.5
+      }
+    },
+    "perceptualSharpness": {
+      "description": "Психоакустическая резкость",
+      "source": "nature-etalons.js → presence_profile.sharpness",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "мягкий бархатный",
+        "high": "острый режущий"
+      },
+      "material": {
+        "low": "velvet",
+        "high": "metallic_sharp"
+      },
+      "geometry": {
+        "target": "material_roughness",
+        "low": 0.9,
+        "high": 0.05
+      }
+    },
+    "loudness": {
+      "description": "Психоакустическая громкость (LUFS)",
+      "source": "audio-params-104.js → (loudness_lufs+70)/70",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "geometry": {
+        "target": "vertex_density",
+        "low": 64,
+        "high": 512
+      }
+    },
+    "inharmonicity": {
+      "description": "Инхармоничность — отклонение обертонов",
+      "source": "audio-params-104.js → inharmonicity (1-harmonic_ratio)",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "гармоничный правильный",
+        "high": "инхармоничный неправильный напряжённый"
+      },
+      "geometry": {
+        "target": "surface_noise_amplitude",
+        "low": 0.0,
+        "high": 0.5
+      },
+      "измерено": {
+        "образ_цель": "негармоничность→гладкость↔металл",
+        "r": 0.908,
+        "закон": "монотонен",
+        "источник": "зонд-лесенки V3, 2026-06-10"
+      }
+    },
+    "roughness": {
+      "description": "Шероховатость — биения тонов",
+      "source": "audio-params-104.js → roughness",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "гладкий чистый",
+        "high": "шероховатый вибрирующий"
+      },
+      "material": {
+        "low": "smooth_glass",
+        "high": "sandpaper"
+      },
+      "измерено": {
+        "образ_цель": "шероховатость→дрожь",
+        "r": 0.999,
+        "закон": "линеен",
+        "источник": "зонд-лесенки V3, 2026-06-10"
+      }
+    },
+    "formantF1": {
+      "description": "Первый формант — открытость гласного",
+      "source": "audio-params-104.js → formant_f1",
+      "range_hz": [
+        200,
+        800
+      ],
+      "word": {
+        "low_hz": "закрытый узкий",
+        "high_hz": "открытый широкий"
+      },
+      "geometry": {
+        "target": "lower_curvature",
+        "note": "F1 → нижняя кривизна"
+      }
+    },
+    "formantF2": {
+      "description": "Второй формант — передний/задний",
+      "source": "audio-params-104.js → formant_f2",
+      "range_hz": [
+        700,
+        2500
+      ],
+      "geometry": {
+        "target": "upper_curvature",
+        "note": "F2 → верхняя кривизна"
+      }
+    },
+    "dynamicRange": {
+      "description": "Динамический диапазон",
+      "source": "audio-params-104.js → dynamic_range",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "компрессированный плоский",
+        "high": "динамичный выразительный"
+      }
+    },
+    "crestFactor": {
+      "description": "Гребневый фактор peak/RMS",
+      "source": "audio-params-104.js → crest_factor",
+      "range": [
+        1.0,
+        10.0
+      ],
+      "geometry": {
+        "target": "spike_height_ratio",
+        "note": "выше → острые выступы"
+      }
+    },
+    "zcr": {
+      "description": "Zero Crossing Rate",
+      "source": "audio-params-104.js → zero_crossing_rate (нормализован /5000)",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "geometry": {
+        "target": "micro_edge_frequency",
+        "note": "ZCR → мелкие рёбра"
+      }
+    },
+    "noiseFloor": {
+      "description": "Уровень шумового пола",
+      "source": "audio-params-104.js → noise_floor",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "geometry": {
+        "target": "porosity",
+        "note": "выше шум → пористая"
+      }
+    },
+    "rhythmicRegularity": {
+      "description": "Регулярность ритма",
+      "source": "nature-etalons.js → rhythm_stability",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "свободный рубато",
+        "high": "метрономный точный"
+      }
+    },
+    "ringDecay": {
+      "description": "Длина 'хвоста' звука после пика",
+      "source": "nature-etalons.js → p.ring_decay",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "сухой обрывающийся",
+        "mid": "звучащий",
+        "high": "долго резонирующий"
+      },
+      "geometry": {
+        "target": "particle_lifetime",
+        "low": 0.3,
+        "high": 3.0
+      },
+      "измерено": {
+        "образ_цель": "спад→длина хвоста",
+        "r": 1.0,
+        "закон": "линеен",
+        "источник": "зонд-лесенки V3, 2026-06-10"
+      }
+    },
+    "smoothness": {
+      "description": "Плавность артикуляции (legato vs staccato)",
+      "source": "nature-etalons.js → amplitude_modulation_smoothness",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "стаккато отрывистый",
+        "mid": "portato",
+        "high": "legato шёлковый"
+      },
+      "motion": {
+        "low": "jerky",
+        "high": "smooth"
+      }
+    },
+    "selfSimilarity": {
+      "description": "Повторяемость — одинаковость моментов",
+      "source": "nature-etalons.js → self_similarity_index",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "разнообразный эволюционирующий",
+        "high": "повторяющийся стабильный"
+      },
+      "geometry": {
+        "target": "mesh_stability",
+        "low": 0.0,
+        "high": 1.0
+      }
+    },
+    "movementFlow": {
+      "description": "Текучесть — без рывков",
+      "source": "nature-etalons.js → movement_scores.flow",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "осколки",
+        "mid": "ручей",
+        "high": "масло мёд"
+      }
+    },
+    "movementMist": {
+      "description": "Дымчатость",
+      "source": "nature-etalons.js → movement_scores.mist",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "прозрачный",
+        "mid": "дымчатый",
+        "high": "облачный туман"
+      },
+      "geometry": {
+        "target": "fog_density",
+        "low": 0.0,
+        "high": 0.6
+      }
+    },
+    "movementFracture": {
+      "description": "Раздробленность",
+      "source": "nature-etalons.js → movement_scores.fracture",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "монолит",
+        "mid": "трещины",
+        "high": "пыль осколки"
+      },
+      "geometry": {
+        "target": "scatter_radius",
+        "low": 0.0,
+        "high": 2.0
+      }
+    },
+    "amplitudePeak": {
+      "description": "Пиковая амплитуда",
+      "source": "audio-params-104.js → amplitude_peak",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "без пиков",
+        "high": "с яркими пиками"
+      },
+      "geometry": {
+        "target": "flash_intensity",
+        "low": 0.0,
+        "high": 1.5
+      }
+    },
+    "amplitudeAvg": {
+      "description": "Средняя амплитуда",
+      "source": "audio-params-104.js → amplitude_avg",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "geometry": {
+        "target": "glow_intensity",
+        "low": 0.0,
+        "high": 1.2
+      }
+    },
+    "loudnessLufs": {
+      "description": "Психоакустическая громкость LUFS",
+      "source": "audio-params-104.js → loudness_lufs (нормирована (lufs+70)/70)",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "субтильный",
+        "mid": "обычный",
+        "high": "очень громкий"
+      },
+      "geometry": {
+        "target": "perceived_size",
+        "low": 0.3,
+        "high": 1.5
+      }
+    },
+    "spectralSkewness": {
+      "description": "Асимметрия спектра",
+      "source": "audio-params-104.js → spectral_skewness",
+      "range": [
+        -3,
+        3
+      ],
+      "word": {
+        "low": "глубокий бас",
+        "mid": "сбалансированный",
+        "high": "яркий острый"
+      },
+      "geometry": {
+        "target": "asymmetry_factor",
+        "low": -0.3,
+        "high": 0.3
+      }
+    },
+    "spectralKurtosis": {
+      "description": "Острота пика спектра",
+      "source": "audio-params-104.js → spectral_kurtosis",
+      "range": [
+        -3,
+        30
+      ],
+      "word": {
+        "low": "плоский шум",
+        "mid": "размытый",
+        "high": "острый пиковый"
+      },
+      "geometry": {
+        "target": "peak_height",
+        "low": 0.0,
+        "high": 1.0
+      }
+    },
+    "spectralRolloff85": {
+      "description": "Где заканчивается 85% энергии",
+      "source": "audio-params-104.js → spectral_rolloff_85",
+      "range_hz": [
+        200,
+        16000
+      ],
+      "word": {
+        "low_hz": "тёмный низкий",
+        "mid_hz": "сбалансированный",
+        "high_hz": "режущий сибилянтный"
+      },
+      "geometry": {
+        "target": "top_visible_freq",
+        "note": "верхняя граница видимости"
+      }
+    },
+    "spectralSlope": {
+      "description": "Наклон спектра dB/oct",
+      "source": "audio-params-104.js → spectral_slope",
+      "range": [
+        -18,
+        6
+      ],
+      "word": {
+        "low": "ламповый тёплый",
+        "mid": "ясный",
+        "high": "режущий ярко-холодный"
+      },
+      "color": {
+        "warmth_low": 1.0,
+        "warmth_high": 0.0,
+        "note": "naklon → теплота палитры"
+      },
+      "измерено": {
+        "образ_цель": "наклон→яркость",
+        "r": -0.94,
+        "закон": "монотонен",
+        "источник": "зонд-лесенки V3, 2026-06-10"
+      }
+    },
+    "lowMidFreqRatio": {
+      "description": "% энергии 250-500 Hz (грудной диапазон)",
+      "source": "audio-params-104.js → low_mid_freq_ratio",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "пустая середина",
+        "mid": "наполненная",
+        "high": "плотная грудная"
+      },
+      "geometry": {
+        "target": "body_density",
+        "low": 0.0,
+        "high": 1.0
+      }
+    },
+    "midFreqRatio": {
+      "description": "% энергии 500-2000 Hz (голосовой диапазон)",
+      "source": "audio-params-104.js → mid_freq_ratio",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "hollow",
+        "mid": "сбалансированный",
+        "high": "голосовой плотный"
+      }
+    },
+    "highMidFreqRatio": {
+      "description": "% энергии 2000-4000 Hz (присутствие)",
+      "source": "audio-params-104.js → high_mid_freq_ratio",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "глухой",
+        "mid": "ясный",
+        "high": "пронзительный"
+      },
+      "geometry": {
+        "target": "edge_sharpness",
+        "low": 0.0,
+        "high": 1.0
+      }
+    },
+    "tonality": {
+      "description": "Tone vs noise",
+      "source": "audio-params-104.js → tonality",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "шумный",
+        "mid": "окрашенный",
+        "high": "чистая нота"
+      }
+    },
+    "formantF3": {
+      "description": "Третий формант — индивидуальный тембр",
+      "source": "audio-params-104.js → formant_f3",
+      "range_hz": [
+        1500,
+        4500
+      ],
+      "word": {
+        "low_hz": "мужской глубокий",
+        "mid_hz": "взрослый универсальный",
+        "high_hz": "женский / детский"
+      }
+    },
+    "voicingRatio": {
+      "description": "% озвучённых сегментов",
+      "source": "audio-params-104.js → voicing_ratio",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "беззвучный шёпотный",
+        "mid": "разговорный",
+        "high": "поющий тянущий"
+      },
+      "geometry": {
+        "target": "core_visibility",
+        "low": 0.0,
+        "high": 1.0
+      }
+    },
+    "breathiness": {
+      "description": "Уровень придыхания",
+      "source": "audio-params-104.js → breathiness",
+      "range": [
+        0.0,
+        1.0
+      ],
+      "word": {
+        "low": "чистый оперный",
+        "mid": "разговорный",
+        "high": "придыхательный шёпот"
+      },
+      "geometry": {
+        "target": "mist_density",
+        "low": 0.0,
+        "high": 1.5
+      }
+    },
+    "jitter": {
+      "description": "Микро-колебания частоты %",
+      "source": "audio-params-104.js → jitter",
+      "range": [
+        0,
+        5
+      ],
+      "word": {
+        "low": "стерильный",
+        "mid": "живой натуральный",
+        "high": "дрожащий болезненный"
+      },
+      "geometry": {
+        "target": "wobble_frequency",
+        "low": 0,
+        "high": 50
+      }
+    },
+    "shimmer": {
+      "description": "Микро-колебания амплитуды dB",
+      "source": "audio-params-104.js → shimmer",
+      "range": [
+        0,
+        2
+      ],
+      "word": {
+        "low": "ровный",
+        "mid": "натуральный",
+        "high": "вибрато"
+      },
+      "geometry": {
+        "target": "glow_pulsation_amplitude",
+        "low": 0.0,
+        "high": 1.0
+      }
+    },
+    "chroma_C": {
+      "description": "Энергия ноты До",
+      "range": [
+        0,
+        1
+      ],
+      "color": {
+        "hue": 0
+      }
+    },
+    "chroma_Cs": {
+      "description": "Энергия ноты До#",
+      "range": [
+        0,
+        1
+      ],
+      "color": {
+        "hue": 30
+      }
+    },
+    "chroma_D": {
+      "description": "Энергия ноты Ре",
+      "range": [
+        0,
+        1
+      ],
+      "color": {
+        "hue": 60
+      }
+    },
+    "chroma_Ds": {
+      "description": "Энергия ноты Ре#",
+      "range": [
+        0,
+        1
+      ],
+      "color": {
+        "hue": 90
+      }
+    },
+    "chroma_E": {
+      "description": "Энергия ноты Ми",
+      "range": [
+        0,
+        1
+      ],
+      "color": {
+        "hue": 120
+      }
+    },
+    "chroma_F": {
+      "description": "Энергия ноты Фа",
+      "range": [
+        0,
+        1
+      ],
+      "color": {
+        "hue": 150
+      }
+    },
+    "chroma_Fs": {
+      "description": "Энергия ноты Фа#",
+      "range": [
+        0,
+        1
+      ],
+      "color": {
+        "hue": 180
+      }
+    },
+    "chroma_G": {
+      "description": "Энергия ноты Соль",
+      "range": [
+        0,
+        1
+      ],
+      "color": {
+        "hue": 210
+      }
+    },
+    "chroma_Gs": {
+      "description": "Энергия ноты Соль#",
+      "range": [
+        0,
+        1
+      ],
+      "color": {
+        "hue": 240
+      }
+    },
+    "chroma_A": {
+      "description": "Энергия ноты Ля",
+      "range": [
+        0,
+        1
+      ],
+      "color": {
+        "hue": 270
+      }
+    },
+    "chroma_As": {
+      "description": "Энергия ноты Ля#",
+      "range": [
+        0,
+        1
+      ],
+      "color": {
+        "hue": 300
+      }
+    },
+    "chroma_B": {
+      "description": "Энергия ноты Си",
+      "range": [
+        0,
+        1
+      ],
+      "color": {
+        "hue": 330
+      }
+    },
+    "keyDominant": {
+      "description": "Доминирующая нота (0-11)",
+      "source": "audio-params-104.js → key_dominant",
+      "range": [
+        0,
+        11
+      ],
+      "word": {
+        "0": "До",
+        "1": "До#",
+        "2": "Ре",
+        "3": "Ре#",
+        "4": "Ми",
+        "5": "Фа",
+        "6": "Фа#",
+        "7": "Соль",
+        "8": "Соль#",
+        "9": "Ля",
+        "10": "Ля#",
+        "11": "Си"
+      }
+    },
+    "consonance": {
+      "description": "Гармоничность аккорда (0=диссонанс, 1=октава)",
+      "source": "audio-params-104.js → consonance",
+      "range": [
+        0,
+        1
+      ],
+      "word": {
+        "low": "напряжённый",
+        "mid": "минорный",
+        "high": "чистый peaceful"
+      }
+    },
+    "tempoOctave": {
+      "description": "Темп с учётом удвоения",
+      "source": "audio-params-104.js → tempo_octave",
+      "range_bpm": [
+        60,
+        180
+      ]
+    },
+    "stereoCorrelation": {
+      "description": "L/R корреляция (-1..1)",
+      "source": "audio-params-104.js → stereo_correlation",
+      "range": [
+        -1,
+        1
+      ],
+      "word": {
+        "low": "противофазное",
+        "mid": "панорамное",
+        "high": "моно точка"
+      }
+    },
+    "spatialImpression": {
+      "description": "Diffuseness — точка vs распылённое",
+      "source": "audio-params-104.js → spatial_impression",
+      "range": [
+        0,
+        1
+      ],
+      "word": {
+        "low": "точечный",
+        "mid": "пространственный",
+        "high": "размытый везде"
+      }
+    },
+    "reverbEstimate": {
+      "description": "RT60 в секундах",
+      "source": "audio-params-104.js → reverb_estimate",
+      "range": [
+        0,
+        6
+      ],
+      "word": {
+        "low": "сухой близкий",
+        "mid": "комнатный",
+        "high": "соборный пещерный"
+      },
+      "geometry": {
+        "target": "particle_lifetime_sec",
+        "low": 0.1,
+        "high": 6
+      },
+      "измерено": {
+        "образ_цель": "реверб→пространство",
+        "r": 0.998,
+        "закон": "линеен",
+        "источник": "зонд-лесенки V3, 2026-06-10"
+      }
+    },
+    "directToReverbRatio": {
+      "description": "Сухой/мокрый в dB",
+      "source": "audio-params-104.js → direct_to_reverb_ratio",
+      "range": [
+        -30,
+        30
+      ],
+      "word": {
+        "low": "издалека в зале",
+        "mid": "в комнате",
+        "high": "близко у уха"
+      }
+    },
+    "perceptualWarmth": {
+      "description": "Тепло звука (low_freq - high_freq)",
+      "source": "audio-params-104.js → perceptual_warmth",
+      "range": [
+        -1,
+        1
+      ],
+      "word": {
+        "low": "ледяной",
+        "mid": "нейтральный",
+        "high": "тёплый грудной"
+      },
+      "color": {
+        "modifier": "warmth → red, cool → blue"
+      }
+    },
+    "perceptualBrightness": {
+      "description": "Яркость звука",
+      "source": "audio-params-104.js → perceptual_brightness",
+      "range": [
+        0,
+        1
+      ],
+      "word": {
+        "low": "тусклый",
+        "mid": "ясный",
+        "high": "ослепительный"
+      },
+      "geometry": {
+        "target": "glow_intensity",
+        "low": 0.0,
+        "high": 1.5
+      }
+    },
+    "perceptualDensity": {
+      "description": "Плотность звука",
+      "source": "audio-params-104.js → perceptual_density",
+      "range": [
+        0,
+        1
+      ],
+      "word": {
+        "low": "разреженный",
+        "mid": "лёгкий",
+        "high": "густой насыщенный"
+      },
+      "geometry": {
+        "target": "particle_count_modifier",
+        "low": 0.5,
+        "high": 2.5
+      }
+    },
+    "movementExplosion": {
+      "description": "Взрывность — внезапные импульсы",
+      "source": "nature-etalons.js → movement_scores.explosion",
+      "range": [
+        0,
+        1
+      ],
+      "word": {
+        "low": "плавный",
+        "mid": "пульсирующий",
+        "high": "взрывной"
+      },
+      "geometry": {
+        "target": "shockwave_strength",
+        "low": 0.0,
+        "high": 1.5
+      }
+    },
+    "movementResonance": {
+      "description": "Резонансность",
+      "source": "nature-etalons.js → movement_scores.resonance",
+      "range": [
+        0,
+        1
+      ],
+      "word": {
+        "low": "глухой удар",
+        "mid": "деревянный отзвук",
+        "high": "колокольный звон"
+      }
+    },
+    "attackTime": {
+      "description": "Время атаки в мс",
+      "source": "audio-params-104.js → attack_time",
+      "range": [
+        0,
+        500
+      ],
+      "word": {
+        "low": "резкий молот",
+        "mid": "быстрый",
+        "high": "плавающий"
+      }
+    },
+    "decayTime": {
+      "description": "Время спада decay (мс)",
+      "source": "audio-params-104.js → decay_time",
+      "range": [
+        0,
+        3000
+      ],
+      "word": {
+        "low": "резкий спад",
+        "mid": "плавный",
+        "high": "тягучий"
+      }
+    },
+    "sustainLevel": {
+      "description": "Уровень удержания 0..1",
+      "source": "audio-params-104.js → sustain_level",
+      "range": [
+        0,
+        1
+      ],
+      "word": {
+        "low": "не держит",
+        "mid": "стабильное",
+        "high": "плотное удержание"
+      }
+    },
+    "releaseTime": {
+      "description": "Время финального затухания мс",
+      "source": "audio-params-104.js → release_time",
+      "range": [
+        0,
+        6000
+      ],
+      "word": {
+        "low": "обрыв",
+        "mid": "плавный",
+        "high": "вечный отзвук"
+      },
+      "geometry": {
+        "target": "tail_length_3d",
+        "low": 0.0,
+        "high": 3.0
+      }
+    },
+    "mfcc_0": {
+      "description": "MFCC 0 — общая энергия",
+      "range": [
+        -700,
+        0
+      ]
+    },
+    "mfcc_1": {
+      "description": "MFCC 1 — spectral tilt",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "mfcc_2": {
+      "description": "MFCC 2 — plenitude",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "mfcc_3": {
+      "description": "MFCC 3 — compactness",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "mfcc_4": {
+      "description": "MFCC 4 — F1 region",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "mfcc_5": {
+      "description": "MFCC 5 — F2 region",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "mfcc_6": {
+      "description": "MFCC 6 — roughness 1",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "mfcc_7": {
+      "description": "MFCC 7 — roughness 2",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "mfcc_8": {
+      "description": "MFCC 8 — texture",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "mfcc_9": {
+      "description": "MFCC 9 — high detail 1",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "mfcc_10": {
+      "description": "MFCC 10 — fine detail",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "mfcc_11": {
+      "description": "MFCC 11 — noise pattern",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "mfcc_12": {
+      "description": "MFCC 12 — edge details",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "zeroCrossingRate": {
+      "description": "ZCR — пересечений нуля в секунду",
+      "source": "audio-params-104.js → zero_crossing_rate",
+      "range": [
+        0,
+        8000
+      ],
+      "word": {
+        "low": "грудной басовый",
+        "mid": "голосовой",
+        "high": "шипящий шумный"
+      },
+      "geometry": {
+        "target": "surface_grain_count",
+        "low": 0,
+        "high": 200
+      }
+    }
+  },
+  "metaphors": {
+    "_doc": "Привязки архетипов к природным метафорам (для текста)",
+    "rain": {
+      "primary": "дождь, падающий на листву",
+      "secondary": "капли по жестяной крыше"
+    },
+    "fire": {
+      "primary": "костёр в ночном лесу",
+      "secondary": "свеча на сквозняке"
+    },
+    "wind": {
+      "primary": "ветер в кронах деревьев",
+      "secondary": "продувание через щель"
+    },
+    "waves": {
+      "primary": "прибой на пустом пляже",
+      "secondary": "волна, разбивающаяся о борт"
+    },
+    "seismic": {
+      "primary": "далёкий раскат грома",
+      "secondary": "обвал каменной осыпи"
+    },
+    "river": {
+      "primary": "горный ручей по камням",
+      "secondary": "талая вода под снегом"
+    },
+    "heartbeat": {
+      "primary": "сердце, бьющееся в груди",
+      "secondary": "двойной стук — систола и диастола"
+    },
+    "morph": {
+      "primary": "дыхание спящего человека",
+      "secondary": "вдох-выдох ребёнка"
+    },
+    "digestive": {
+      "primary": "журчание в животе",
+      "secondary": "глоток воды"
+    },
+    "muscle": {
+      "primary": "напряжение мышцы",
+      "secondary": "хруст сустава"
+    },
+    "fauna": {
+      "primary": "голос живого существа",
+      "secondary": "крик в ночи"
+    },
+    "crystal": {
+      "primary": "удар по стеклянному бокалу",
+      "secondary": "падение льдинки"
+    },
+    "string": {
+      "primary": "натянутая струна",
+      "secondary": "отзвук медной проволоки"
+    },
+    "voice": {
+      "primary": "человеческий голос",
+      "secondary": "формантное пение"
+    },
+    "brass": {
+      "primary": "дыхание сквозь медную трубу",
+      "secondary": "духовой инструмент"
+    },
+    "drone": {
+      "primary": "низкий гул органа",
+      "secondary": "утренний туман над водой"
+    },
+    "whisper": {
+      "primary": "шёпот близкого человека",
+      "secondary": "шуршание ткани"
+    },
+    "bass": {
+      "primary": "удар низкочастотной струны",
+      "secondary": "утроба субвуфера"
+    },
+    "synth": {
+      "primary": "электронная волна",
+      "secondary": "аналоговый осциллятор"
+    },
+    "impact": {
+      "primary": "удар по литому металлу",
+      "secondary": "падение предмета"
+    },
+    "drum_beats": {
+      "primary": "барабанный марш",
+      "secondary": "хождение в такт"
+    },
+    "cymbals": {
+      "primary": "удар по тарелке",
+      "secondary": "звон ключей"
+    },
+    "neural": {
+      "primary": "нейронные импульсы",
+      "secondary": "электрический разряд"
+    },
+    "texture": {
+      "primary": "шероховатая поверхность",
+      "secondary": "трение песка"
+    },
+    "flora": {
+      "primary": "распускающийся цветок",
+      "secondary": "рост стебля"
+    },
+    "chemical": {
+      "primary": "шипение реакции",
+      "secondary": "пузырьки в стакане"
+    },
+    "micro": {
+      "primary": "мир под микроскопом",
+      "secondary": "клетки в движении"
+    },
+    "cosmic": {
+      "primary": "звёздное поле",
+      "secondary": "дальний пульсар"
+    }
+  },
+  "калибровка": {
+    "дата": "2026-06-10",
+    "осей_измерено": 10,
+    "рабочих_законов": 9,
+    "перцептивная_насыщенность": "harmonicity",
+    "данные": "Тринити_V3/данные/закономерности_пилот.json",
+    "примечание": "калибрует, не заменяет; результат измерен на сквозной фазе"
+  }
+}

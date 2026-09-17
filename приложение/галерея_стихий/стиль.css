@@ -1,0 +1,238 @@
+/* Галерея стихий — каталог + просмотр. Скролл разрешён (не главный экран). */
+@import url("https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Manrope:wght@400;600&display=swap");
+
+html, body.галерея {
+  overflow: auto;
+  height: auto;
+  min-height: 100%;
+  background:
+    radial-gradient(90% 60% at 10% 0%, #1a2218 0%, transparent 50%),
+    radial-gradient(70% 50% at 100% 100%, #1a1510 0%, transparent 45%),
+    #070908;
+  color: #e8efe9;
+  font-family: Manrope, system-ui, sans-serif;
+}
+
+.оболочка {
+  display: grid;
+  grid-template-columns: minmax(14rem, 18rem) 1fr;
+  min-height: 100vh;
+}
+
+@media (max-width: 800px) {
+  .оболочка { grid-template-columns: 1fr; }
+  .каталог { border-right: none; border-bottom: 1px solid rgba(232,239,233,0.1); }
+}
+
+.каталог {
+  padding: 1.75rem 1.25rem 2rem;
+  border-right: 1px solid rgba(232,239,233,0.1);
+  background: rgba(0,0,0,0.25);
+}
+
+.бренд {
+  margin: 0;
+  font-family: Literata, Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.каталог-верх h1 {
+  margin: 0.2rem 0 0;
+  font-family: Literata, Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #c4a35a;
+}
+
+.под {
+  margin: 0.5rem 0 1.5rem;
+  color: #8a9a90;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.список {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.пункт {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: #e8efe9;
+  text-align: left;
+  font: inherit;
+  font-size: 1.05rem;
+  padding: 0.65rem 0.5rem;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(232,239,233,0.08);
+  transition: color 0.2s, background 0.2s;
+}
+
+.пункт:hover { color: #c4a35a; }
+.пункт.активен {
+  color: #c4a35a;
+  background: rgba(196,163,90,0.08);
+}
+
+.пункт .мелкий {
+  display: block;
+  font-size: 0.72rem;
+  color: #6a7870;
+  margin-top: 0.15rem;
+}
+
+.каталог-низ {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: #6a7870;
+}
+.каталог-низ a { color: #9aada3; }
+
+.сцена {
+  padding: 2rem 2rem 3rem;
+  max-width: 56rem;
+}
+
+.пусто {
+  color: #6a7870;
+  font-family: Literata, Georgia, serif;
+  font-size: 1.25rem;
+  padding-top: 20vh;
+}
+
+.шапка h2 {
+  margin: 0;
+  font-family: Literata, Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 500;
+}
+
+.мета {
+  margin: 0.4rem 0 1.5rem;
+  color: #8a9a90;
+  font-size: 0.9rem;
+}
+
+.медиа-ряд {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .медиа-ряд { grid-template-columns: 1.2fr 1fr; align-items: start; }
+}
+
+.режим {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.режим-кнопка {
+  appearance: none;
+  border: 1px solid rgba(232,239,233,0.15);
+  background: transparent;
+  color: #9aada3;
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+}
+.режим-кнопка.активен {
+  border-color: #c4a35a;
+  color: #c4a35a;
+}
+
+.подпись-медиа {
+  margin: 0.4rem 0 0;
+  font-size: 0.78rem;
+  color: #6a7870;
+}
+
+.пояснение {
+  margin-top: 1.25rem;
+  font-size: 0.8rem;
+  color: #6a7870;
+  line-height: 1.45;
+  max-width: 36rem;
+}
+.пояснение code { color: #9aada3; }
+
+.видео-блок video,
+.фото-блок img {
+  width: 100%;
+  display: block;
+  background: #050606;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.ряд-кнопок {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.55rem;
+}
+
+.чип {
+  appearance: none;
+  border: 1px solid rgba(232,239,233,0.15);
+  background: transparent;
+  color: #c8d4cc;
+  font: inherit;
+  font-size: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  cursor: pointer;
+}
+.чип.активен {
+  border-color: #c4a35a;
+  color: #c4a35a;
+}
+
+.действия {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(232,239,233,0.1);
+}
+
+.кнопка {
+  appearance: none;
+  border: 1px solid rgba(232,239,233,0.2);
+  background: transparent;
+  color: #e8efe9;
+  font: inherit;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.кнопка:hover:not(:disabled) {
+  border-color: #c4a35a;
+  color: #c4a35a;
+}
+.кнопка:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.кнопка.тихий { opacity: 0.7; }
+.кнопка.играет {
+  background: #c4a35a;
+  border-color: #c4a35a;
+  color: #1a1610;
+}
+
+.статус {
+  font-size: 0.8rem;
+  color: #8a9a90;
+}

@@ -1,0 +1,53 @@
+:root {
+    --фон-главный: #000000;
+    --фон-вторичный: #0a0a0a;
+    --фон-панель: #1a1a1a;
+    --текст-основной: #ffffff;
+    --текст-вторичный: #aaaaaa;
+    --текст-тусклый: #666666;
+    --акцент-главный: #FFD700;
+    --акцент-тёплый: #FF6347;
+    --акцент-холодный: #1E90FF;
+    --акцент-зелёный: #32CD32;
+    --шрифт-основной: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    --радиус-углов: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--фон-главный);
+    color: var(--текст-основной);
+    font-family: var(--шрифт-основной);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.экран-заглушка {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.центр {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.мелкая {
+    color: var(--текст-тусклый);
+    font-size: 12px;
+    margin-top: 24px;
+    line-height: 1.6;
+}

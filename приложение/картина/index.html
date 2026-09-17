@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trinity — картина</title>
+  <style>
+    :root { --bg: #07080a; --fg: #e8e6e1; --mute: #8a8780; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; background: var(--bg); color: var(--fg);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+      display: grid; place-items: center; padding: 2rem 1rem;
+    }
+    main { width: min(900px, 100%); text-align: center; }
+    .бренд { letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.75rem; color: var(--mute); margin: 0 0 0.5rem; }
+    h1 { font-weight: 400; font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 0 0 0.35rem; }
+    .под { color: var(--mute); margin: 0 0 1.5rem; font-size: 0.95rem; }
+    .образ { width: 100%; aspect-ratio: 16/9; object-fit: contain; background: #000; display: block; margin: 0 auto 1.25rem; }
+    button {
+      appearance: none; border: 1px solid #3a3935; background: transparent;
+      color: var(--fg); padding: 0.7rem 1.4rem; font: inherit; cursor: pointer;
+    }
+    button:hover { border-color: #c4bfb4; }
+    .мета { margin-top: 1.1rem; color: var(--mute); font-size: 0.85rem; line-height: 1.55; }
+    a { color: #c4bfb4; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="бренд">Trinity · буква ≠ картина</p>
+    <h1 id="имя">картина</h1>
+    <p class="под" id="под">сборка из кусочков природы</p>
+    <img class="образ" id="картинка" alt="составной образ">
+    <button type="button" id="играть">слушать картину</button>
+    <p class="мета" id="мета"></p>
+    <p class="мета"><a href="../буква/">буква</a> · <a href="../галерея_стихий/">галерея</a></p>
+  </main>
+  <script type="module">
+    const r = await fetch("../../выход/картины/лесная_гроза.json");
+    const m = await r.json();
+    document.getElementById("имя").textContent = m.id.replaceAll("_", " ");
+    document.getElementById("под").textContent =
+      m.состав.map(s => s.стихия).join(" + ") + ` · ${m.длит_с} с`;
+    document.getElementById("картинка").src = m.png;
+    document.getElementById("мета").textContent =
+      `${m.точек_образа} частичек образа · ${m.правило}`;
+    const audio = new Audio(m.wav);
+    document.getElementById("играть").onclick = () => {
+      audio.currentTime = 0;
+      audio.play();
+    };
+  </script>
+</body>
+</html>

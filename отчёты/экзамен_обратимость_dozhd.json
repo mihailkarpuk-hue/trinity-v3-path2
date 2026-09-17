@@ -1,0 +1,21 @@
+{
+  "пилот": "dozhd",
+  "дата": "2026-07-21",
+  "mode": "A_sound_cell",
+  "alignment_note": "образ_кусочек не в петле этого экзамена",
+  "звук_эталон": "данные/клеточки/эталоны/dozhd_real.wav",
+  "клетка": "данные/клеточки/клеточки_полные/etalon_dozhd.json",
+  "atoms": 7350,
+  "crosses": 19825,
+  "sr": 22050,
+  "sec": 2.4,
+  "band_corr": 0.6817,
+  "stft_corr": 0.6747,
+  "fd_orig": 0.714,
+  "fd_synth": 0.673,
+  "nestedness_orig": 0.177,
+  "nestedness_synth": 0.299,
+  "порог_band_corr": 0.5,
+  "вердикт_порога": "PASS",
+  "synth_wav": "выход/раскадровка_dozhd_A/dozhd_synth_A.wav"
+}

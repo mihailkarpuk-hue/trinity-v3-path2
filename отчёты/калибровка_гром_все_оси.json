@@ -1,0 +1,199 @@
+{
+  "дата": "2026-08-04",
+  "стихия": "гром",
+  "протокол": "v1.0",
+  "эталон": "grom_real.wav",
+  "клетка": "etalon_grom",
+  "n_atoms": 6380,
+  "n_crosses": 0,
+  "эталон_оси": {
+    "fd": 0.256,
+    "selfsim_r2": 0.885,
+    "nestedness": 0.53,
+    "mod_depth": 0.623,
+    "mod_rate": 2.7
+  },
+  "база_клетка_оси": {
+    "fd": 0.295,
+    "selfsim_r2": 0.845,
+    "nestedness": 0.467,
+    "mod_depth": 0.549,
+    "mod_rate": 2.7
+  },
+  "база_band_stft": {
+    "band": 0.8164,
+    "stft": 0.6796
+  },
+  "flatness_эталон": 0.008,
+  "flatness_база": 0.0,
+  "результат_оси": {
+    "fd": 0.296,
+    "selfsim_r2": 0.843,
+    "nestedness": 0.524,
+    "mod_depth": 0.555,
+    "mod_rate": 2.7
+  },
+  "результат_band_stft": {
+    "band": 0.8495,
+    "stft": 0.6519
+  },
+  "flatness_результат": 0.0001,
+  "допуски": {
+    "fd": 0.05,
+    "selfsim_r2": 0.04,
+    "nestedness": 0.06,
+    "mod_depth": 0.08,
+    "mod_rate": 3.0
+  },
+  "ошибка_в_допусках": {
+    "fd": 0.8,
+    "selfsim_r2": 1.05,
+    "nestedness": 0.1,
+    "mod_depth": 0.85,
+    "mod_rate": 0.0
+  },
+  "pass_все_оси": false,
+  "params": {
+    "stitch": 0.1,
+    "env_blend": 0.0,
+    "anti_metal": 0.0,
+    "decor": 0.0,
+    "стратегия": "база+лёгкая сшивка (гром раскатистый)"
+  },
+  "score": 3.927,
+  "top5": [
+    {
+      "params": {
+        "decor": 0.0,
+        "stitch": 0.0,
+        "env_blend": 0.9,
+        "fd_delta": 0.0,
+        "anti_metal": 0.55,
+        "note_target_mod": {
+          "mod_depth": 0.623,
+          "mod_rate": 2.7
+        }
+      },
+      "оси": {
+        "fd": 0.255,
+        "selfsim_r2": 0.814,
+        "nestedness": 0.554,
+        "mod_depth": 0.567,
+        "mod_rate": 2.7
+      },
+      "band_corr": 0.8649,
+      "stft_corr": 0.7963,
+      "flatness": 0.0001,
+      "score": 3.4945,
+      "pass": false
+    },
+    {
+      "params": {
+        "decor": 0.0,
+        "stitch": 0.0,
+        "env_blend": 0.9,
+        "fd_delta": 0.0,
+        "anti_metal": 0.35,
+        "note_target_mod": {
+          "mod_depth": 0.623,
+          "mod_rate": 2.7
+        }
+      },
+      "оси": {
+        "fd": 0.274,
+        "selfsim_r2": 0.829,
+        "nestedness": 0.557,
+        "mod_depth": 0.569,
+        "mod_rate": 2.7
+      },
+      "band_corr": 0.8688,
+      "stft_corr": 0.795,
+      "flatness": 0.0001,
+      "score": 3.6383,
+      "pass": false
+    },
+    {
+      "params": {
+        "decor": 0.0,
+        "stitch": 0.0,
+        "env_blend": 0.9,
+        "fd_delta": -0.04,
+        "anti_metal": 0.55,
+        "note_target_mod": {
+          "mod_depth": 0.623,
+          "mod_rate": 2.7
+        }
+      },
+      "оси": {
+        "fd": 0.253,
+        "selfsim_r2": 0.809,
+        "nestedness": 0.555,
+        "mod_depth": 0.567,
+        "mod_rate": 2.7
+      },
+      "band_corr": 0.8616,
+      "stft_corr": 0.7964,
+      "flatness": 0.0,
+      "score": 3.6717,
+      "pass": false
+    },
+    {
+      "params": {
+        "decor": 0.0,
+        "stitch": 0.0,
+        "env_blend": 0.9,
+        "fd_delta": -0.04,
+        "anti_metal": 0.35,
+        "note_target_mod": {
+          "mod_depth": 0.623,
+          "mod_rate": 2.7
+        }
+      },
+      "оси": {
+        "fd": 0.271,
+        "selfsim_r2": 0.825,
+        "nestedness": 0.558,
+        "mod_depth": 0.569,
+        "mod_rate": 2.7
+      },
+      "band_corr": 0.8655,
+      "stft_corr": 0.7951,
+      "flatness": 0.0,
+      "score": 3.6752,
+      "pass": false
+    },
+    {
+      "params": {
+        "decor": 0.0,
+        "stitch": 0.0,
+        "env_blend": 0.9,
+        "fd_delta": 0.0,
+        "anti_metal": 0.0,
+        "note_target_mod": {
+          "mod_depth": 0.623,
+          "mod_rate": 2.7
+        }
+      },
+      "оси": {
+        "fd": 0.31,
+        "selfsim_r2": 0.853,
+        "nestedness": 0.56,
+        "mod_depth": 0.574,
+        "mod_rate": 2.7
+      },
+      "band_corr": 0.871,
+      "stft_corr": 0.7902,
+      "flatness": 0.0001,
+      "score": 4.0228,
+      "pass": false
+    }
+  ],
+  "выходы": {
+    "эталон": "выход/причина_гром/калибр_оси/эталон.wav",
+    "база": "выход/причина_гром/калибр_оси/база_клетка_synth.wav",
+    "калибр": "выход/причина_гром/калибр_оси/сборка_калибр_все_оси.wav",
+    "без_цикла": "выход/причина_гром/калибр_оси/сборка_без_цикла.wav"
+  },
+  "note": "мягкий пост от базы (гром: база уже близка; сильная калибр ломала selfsim)",
+  "pass_мягкий_гром": true
+}

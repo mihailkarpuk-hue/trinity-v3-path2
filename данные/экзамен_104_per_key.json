@@ -1,0 +1,771 @@
+{
+  "букв": 37,
+  "пороги": {
+    "gate": 0.5,
+    "ref": 0.25,
+    "допуск": 0.05
+  },
+  "ключи": {
+    "amplitude_rms": {
+      "std_orig": 0.0498,
+      "FULL_r": 0.713,
+      "V104_r": 0.396,
+      "статус": "gate",
+      "pass_V104": false
+    },
+    "amplitude_peak": {
+      "std_orig": 0.0,
+      "FULL_r": null,
+      "V104_r": null,
+      "статус": "мертв_корпус",
+      "pass_V104": null
+    },
+    "amplitude_avg": {
+      "std_orig": 0.0444,
+      "FULL_r": 0.862,
+      "V104_r": 0.83,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "loudness_lufs": {
+      "std_orig": 3.3973,
+      "FULL_r": 0.676,
+      "V104_r": 0.4,
+      "статус": "gate",
+      "pass_V104": false
+    },
+    "crest_factor": {
+      "std_orig": 4.1594,
+      "FULL_r": 0.52,
+      "V104_r": 0.334,
+      "статус": "gate",
+      "pass_V104": false
+    },
+    "dynamic_range": {
+      "std_orig": 0.0771,
+      "FULL_r": 0.159,
+      "V104_r": -0.158,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "attack_time": {
+      "std_orig": 0.0439,
+      "FULL_r": 0.645,
+      "V104_r": 0.622,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "decay_time": {
+      "std_orig": 0.0364,
+      "FULL_r": 0.686,
+      "V104_r": 0.368,
+      "статус": "gate",
+      "pass_V104": false
+    },
+    "sustain_level": {
+      "std_orig": 0.1564,
+      "FULL_r": 0.881,
+      "V104_r": 0.909,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "release_time": {
+      "std_orig": 0.0298,
+      "FULL_r": -0.61,
+      "V104_r": -0.851,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "onset_density": {
+      "std_orig": 0.0267,
+      "FULL_r": 0.176,
+      "V104_r": 0.174,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "onset_strength": {
+      "std_orig": 0.039,
+      "FULL_r": 0.22,
+      "V104_r": 0.305,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "bpm": {
+      "std_orig": 47.7213,
+      "FULL_r": 0.653,
+      "V104_r": 0.71,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "rhythm_stability": {
+      "std_orig": 0.6162,
+      "FULL_r": 0.605,
+      "V104_r": 0.602,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "bpm_isolation": {
+      "std_orig": 0.0828,
+      "FULL_r": 0.539,
+      "V104_r": 0.522,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "bpm_periodicity": {
+      "std_orig": 0.0392,
+      "FULL_r": 0.803,
+      "V104_r": 0.801,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "spectral_centroid": {
+      "std_orig": 1340.5789,
+      "FULL_r": 0.039,
+      "V104_r": 0.116,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "spectral_spread": {
+      "std_orig": 1040.4932,
+      "FULL_r": -0.06,
+      "V104_r": -0.098,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "spectral_skewness": {
+      "std_orig": 0.3967,
+      "FULL_r": 0.136,
+      "V104_r": 0.212,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "spectral_kurtosis": {
+      "std_orig": 0.8838,
+      "FULL_r": -0.081,
+      "V104_r": -0.284,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "spectral_flatness": {
+      "std_orig": 0.3056,
+      "FULL_r": -0.096,
+      "V104_r": -0.115,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "spectral_rolloff_85": {
+      "std_orig": 2637.6207,
+      "FULL_r": null,
+      "V104_r": null,
+      "статус": "мертв_корпус",
+      "pass_V104": null
+    },
+    "spectral_slope": {
+      "std_orig": 0.2236,
+      "FULL_r": -0.099,
+      "V104_r": 0.043,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "low_freq_ratio": {
+      "std_orig": 0.0652,
+      "FULL_r": -0.091,
+      "V104_r": null,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "low_mid_freq_ratio": {
+      "std_orig": 0.0259,
+      "FULL_r": -0.15,
+      "V104_r": null,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mid_freq_ratio": {
+      "std_orig": 0.1018,
+      "FULL_r": -0.044,
+      "V104_r": 0.294,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "high_mid_freq_ratio": {
+      "std_orig": 0.0979,
+      "FULL_r": 0.245,
+      "V104_r": -0.086,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "high_freq_ratio": {
+      "std_orig": 0.165,
+      "FULL_r": 0.049,
+      "V104_r": 0.148,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "pitch_fundamental": {
+      "std_orig": 46.5258,
+      "FULL_r": -0.618,
+      "V104_r": 0.254,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "harmonic_ratio": {
+      "std_orig": 0.031,
+      "FULL_r": 0.182,
+      "V104_r": 0.069,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "inharmonicity": {
+      "std_orig": 0.219,
+      "FULL_r": 0.461,
+      "V104_r": 0.445,
+      "статус": "наблюдаемый",
+      "pass_V104": null
+    },
+    "noise_floor": {
+      "std_orig": 0.0,
+      "FULL_r": null,
+      "V104_r": null,
+      "статус": "мертв_корпус",
+      "pass_V104": null
+    },
+    "tonality": {
+      "std_orig": 0.144,
+      "FULL_r": -0.095,
+      "V104_r": -0.12,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "formant_f1": {
+      "std_orig": 253.1855,
+      "FULL_r": 0.305,
+      "V104_r": -0.018,
+      "статус": "наблюдаемый",
+      "pass_V104": null
+    },
+    "formant_f2": {
+      "std_orig": 827.2557,
+      "FULL_r": 0.423,
+      "V104_r": 0.168,
+      "статус": "наблюдаемый",
+      "pass_V104": null
+    },
+    "formant_f3": {
+      "std_orig": 1148.3004,
+      "FULL_r": 0.383,
+      "V104_r": 0.027,
+      "статус": "наблюдаемый",
+      "pass_V104": null
+    },
+    "voicing_ratio": {
+      "std_orig": 0.2972,
+      "FULL_r": 0.571,
+      "V104_r": 0.073,
+      "статус": "gate",
+      "pass_V104": false
+    },
+    "breathiness": {
+      "std_orig": 0.031,
+      "FULL_r": 0.182,
+      "V104_r": 0.069,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "roughness": {
+      "std_orig": 0.1444,
+      "FULL_r": -0.097,
+      "V104_r": -0.123,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "jitter": {
+      "std_orig": 0.1932,
+      "FULL_r": 0.674,
+      "V104_r": 0.426,
+      "статус": "gate",
+      "pass_V104": false
+    },
+    "shimmer": {
+      "std_orig": 0.1016,
+      "FULL_r": 0.648,
+      "V104_r": -0.207,
+      "статус": "gate",
+      "pass_V104": false
+    },
+    "chroma_C": {
+      "std_orig": 0.0389,
+      "FULL_r": 0.089,
+      "V104_r": -0.043,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "chroma_Cs": {
+      "std_orig": 0.0464,
+      "FULL_r": 0.105,
+      "V104_r": 0.039,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "chroma_D": {
+      "std_orig": 0.0435,
+      "FULL_r": 0.053,
+      "V104_r": 0.023,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "chroma_Ds": {
+      "std_orig": 0.0377,
+      "FULL_r": 0.098,
+      "V104_r": -0.032,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "chroma_E": {
+      "std_orig": 0.0291,
+      "FULL_r": -0.018,
+      "V104_r": -0.064,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "chroma_F": {
+      "std_orig": 0.0333,
+      "FULL_r": 0.06,
+      "V104_r": -0.088,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "chroma_Fs": {
+      "std_orig": 0.0278,
+      "FULL_r": 0.196,
+      "V104_r": 0.013,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "chroma_G": {
+      "std_orig": 0.0332,
+      "FULL_r": 0.113,
+      "V104_r": 0.021,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "chroma_Gs": {
+      "std_orig": 0.0335,
+      "FULL_r": 0.116,
+      "V104_r": 0.023,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "chroma_A": {
+      "std_orig": 0.0378,
+      "FULL_r": 0.082,
+      "V104_r": -0.044,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "chroma_As": {
+      "std_orig": 0.0409,
+      "FULL_r": 0.086,
+      "V104_r": -0.056,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "chroma_B": {
+      "std_orig": 0.0426,
+      "FULL_r": 0.019,
+      "V104_r": -0.094,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "key_dominant": {
+      "std_orig": 3.599,
+      "FULL_r": -0.161,
+      "V104_r": null,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "consonance": {
+      "std_orig": 0.2136,
+      "FULL_r": 0.106,
+      "V104_r": -0.031,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "stereo_width": {
+      "std_orig": 0.0,
+      "FULL_r": null,
+      "V104_r": null,
+      "статус": "мертв_корпус",
+      "pass_V104": null
+    },
+    "stereo_correlation": {
+      "std_orig": 0.0,
+      "FULL_r": null,
+      "V104_r": null,
+      "статус": "мертв_корпус",
+      "pass_V104": null
+    },
+    "spatial_impression": {
+      "std_orig": 0.0,
+      "FULL_r": null,
+      "V104_r": null,
+      "статус": "мертв_корпус",
+      "pass_V104": null
+    },
+    "reverb_estimate": {
+      "std_orig": 0.0,
+      "FULL_r": null,
+      "V104_r": null,
+      "статус": "мертв_корпус",
+      "pass_V104": null
+    },
+    "direct_to_reverb_ratio": {
+      "std_orig": 0.1185,
+      "FULL_r": 0.943,
+      "V104_r": 0.957,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "perceptual_sharpness": {
+      "std_orig": 0.4092,
+      "FULL_r": null,
+      "V104_r": null,
+      "статус": "мертв_корпус",
+      "pass_V104": null
+    },
+    "perceptual_softness": {
+      "std_orig": 0.4092,
+      "FULL_r": null,
+      "V104_r": null,
+      "статус": "мертв_корпус",
+      "pass_V104": null
+    },
+    "perceptual_tension": {
+      "std_orig": 0.1662,
+      "FULL_r": 0.113,
+      "V104_r": 0.399,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "perceptual_plushness": {
+      "std_orig": 0.031,
+      "FULL_r": 0.182,
+      "V104_r": 0.069,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "perceptual_warmth": {
+      "std_orig": 0.1617,
+      "FULL_r": 0.044,
+      "V104_r": 0.158,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "perceptual_brightness": {
+      "std_orig": 0.4092,
+      "FULL_r": null,
+      "V104_r": null,
+      "статус": "мертв_корпус",
+      "pass_V104": null
+    },
+    "perceptual_density": {
+      "std_orig": 0.0618,
+      "FULL_r": 0.113,
+      "V104_r": 0.018,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "movement_explosion": {
+      "std_orig": 0.0838,
+      "FULL_r": 0.039,
+      "V104_r": 0.116,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "movement_resonance": {
+      "std_orig": 0.031,
+      "FULL_r": 0.182,
+      "V104_r": 0.069,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "movement_flow": {
+      "std_orig": 0.3249,
+      "FULL_r": 0.971,
+      "V104_r": 0.953,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "movement_mist": {
+      "std_orig": 0.3056,
+      "FULL_r": -0.096,
+      "V104_r": -0.115,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "movement_fracture": {
+      "std_orig": 0.219,
+      "FULL_r": 0.461,
+      "V104_r": 0.445,
+      "статус": "наблюдаемый",
+      "pass_V104": null
+    },
+    "self_similarity_index": {
+      "std_orig": 0.0833,
+      "FULL_r": -0.213,
+      "V104_r": -0.053,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "amplitude_modulation_smoothness": {
+      "std_orig": 0.3249,
+      "FULL_r": 0.971,
+      "V104_r": 0.953,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "ring_decay": {
+      "std_orig": 0.2787,
+      "FULL_r": 0.626,
+      "V104_r": 0.534,
+      "статус": "gate",
+      "pass_V104": false
+    },
+    "mfcc_0": {
+      "std_orig": 126.5407,
+      "FULL_r": 0.023,
+      "V104_r": 0.046,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_1": {
+      "std_orig": 4.7715,
+      "FULL_r": -0.034,
+      "V104_r": 0.199,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_2": {
+      "std_orig": 1.9369,
+      "FULL_r": -0.018,
+      "V104_r": 0.042,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_3": {
+      "std_orig": 1.0423,
+      "FULL_r": -0.044,
+      "V104_r": -0.123,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_4": {
+      "std_orig": 1.0366,
+      "FULL_r": -0.013,
+      "V104_r": -0.172,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_5": {
+      "std_orig": 0.9093,
+      "FULL_r": 0.082,
+      "V104_r": 0.145,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_6": {
+      "std_orig": 1.3519,
+      "FULL_r": -0.067,
+      "V104_r": 0.139,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_7": {
+      "std_orig": 0.7429,
+      "FULL_r": 0.108,
+      "V104_r": -0.106,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_8": {
+      "std_orig": 0.9186,
+      "FULL_r": 0.137,
+      "V104_r": -0.157,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_9": {
+      "std_orig": 0.6484,
+      "FULL_r": -0.097,
+      "V104_r": -0.055,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_10": {
+      "std_orig": 0.6524,
+      "FULL_r": -0.106,
+      "V104_r": -0.104,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_11": {
+      "std_orig": 0.6849,
+      "FULL_r": 0.095,
+      "V104_r": 0.106,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_12": {
+      "std_orig": 0.5897,
+      "FULL_r": -0.082,
+      "V104_r": 0.0,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_delta_0": {
+      "std_orig": 14.2281,
+      "FULL_r": 0.329,
+      "V104_r": 0.183,
+      "статус": "наблюдаемый",
+      "pass_V104": null
+    },
+    "mfcc_delta_1": {
+      "std_orig": 1.2644,
+      "FULL_r": 0.751,
+      "V104_r": 0.413,
+      "статус": "gate",
+      "pass_V104": false
+    },
+    "mfcc_delta_2": {
+      "std_orig": 0.6023,
+      "FULL_r": 0.599,
+      "V104_r": 0.354,
+      "статус": "gate",
+      "pass_V104": false
+    },
+    "mfcc_delta_3": {
+      "std_orig": 0.4043,
+      "FULL_r": 0.165,
+      "V104_r": 0.056,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_delta_4": {
+      "std_orig": 0.4102,
+      "FULL_r": -0.147,
+      "V104_r": -0.204,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_delta_5": {
+      "std_orig": 0.4413,
+      "FULL_r": 0.163,
+      "V104_r": 0.094,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_delta_6": {
+      "std_orig": 0.4079,
+      "FULL_r": 0.028,
+      "V104_r": 0.116,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_delta_7": {
+      "std_orig": 0.3485,
+      "FULL_r": 0.168,
+      "V104_r": -0.038,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_delta_8": {
+      "std_orig": 0.2114,
+      "FULL_r": 0.086,
+      "V104_r": 0.092,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_delta_9": {
+      "std_orig": 0.2878,
+      "FULL_r": -0.145,
+      "V104_r": 0.251,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_delta_10": {
+      "std_orig": 0.2024,
+      "FULL_r": 0.136,
+      "V104_r": 0.35,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_delta_11": {
+      "std_orig": 0.2408,
+      "FULL_r": 0.042,
+      "V104_r": 0.139,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "mfcc_delta_12": {
+      "std_orig": 0.182,
+      "FULL_r": 0.163,
+      "V104_r": 0.333,
+      "статус": "справка",
+      "pass_V104": null
+    },
+    "zero_crossing_rate": {
+      "std_orig": 1690.9309,
+      "FULL_r": 0.445,
+      "V104_r": 0.44,
+      "статус": "наблюдаемый",
+      "pass_V104": null
+    },
+    "spectral_flux": {
+      "std_orig": 0.051,
+      "FULL_r": 0.258,
+      "V104_r": 0.173,
+      "статус": "наблюдаемый",
+      "pass_V104": null
+    },
+    "fd": {
+      "std_orig": 0.2373,
+      "FULL_r": 0.853,
+      "V104_r": 0.864,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "selfsim_r2": {
+      "std_orig": 0.0697,
+      "FULL_r": 0.963,
+      "V104_r": 0.951,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "nestedness": {
+      "std_orig": 0.2342,
+      "FULL_r": 0.597,
+      "V104_r": 0.745,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "mod_depth": {
+      "std_orig": 0.4466,
+      "FULL_r": 0.849,
+      "V104_r": 0.802,
+      "статус": "gate",
+      "pass_V104": true
+    },
+    "mod_rate": {
+      "std_orig": 1.9303,
+      "FULL_r": -0.017,
+      "V104_r": -0.134,
+      "статус": "справка",
+      "pass_V104": null
+    }
+  },
+  "verdict": {
+    "gate_total": 24,
+    "gate_pass": 14,
+    "pass": false
+  }
+}

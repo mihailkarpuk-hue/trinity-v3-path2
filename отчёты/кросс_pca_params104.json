@@ -1,0 +1,337 @@
+{
+  "дата": "2026-08-10",
+  "метод": "PCA SVD на standardized params_104; без umap/sklearn",
+  "запрет": "не вердикт уха/глаза; delay_s исключён",
+  "n_rows": 929,
+  "n_features": 99,
+  "max_per_style": 400,
+  "var_explained": [
+    0.2564,
+    0.1819,
+    0.1018,
+    0.0617,
+    0.0437,
+    0.0407,
+    0.0329,
+    0.027
+  ],
+  "var_pc1_pc2": 0.4382,
+  "loadings": [
+    {
+      "pc": 1,
+      "var": 0.2564,
+      "top": [
+        {
+          "key": "spectral_flux",
+          "w": -0.1736
+        },
+        {
+          "key": "amplitude_avg",
+          "w": -0.163
+        },
+        {
+          "key": "mfcc_delta_12",
+          "w": -0.159
+        },
+        {
+          "key": "mfcc_delta_2",
+          "w": -0.1583
+        },
+        {
+          "key": "mfcc_delta_8",
+          "w": -0.1575
+        },
+        {
+          "key": "mfcc_delta_11",
+          "w": -0.155
+        },
+        {
+          "key": "mfcc_delta_5",
+          "w": -0.1549
+        },
+        {
+          "key": "mfcc_6",
+          "w": 0.1532
+        },
+        {
+          "key": "mfcc_delta_10",
+          "w": -0.1523
+        },
+        {
+          "key": "mfcc_delta_3",
+          "w": -0.1517
+        }
+      ]
+    },
+    {
+      "pc": 2,
+      "var": 0.1819,
+      "top": [
+        {
+          "key": "spectral_rolloff_85",
+          "w": -0.2225
+        },
+        {
+          "key": "perceptual_softness",
+          "w": 0.2144
+        },
+        {
+          "key": "perceptual_brightness",
+          "w": -0.2144
+        },
+        {
+          "key": "perceptual_sharpness",
+          "w": -0.2144
+        },
+        {
+          "key": "movement_explosion",
+          "w": -0.2003
+        },
+        {
+          "key": "spectral_centroid",
+          "w": -0.2003
+        },
+        {
+          "key": "spectral_spread",
+          "w": -0.1988
+        },
+        {
+          "key": "mfcc_1",
+          "w": 0.1944
+        },
+        {
+          "key": "high_freq_ratio",
+          "w": -0.1938
+        },
+        {
+          "key": "perceptual_warmth",
+          "w": 0.1908
+        }
+      ]
+    },
+    {
+      "pc": 3,
+      "var": 0.1018,
+      "top": [
+        {
+          "key": "mfcc_0",
+          "w": 0.238
+        },
+        {
+          "key": "mid_freq_ratio",
+          "w": 0.2253
+        },
+        {
+          "key": "low_freq_ratio",
+          "w": -0.179
+        },
+        {
+          "key": "mfcc_9",
+          "w": -0.1778
+        },
+        {
+          "key": "low_mid_freq_ratio",
+          "w": 0.1743
+        },
+        {
+          "key": "dynamic_range",
+          "w": -0.1711
+        },
+        {
+          "key": "movement_fracture",
+          "w": 0.1672
+        },
+        {
+          "key": "inharmonicity",
+          "w": 0.1672
+        },
+        {
+          "key": "direct_to_reverb_ratio",
+          "w": -0.1664
+        },
+        {
+          "key": "onset_strength",
+          "w": -0.1646
+        }
+      ]
+    }
+  ],
+  "centroids": {
+    "ветер": {
+      "n": 19,
+      "pc1": -16.9829,
+      "pc2": 5.734,
+      "pc3": -7.7308,
+      "std1": 2.2584,
+      "std2": 12.4991
+    },
+    "водопад": {
+      "n": 19,
+      "pc1": -17.523,
+      "pc2": 4.6244,
+      "pc3": -6.7303,
+      "std1": 2.2858,
+      "std2": 11.3602
+    },
+    "гром": {
+      "n": 400,
+      "pc1": 0.3045,
+      "pc2": 1.241,
+      "pc3": 2.1254,
+      "std1": 1.1906,
+      "std2": 1.6991
+    },
+    "дождь_live": {
+      "n": 40,
+      "pc1": -8.9573,
+      "pc2": -13.9276,
+      "pc3": -0.3386,
+      "std1": 1.3424,
+      "std2": 0.9167
+    },
+    "огонь": {
+      "n": 400,
+      "pc1": 3.2454,
+      "pc2": -0.5478,
+      "pc3": -1.9464,
+      "std1": 0.6616,
+      "std2": 0.8668
+    },
+    "река": {
+      "n": 51,
+      "pc1": -7.9564,
+      "pc2": 1.6183,
+      "pc3": 4.2663,
+      "std1": 2.9525,
+      "std2": 1.1716
+    }
+  },
+  "distances_pc12_asc": [
+    {
+      "a": "ветер",
+      "b": "водопад",
+      "d_pc12": 1.2341
+    },
+    {
+      "a": "гром",
+      "b": "огонь",
+      "d_pc12": 3.4422
+    },
+    {
+      "a": "гром",
+      "b": "река",
+      "d_pc12": 8.2695
+    },
+    {
+      "a": "ветер",
+      "b": "река",
+      "d_pc12": 9.9205
+    },
+    {
+      "a": "водопад",
+      "b": "река",
+      "d_pc12": 10.0278
+    },
+    {
+      "a": "огонь",
+      "b": "река",
+      "d_pc12": 11.4093
+    },
+    {
+      "a": "дождь_live",
+      "b": "река",
+      "d_pc12": 15.5781
+    },
+    {
+      "a": "гром",
+      "b": "дождь_live",
+      "d_pc12": 17.7727
+    },
+    {
+      "a": "ветер",
+      "b": "гром",
+      "d_pc12": 17.8617
+    },
+    {
+      "a": "дождь_live",
+      "b": "огонь",
+      "d_pc12": 18.1087
+    },
+    {
+      "a": "водопад",
+      "b": "гром",
+      "d_pc12": 18.1457
+    },
+    {
+      "a": "водопад",
+      "b": "дождь_live",
+      "d_pc12": 20.434
+    },
+    {
+      "a": "ветер",
+      "b": "огонь",
+      "d_pc12": 21.1812
+    },
+    {
+      "a": "ветер",
+      "b": "дождь_live",
+      "d_pc12": 21.2365
+    },
+    {
+      "a": "водопад",
+      "b": "огонь",
+      "d_pc12": 21.4028
+    }
+  ],
+  "counts": {
+    "ветер": 19,
+    "водопад": 19,
+    "гром": 400,
+    "дождь_live": 40,
+    "огонь": 400,
+    "река": 51
+  },
+  "features_used_n": 99,
+  "features_sample": [
+    "amplitude_avg",
+    "amplitude_modulation_smoothness",
+    "amplitude_peak",
+    "amplitude_rms",
+    "attack_time",
+    "breathiness",
+    "chroma_A",
+    "chroma_As",
+    "chroma_B",
+    "chroma_C",
+    "chroma_Cs",
+    "chroma_D",
+    "chroma_Ds",
+    "chroma_E",
+    "chroma_F",
+    "chroma_Fs",
+    "chroma_G",
+    "chroma_Gs",
+    "consonance",
+    "crest_factor",
+    "decay_time",
+    "direct_to_reverb_ratio",
+    "dynamic_range",
+    "fd",
+    "formant_f1",
+    "formant_f2",
+    "formant_f3",
+    "harmonic_ratio",
+    "high_freq_ratio",
+    "high_mid_freq_ratio",
+    "inharmonicity",
+    "jitter",
+    "key_dominant",
+    "loudness_lufs",
+    "low_freq_ratio",
+    "low_mid_freq_ratio",
+    "mfcc_0",
+    "mfcc_1",
+    "mfcc_10",
+    "mfcc_11"
+  ]
+}

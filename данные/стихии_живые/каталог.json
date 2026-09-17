@@ -1,0 +1,187 @@
+{
+  "версия": 1,
+  "путь": 2,
+  "описание": "Живые стихии: приоритет — видео с родной звуковой дорожкой (не вшивание)",
+  "корень_медиа": "данные/стихии_живые",
+  "лицензии": {
+    "video": "Mixkit Stock Video Free License",
+    "photo": "Wikimedia Commons (CC0 / CC BY / Public Domain)",
+    "video_live": "Wikimedia Commons (см. meta_live.json)"
+  },
+  "элементы": [
+    {
+      "id": "dozhd",
+      "имя": "Дождь",
+      "клетка_id": "etalon_dozhd",
+      "звук": "../../данные/клеточки/эталоны/dozhd_real.wav",
+      "model3d": "../../данные/клеточки/эталоны/dozhd_model3d.json",
+      "папка": "dozhd",
+      "фото": [
+        "photo_01.jpg"
+      ],
+      "видео": [
+        "video_live_02.mp4",
+        "video_live_01.mp4"
+      ],
+      "порядок": 1,
+      "clean_video": "clean_video.mp4",
+      "clean_image": "clean_image.png",
+      "звук_синхрон": true,
+      "звук_из_видео": true,
+      "заметка": "чистый образ = «дождь ветер с деревьями» + родной звук в такт",
+      "звук_в_clean": true,
+      "видео_имена": {
+        "video_live_02.mp4": "дождь ветер с деревьями",
+        "video_live_01.mp4": "ливень природа"
+      },
+      "clean_имя": "дождь ветер с деревьями",
+      "clean_источник": "video_live_02.mp4"
+    },
+    {
+      "id": "veter",
+      "имя": "Ветер",
+      "клетка_id": "etalon_veter",
+      "звук": "../../данные/клеточки/эталоны/veter_real.wav",
+      "model3d": "../../данные/клеточки/эталоны/veter_model3d.json",
+      "папка": "veter",
+      "фото": [
+        "photo_01.jpg"
+      ],
+      "видео": [
+        "video_live_01.mp4",
+        "video_live_02.mp4"
+      ],
+      "порядок": 2,
+      "clean_video": "clean_video.mp4",
+      "clean_image": "clean_image.png",
+      "звук_синхрон": true,
+      "звук_из_видео": true,
+      "заметка": "AirDrop: природа со звуком — деревья + камыш; clean = ветер деревья",
+      "видео_имена": {
+        "video_live_01.mp4": "ветер деревья",
+        "video_live_02.mp4": "ветер камыш у воды"
+      },
+      "clean_источник": "video_live_01.mp4",
+      "clean_имя": "ветер деревья",
+      "звук_в_clean": true
+    },
+    {
+      "id": "ogon",
+      "имя": "Огонь",
+      "клетка_id": "etalon_ogon",
+      "звук": "../../данные/клеточки/эталоны/ogon_real.wav",
+      "model3d": "../../данные/клеточки/эталоны/ogon_model3d.json",
+      "папка": "ogon",
+      "фото": [
+        "photo_01.jpg"
+      ],
+      "видео": [
+        "video_live_01.mp4",
+        "video_live_02.mp4"
+      ],
+      "порядок": 3,
+      "clean_video": "clean_video.mp4",
+      "clean_image": "clean_image.png",
+      "звук_синхрон": true,
+      "звук_из_видео": true,
+      "заметка": "#2 — чистое пламя/искры без чаши; треск родной",
+      "звук_в_clean": true,
+      "видео_имена": {
+        "video_live_01.mp4": "пламя крупно",
+        "video_live_02.mp4": "костёр искры"
+      },
+      "clean_источник": "video_live_01.mp4",
+      "clean_имя": "пламя крупно"
+    },
+    {
+      "id": "vodopad",
+      "имя": "Водопад",
+      "клетка_id": "etalon_vodopad",
+      "звук": "../../данные/клеточки/эталоны/vodopad_real.wav",
+      "model3d": "../../данные/клеточки/эталоны/vodopad_model3d.json",
+      "папка": "vodopad",
+      "фото": [
+        "photo_01.jpg"
+      ],
+      "видео": [
+        "video_live_01.mp4",
+        "video_live_02.mp4"
+      ],
+      "порядок": 4,
+      "clean_video": "clean_video.mp4",
+      "clean_image": "clean_image.png",
+      "звук_синхрон": false,
+      "звук_из_видео": true,
+      "заметка": "оба ролика ок; чистый образ — вода без скал"
+    },
+    {
+      "id": "reka",
+      "имя": "Река",
+      "клетка_id": null,
+      "звук": null,
+      "model3d": null,
+      "папка": "reka",
+      "фото": [
+        "photo_01.jpg"
+      ],
+      "видео": [
+        "video_live_01.mp4"
+      ],
+      "порядок": 5,
+      "заметка": "живая фотография реки; видео — один чистый поток",
+      "clean_video": "clean_video.mp4",
+      "clean_image": "clean_image.png",
+      "звук_синхрон": false,
+      "звук_из_видео": true
+    },
+    {
+      "id": "grom",
+      "имя": "Гром",
+      "клетка_id": "etalon_grom",
+      "звук": "../../данные/клеточки/эталоны/grom_real.wav",
+      "model3d": "../../данные/клеточки/эталоны/grom_model3d.json",
+      "папка": "grom",
+      "фото": [
+        "photo_01.jpg"
+      ],
+      "видео": [
+        "video_live_01.mp4",
+        "video_live_02.mp4"
+      ],
+      "порядок": 6,
+      "clean_video": "clean_video.mp4",
+      "clean_image": "clean_image.png",
+      "звук_синхрон": true,
+      "звук_из_видео": true,
+      "заметка": "#2 — cold front thunderstorm (гром, меньше дождя)"
+    },
+    {
+      "id": "molniya",
+      "имя": "Молния",
+      "клетка_id": null,
+      "звук": null,
+      "model3d": null,
+      "папка": "molniya",
+      "фото": [
+        "photo_01.jpg"
+      ],
+      "видео": [
+        "video_live_01.mp4",
+        "video_live_02.mp4"
+      ],
+      "порядок": 7,
+      "заметка": "#1 обрезан до 3с; #2 — молния за горой (природа)",
+      "clean_video": "clean_video.mp4",
+      "clean_image": "clean_image.png",
+      "звук_синхрон": true,
+      "звук_из_видео": true,
+      "видео_имена": {
+        "video_live_01.mp4": "вспышка 3с",
+        "video_live_02.mp4": "гроза в горах"
+      },
+      "clean_источник": "video_live_02.mp4",
+      "clean_имя": "гроза в горах",
+      "звук_в_clean": true
+    }
+  ]
+}

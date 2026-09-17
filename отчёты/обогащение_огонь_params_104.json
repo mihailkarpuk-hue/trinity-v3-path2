@@ -1,0 +1,13 @@
+{
+  "дата": "2026-08-04",
+  "n_atoms": 7945,
+  "n_keys_params_104": 108,
+  "elapsed_s": 77.7,
+  "cell_copy": "выход/атомы_полные_огонь/etalon_ogon_with_104.json",
+  "sample": {
+    "fd": 0.655,
+    "spectral_flatness": 0.5152075458651096,
+    "tonality": 0.2476731092662147,
+    "high_mid_freq_ratio": 0.11358096525347729
+  }
+}

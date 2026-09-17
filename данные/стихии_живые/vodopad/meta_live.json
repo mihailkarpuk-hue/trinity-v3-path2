@@ -1,0 +1,25 @@
+{
+  "стихия": "vodopad",
+  "правило": "звук из видео, без вшивания",
+  "дата": "2026-07-15",
+  "источники": [
+    {
+      "файл": "video_live_01.mp4",
+      "источник": "File:Cascade de Syratu.webm",
+      "звук": "родной"
+    },
+    {
+      "файл": "video_live_02.mp4",
+      "источник": "File:Smoky Mountains waterfall.webm",
+      "звук": "родной"
+    },
+    {
+      "файл": "video_live_03_niagara.mp4",
+      "источник": "File:NiagaraKanadaHufeisenfall2006Mai.ogv",
+      "звук": "родной",
+      "дата": "2026-08-10",
+      "роль": "текущий single_live эталон"
+    }
+  ],
+  "текущий_эталон": "video_live_03_niagara.mp4"
+}

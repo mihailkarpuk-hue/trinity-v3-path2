@@ -1,0 +1,40 @@
+{
+  "chosen": "pass_lock",
+  "snap": {
+    "name": "pass_lock",
+    "fd": 0.305,
+    "nestedness": 0.193,
+    "mod_rate": 29.1,
+    "selfsim_r2": 0.853,
+    "flatness": 0.0066,
+    "centroid_hz": 703.2,
+    "bands": {
+      "0-400": 0.344,
+      "400-1200": 0.5,
+      "1.2-3.8k": 0.152,
+      "3.8-6k": 0.004,
+      "6k+": 0.001
+    },
+    "band": 0.225,
+    "stft": 0.194
+  },
+  "etalon": {
+    "name": "e",
+    "fd": 0.329,
+    "nestedness": 0.044,
+    "mod_rate": 2.7,
+    "selfsim_r2": 0.886,
+    "flatness": 0.0178,
+    "centroid_hz": 716.4,
+    "bands": {
+      "0-400": 0.352,
+      "400-1200": 0.49,
+      "1.2-3.8k": 0.154,
+      "3.8-6k": 0.004,
+      "6k+": 0.001
+    },
+    "band": 1.0,
+    "stft": 1.0
+  },
+  "note": "HF rejected; river body + band lock"
+}
