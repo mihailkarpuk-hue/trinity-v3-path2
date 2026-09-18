@@ -170,11 +170,42 @@ function upperBound(arr, t) {
     return lo; // количество элементов ≤ t
 }
 
+// Полка природы хранит атомы по-русски (t / форма / пики). Рендер ждёт atoms[].
+export function нормализовать_атомы(данные) {
+    if (данные?.atoms?.length) return данные;
+    const сырьё = данные?.атомы;
+    if (!Array.isArray(сырьё) || !сырьё.length) return данные;
+    const atoms = сырьё.map((a) => {
+        const пик = Array.isArray(a.пики) && a.пики[0];
+        const точка = Array.isArray(a.образ_кусочек?.точки) ? a.образ_кусочек.точки[0] : null;
+        const freq = a.форма?.частота_дом ?? (пик ? пик[0] : 20) ?? 20;
+        const amp = (пик ? пик[1] : 0) || a.электрон?.amplitude_rms || 0;
+        const harm = a.протон?.harmonic_ratio ?? a.параметры?.harmonic_ratio ?? 0;
+        const out = {
+            birth: a.t ?? a.старт ?? 0,
+            freq,
+            amp,
+            harmonicity: harm,
+            params_104: a.параметры || a.протон || {},
+        };
+        if (точка) {
+            if (точка.r != null) { out.color_r = точка.r; out.color_g = точка.g; out.color_b = точка.b; }
+            if (точка.x != null) {
+                out.pos_x = (точка.x - 0.5) * 2;
+                out.pos_y = (0.5 - (точка.y ?? 0.5)) * 2;
+                out.pos_z = 0;
+            }
+        }
+        return out;
+    });
+    return { ...данные, atoms, atoms_count: atoms.length };
+}
+
 // === Загрузка ===
 export async function загрузить_атомы(url) {
     const ответ = await fetch(encodeURI(url), { cache: 'force-cache' });
     if (!ответ.ok) throw new Error('Атомы HTTP ' + ответ.status);
-    return ответ.json();
+    return нормализовать_атомы(await ответ.json());
 }
 
 // === Сборка содержимого с учётом синхронизации по времени ===

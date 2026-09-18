@@ -160,11 +160,62 @@ export function создать_эталон_сцену(корень_родите
             fragmentShader:'uniform sampler2D uTex;\nvarying vec3 vC;\nvoid main(){vec4 t=texture2D(uTex,gl_PointCoord);if(t.a<0.02)discard;gl_FragColor=vec4(vC,1.0)*t;}',
             transparent:true,depthWrite:false,blending:THREE.AdditiveBlending });
     }
-    async function показать(url){
+    function rng(seed){
+        let s = (seed >>> 0) || 1;
+        return () => { s = (Math.imul(1664525, s) + 1013904223) >>> 0; return (s & 0xfffffff) / 0x10000000; };
+    }
+    // Встроенные 3D-эталоны (дождь/огонь…), если *_model3d.json нет в git.
+    function собрать_модель(тип){
+        const rnd = rng((String(тип||'дождь').length * 997 + 13) >>> 0);
+        if(тип==='огонь'){
+            const parts=[];
+            for(let i=0;i<520;i++){
+                const ang=rnd()*Math.PI*2, rad=rnd()*0.85;
+                parts.push({x:Math.cos(ang)*rad, z:Math.sin(ang)*rad*0.7, h:1.6+rnd()*2.2, phase:rnd(), bright:0.45+rnd()*0.55});
+            }
+            return {тип:'огонь', y_bot:-1.85, скорость:0.28, parts};
+        }
+        if(тип==='ветер'){
+            const parts=[];
+            for(let i=0;i<280;i++) parts.push({y:(rnd()-0.5)*2.4, z:(rnd()-0.5)*2.0, len:0.35+rnd()*1.1, phase:rnd(), bright:0.5+rnd()*0.5});
+            return {тип:'ветер', x_left:-2.6, x_right:2.8, скорость:0.38, parts};
+        }
+        if(тип==='водопад'){
+            const drops=[], mist=[];
+            for(let i=0;i<520;i++) drops.push({x:(rnd()-0.5)*2.2, z:(rnd()-0.5)*1.4, len:0.35+rnd()*0.9, phase:rnd(), bright:0.6+rnd()*0.4});
+            for(let i=0;i<180;i++) mist.push({x:(rnd()-0.5)*2.4, z:(rnd()-0.5)*1.6, phase:rnd(), bright:0.5+rnd()*0.5});
+            return {тип:'водопад', y_top:2.5, y_bot:-2.0, скорость:0.55, drops, mist};
+        }
+        if(тип==='ручей'){
+            const parts=[], bubbles=[];
+            for(let i=0;i<220;i++) parts.push({y:-0.4+(rnd()-0.5)*0.7, z:(rnd()-0.5)*1.6, len:0.3+rnd()*0.9, phase:rnd(), bright:0.55+rnd()*0.45});
+            for(let i=0;i<90;i++) bubbles.push({x:(rnd()-0.5)*2.4, y:-0.5+rnd()*0.4, z:(rnd()-0.5)*1.2, phase:rnd(), bright:0.5+rnd()*0.5});
+            return {тип:'ручей', x_left:-2.5, x_right:2.6, скорость:0.32, parts, bubbles};
+        }
+        if(тип==='гром'){
+            const болт=[{x:0,y:2.3,z:0}];
+            let x=0,y=2.3;
+            for(let i=0;i<14;i++){ x+=(rnd()-0.5)*0.55; y-=0.28+rnd()*0.12; болт.push({x,y,z:(rnd()-0.5)*0.15}); }
+            const частицы=[];
+            for(let i=0;i<160;i++) частицы.push({x:(rnd()-0.5)*3.2, y:1.2+rnd()*1.4, z:(rnd()-0.5)*1.8, phase:rnd(), bright:0.4+rnd()*0.6});
+            return {тип:'гром', болт, частицы};
+        }
+        if(тип==='удар'){
+            const частицы=[];
+            for(let i=0;i<220;i++){
+                const ang=rnd()*6.283, rad=rnd()*1.8;
+                частицы.push({x:Math.cos(ang)*rad, y:(rnd()-0.3)*1.6, z:Math.sin(ang)*rad*0.8, phase:rnd(), bright:0.5+rnd()*0.5});
+            }
+            return {тип:'удар', частицы};
+        }
+        const drops=[];
+        for(let i=0;i<440;i++) drops.push({x:(rnd()-0.5)*4.2, z:(rnd()-0.5)*2.4, len:0.22+rnd()*0.7, phase:rnd(), bright:0.5+rnd()*0.5});
+        return {тип:'дождь', y_top:2.45, y_bot:-2.15, скорость:0.42, drops};
+    }
+    function применить_модель(m){
         while(группа.children.length){ const o=группа.children.pop(); o.geometry?.dispose?.(); o.material?.dispose?.(); }
         segs=null; pts=null; wind=null;
-        const r=await fetch(encodeURI(url),{cache:'no-store'}); if(!r.ok) throw new Error('модель HTTP '+r.status);
-        model=await r.json();
+        model=m;
         if(model.тип==='огонь' && model.parts){
             const P=model.parts, v=new Float32Array(P.length*3), c=new Float32Array(P.length*3), sz=new Float32Array(P.length);
             const g=new THREE.BufferGeometry();
@@ -276,11 +327,17 @@ export function создать_эталон_сцену(корень_родите
         }
         controls.target.set(0,0,0); controls.update(); t0=performance.now();
     }
+    async function показать(url){
+        const r=await fetch(encodeURI(url),{cache:'no-store'}); if(!r.ok) throw new Error('модель HTTP '+r.status);
+        применить_модель(await r.json());
+    }
+    function показать_тип(тип){ применить_модель(собрать_модель(тип)); }
     return {
         узел,
         активировать(){ узел.classList.add('активна'); активна=true; resize(); raf=requestAnimationFrame(tick); },
         деактивировать(){ узел.classList.remove('активна'); активна=false; cancelAnimationFrame(raf); },
         показать,
+        показать_тип,
         снять(){ ro.disconnect(); cancelAnimationFrame(raf); controls.dispose(); renderer.dispose(); узел.remove(); },
     };
 }
