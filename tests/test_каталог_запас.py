@@ -24,6 +24,7 @@ class TestКаталогЗапас(unittest.TestCase):
         with open(ПОЛКА, encoding="utf-8") as f:
             полка = json.load(f)
         органы = {о["стихия_id"]: о for о in полка["органы"]}
+        self.assertEqual(len(органы), 7)
         self.assertIn("dozhd", органы)
         for стихия, о in органы.items():
             путь = os.path.join(КОРЕНЬ, "данные", "библиотека_природы", о["файл"])

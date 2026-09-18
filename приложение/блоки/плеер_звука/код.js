@@ -92,21 +92,45 @@ const БАЗА_ДАННЫХ = '../../данные/клеточки/';
     }
 
     // 6) Загрузка звука клеточки
+    let synthUrl = null;
+    function поставить_синтез(данные) {
+        if (!данные?.atoms?.length || !window.__wav_url_из_атомов) return false;
+        if (synthUrl) { try { URL.revokeObjectURL(synthUrl); } catch (e) { /* noop */ } }
+        synthUrl = window.__wav_url_из_атомов(данные);
+        аудио.src = synthUrl;
+        return true;
+    }
     function загрузить_клеточку(клеточка) {
-        // Пользовательский звук играет из blob-URL; корпусный — из файла.
-        const url = клеточка?.['__в_памяти']
-            ? клеточка['__url']
-            : (клеточка?.['звук'] ? encodeURI(БАЗА_ДАННЫХ + клеточка['звук']) : null);
-        if (!url) return;
         текущая_клеточка = клеточка;
         аудио.pause();
         поставить_иконку(false);
-        аудио.src = url;
-        аудио.currentTime = 0;
+        if (клеточка?.['__в_памяти']) {
+            аудио.src = клеточка['__url'];
+            аудио.currentTime = 0;
+            обновить_полосу();
+            window.dispatchEvent(new CustomEvent('playbackTime', { detail: { t: 0 } }));
+            return;
+        }
+        if (клеточка?.['звук'] && !клеточка['__звук_из_атомов']) {
+            аудио.src = encodeURI(БАЗА_ДАННЫХ + клеточка['звук']);
+            аудио.currentTime = 0;
+            обновить_полосу();
+            window.dispatchEvent(new CustomEvent('playbackTime', { detail: { t: 0 } }));
+            return;
+        }
+        поставить_синтез(window.__текущие_атомы);
         обновить_полосу();
-        // Сразу пинаем синхронизацию проекций на t=0
         window.dispatchEvent(new CustomEvent('playbackTime', { detail: { t: 0 } }));
     }
+    аудио.addEventListener('error', () => {
+        поставить_синтез(window.__текущие_атомы);
+    });
+    window.addEventListener('atomsReady', (e) => {
+        const кл = window.__текущая_клеточка?.['данные'] || текущая_клеточка;
+        if (кл?.['звук'] && !кл['__звук_из_атомов'] && аудио.src && !аудио.error) return;
+        поставить_синтез(e.detail?.данные);
+        обновить_полосу();
+    });
 
     // 7) Цикл рассылки времени + уровней (50 мс)
     let таймер_50 = 0;
